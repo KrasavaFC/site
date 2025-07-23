@@ -75,7 +75,7 @@
 
     <!-- Terms and Conditions Checkbox -->
     <div class="checkbox-label">
-      <input type="checkbox" checked="checked" id="terms" />
+      <input type="checkbox" id="terms" />
       <label for="terms"
         >i agree with the <span>&nbsp;terms & conditions</span></label
       >
