@@ -26,46 +26,46 @@
         <div class="dropdown-menu">
           <button class="nav-btn">about</button>
           <div class="dropdown-content">
-            <a href="./pages/About/About.html">about us</a>
-            <a href="./pages/About/Testimonials.html">testimonials</a>
-            <a href="./pages/About/FAQs.html">fAQs</a>
+            <a href="/about">about us</a>
+            <a href="/testimonials">testimonials</a>
+            <a href="/faq">fAQs</a>
           </div>
         </div>
 
         <div class="dropdown-menu">
           <button class="nav-btn">Pages</button>
           <div class="dropdown-content">
-            <a href="./pages/Pages/Point-Table.html">Point Table</a>
-            <a href="./pages/Pages/Fixtures.html">Fixtures</a>
-            <a href="./pages/Pages/Fixture-Single.html">Fixture Single</a>
-            <a href="./pages/Pages/Portfolio.html">Portfolio</a>
-            <a href="./pages/Pages/Portfolio-Single.html">Portfolio Single</a>
-            <a href="./pages/Pages/Sponsors.html">Sponsors</a>
-            <a href="./pages/Pages/Login.html">login</a>
-            <a href="./pages/Pages/Register.html">register</a>
-            <a href="./pages/Pages/Reset-Password.html">forgot Password</a>
+            <a href="/table">Point Table</a>
+            <a href="/fixtures">Fixtures</a>
+            <a href="/fixture">Fixture Single</a>
+            <a href="/portfolios">Portfolio</a>
+            <a href="/portfolio">Portfolio Single</a>
+            <a href="/sponsors">Sponsors</a>
+            <a href="/login">login</a>
+            <a href="/register">register</a>
+            <a href="/reset-password">forgot Password</a>
           </div>
         </div>
 
         <div class="dropdown-menu">
           <button class="nav-btn">team</button>
           <div class="dropdown-content">
-            <a href="./pages/Team/Team.html">team</a>
-            <a href="./pages/Team/Coaches.html">coaches</a>
-            <a href="./pages/Team/Coach-Single.html">coach single</a>
-            <a href="./pages/Team/Players.html">players</a>
-            <a href="./pages/Team/Player-Single.html">player single</a>
+            <a href="/team">team</a>
+            <a href="/team/coaches">coaches</a>
+            <a href="/team/coach">coach single</a>
+            <a href="/team/players">players</a>
+            <a href="/team/player">player single</a>
           </div>
         </div>
 
         <div class="dropdown-menu">
           <button class="nav-btn">Result</button>
           <div class="dropdown-content">
-            <a href="./pages/Result/Results.html">Results</a>
-            <a href="./pages/Result/Result-Single.html">Result Single</a>
+            <a href="/results">Results</a>
+            <a href="/result">Result Single</a>
           </div>
         </div>
-
+        <!-- 
         <div class="dropdown-menu">
           <button class="nav-btn">blog</button>
           <div class="dropdown-content">
@@ -73,29 +73,28 @@
             <a href="./pages/Blog/Blog-List.html">blogs list</a>
             <a href="./pages/Blog/Blog-Single.html">blog Single</a>
           </div>
-        </div>
+        </div> -->
 
         <div class="dropdown-menu">
           <button class="nav-btn">shop</button>
           <div class="dropdown-content">
-            <a href="./pages/Shop/Shop-Grid.html">shop grid</a>
-            <a href="./pages/Shop/Shop-List.html">shop list</a>
-            <a href="./pages/Shop/Product-Single.html">product Single</a>
-            <a href="./pages/Shop/Wishlist.html">wishlist</a>
-            <a href="./pages/Shop/Cart.html">cart</a>
-            <a href="./pages/Shop/Checkout.html">checkout</a>
+            <a href="/shop/grid">shop grid</a>
+            <a href="/shop/list">shop list</a>
+            <a href="/shop/product">product Single</a>
+            <a href="/shop/wishlist">wishlist</a>
+            <a href="/shop/cart">cart</a>
+            <a href="/shop/checkout">checkout</a>
           </div>
         </div>
 
-        <a class="nav-btn" href="./pages/Contact/Contact.html">contact</a>
+        <a class="nav-btn" href="/contact">contact</a>
       </nav>
 
       <!-- == Icon Container == -->
       <div class="icon-container">
         <div id="search-btn" class="icon fa-solid fa-magnifying-glass"></div>
         <!-- Search Icon -->
-        <a href="./pages/Shop/Cart.html"
-          ><i class="icon fa-solid fa-cart-arrow-down"></i></a
+        <a href="/shop/cart"><i class="icon fa-solid fa-cart-arrow-down"></i></a
         >
         <div id="menu-btn" class="icon fa-solid fa-bars-staggered"></div>
       </div>
@@ -121,7 +120,7 @@
     <nav class="mobile-navbar">
       <div class="nav-link">
         <div class="main-nav-link">
-          <a class="nav-btn" href="./index.html">home</a>
+          <a class="nav-btn" href="/">home</a>
         </div>
       </div>
 
@@ -131,9 +130,9 @@
           <i class="fas fa-plus"></i>
         </div>
         <div class="sub-nav-link">
-          <a href="./pages/About/About.html">about us</a>
-          <a href="./pages/About/Testimonials.html">testimonials</a>
-          <a href="./pages/About/FAQs.html">fAQs</a>
+          <a href="/about">about us</a>
+          <a href="/testimonials">testimonials</a>
+          <a href="/faq">fAQs</a>
         </div>
       </div>
 
@@ -143,15 +142,15 @@
           <i class="fas fa-plus"></i>
         </div>
         <div class="sub-nav-link">
-          <a href="./pages/Pages/Point-Table.html">Point Table</a>
-          <a href="./pages/Pages/Fixtures.html">Fixtures</a>
-          <a href="./pages/Pages/Fixture-Single.html">Fixture Single</a>
-          <a href="./pages/Pages/Portfolio.html">Portfolio</a>
-          <a href="./pages/Pages/Portfolio-Single.html">Portfolio Single</a>
-          <a href="./pages/Pages/Sponsors.html">Sponsors</a>
-          <a href="./pages/Pages/Login.html">login</a>
-          <a href="./pages/Pages/Register.html">register</a>
-          <a href="./pages/Pages/Reset-Password.html">forgot Password</a>
+          <a href="/table">Point Table</a>
+          <a href="/fixtures">Fixtures</a>
+          <a href="/fixture">Fixture Single</a>
+          <a href="/portfolios">Portfolio</a>
+          <a href="/portfolio">Portfolio Single</a>
+          <a href="/sponsors">Sponsors</a>
+          <a href="/login">login</a>
+          <a href="/register">register</a>
+          <a href="/reset-password">forgot Password</a>
         </div>
       </div>
 
@@ -161,11 +160,11 @@
           <i class="fas fa-plus"></i>
         </div>
         <div class="sub-nav-link">
-          <a href="./pages/Team/Team.html">team</a>
-          <a href="./pages/Team/Coaches.html">coaches</a>
-          <a href="./pages/Team/Coach-Single.html">coach single</a>
-          <a href="./pages/Team/Players.html">players</a>
-          <a href="./pages/Team/Player-Single.html">player single</a>
+          <a href="/team">team</a>
+          <a href="/team/coaches">coaches</a>
+          <a href="/team/coach">coach single</a>
+          <a href="/team/players">players</a>
+          <a href="/team/player">player single</a>
         </div>
       </div>
 
@@ -175,12 +174,12 @@
           <i class="fas fa-plus"></i>
         </div>
         <div class="sub-nav-link">
-          <a href="./pages/Result/Results.html">Results</a>
-          <a href="./pages/Result/Result-Single.html">Result Single</a>
+          <a href="/results">Results</a>
+          <a href="/result">Result Single</a>
         </div>
       </div>
 
-      <div class="nav-link">
+      <!-- <div class="nav-link">
         <div class="main-nav-link">
           <div class="nav-btn">blog</div>
           <i class="fas fa-plus"></i>
@@ -190,7 +189,7 @@
           <a href="./pages/Blog/Blog-List.html">blogs list</a>
           <a href="./pages/Blog/Blog-Single.html">blog Single</a>
         </div>
-      </div>
+      </div> -->
 
       <div class="nav-link">
         <div class="main-nav-link">
@@ -198,18 +197,18 @@
           <i class="fas fa-plus"></i>
         </div>
         <div class="sub-nav-link">
-          <a href="./pages/Shop/Shop-Grid.html">shop grid</a>
-          <a href="./pages/Shop/Shop-List.html">shop list</a>
-          <a href="./pages/Shop/Product-Single.html">product Single</a>
-          <a href="./pages/Shop/Wishlist.html">wishlist</a>
-          <a href="./pages/Shop/Cart.html">cart</a>
-          <a href="./pages/Shop/Checkout.html">checkout</a>
+          <a href="/shop/grid">shop grid</a>
+          <a href="/shop/list">shop list</a>
+          <a href="/shop/product">product Single</a>
+          <a href="/shop/wishlist">wishlist</a>
+          <a href="/shop/cart">cart</a>
+          <a href="/shop/checkout">checkout</a>
         </div>
       </div>
 
       <div class="nav-link">
         <div class="main-nav-link">
-          <a class="nav-btn" href="./pages/Contact/Contact.html">contact</a>
+          <a class="nav-btn" href="/contact">contact</a>
         </div>
       </div>
     </nav>
