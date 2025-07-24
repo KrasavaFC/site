@@ -19,13 +19,13 @@
   <div class="page-title">
 
     <div class="title">
-      <h2>Portfolio Single</h2>
+      <h2>Book Your Academy Membership</h2>
     </div> 
 
     <div class="link">
       <a href="../../index.html">Home</a>
       <i class="fa-solid fa-angles-right"></i>
-      <span class="page">Portfolio Single</span>
+      <span class="page">Academy</span>
     </div>
 
   </div> 
@@ -41,50 +41,55 @@
   
       <!-- Portfolio Image -->
       <div class="image">
-        <img src="../../assets/images/Portfolio/Portfolio/Portfolio-1.jpg" alt="Young Talents Football Club">
+        <img src="../../assets/images/Portfolio/Portfolio/academy2.JPG" alt="Young Talents Football Club">
       </div>
   
       <!-- Portfolio Content -->
       <div class="content">
 
         <!-- Main Heading -->
-        <h3 class="main-heading">Young Talents</h3>
+        <h3 class="main-heading">Our Mission</h3>
 
         <!-- Portfolio Important Note -->
-        <p class="important">Explore the journey of our young football stars as they showcase their talent and dedication on the field. Join us in celebrating the spirit of football excellence.</p>
+        
+        <p class="important">Territory of freedom</p>
 
         <!-- Portfolio Description -->
-        <p>Our Young Talents Football Club project highlights the incredible journey of our young players as they navigate the world of football. We are committed to providing a nurturing environment for their growth and fostering a love for the beautiful game.</p>
+        <p>Our academy has as its primary goal to inspire children to love football and sports. Under the guidance of qualified coaches from different countries, we create an atmosphere where every child, starting from 3-4 years old, can enjoy the game and not worry about winning or losing. We strive to ensure that our young athletes develop not only physically, but also as individuals, ready to interact in society. At our academy, the emphasis is on the comprehensive development of each child, providing a unique opportunity to grow and fulfill their dreams in the most favorable environment.</p>
 
         <!-- Portfolio Gallery -->
         <div class="portfolio-gallery page-gallery">
-          <a href="../../assets/images/Portfolio/Portfolio-Gallery/1.jpg">
-            <img src="../../assets/images/Portfolio/Portfolio-Gallery/1.jpg" alt="Young Talents FC Image 1">
+          <a href="">
+            <img src="../../assets/images/Portfolio/Portfolio/academy3.JPG" alt="Young Talents FC Image 1">
           </a>
-          <a href="../../assets/images/Portfolio/Portfolio-Gallery/2.jpg">
-            <img src="../../assets/images/Portfolio/Portfolio-Gallery/2.jpg" alt="Young Talents FC Image 2">
+          <a href="">
+            <img src="../../assets/images/Portfolio/Portfolio/academy.JPG" alt="Young Talents FC Image 2">
           </a>
-          <a href="../../assets/images/Portfolio/Portfolio-Gallery/3.jpg">
-            <img src="../../assets/images/Portfolio/Portfolio-Gallery/3.jpg" alt="Young Talents FC Image 3">
+          <a href="">
+            <img src="../../assets/images/Portfolio/Portfolio/academy1.JPG" alt="Young Talents FC Image 2">
           </a>
-          <a href="../../assets/images/Portfolio/Portfolio-Gallery/4.jpg">
-            <img src="../../assets/images/Portfolio/Portfolio-Gallery/4.jpg" alt="Young Talents FC Image 4">
+          <a href="">
+            <img src="../../assets/images/Portfolio/Portfolio/academy5.JPG" alt="Young Talents FC Image 2">
           </a>
-          <a href="../../assets/images/Portfolio/Portfolio-Gallery/5.jpg">
-            <img src="../../assets/images/Portfolio/Portfolio-Gallery/5.jpg" alt="Young Talents FC Image 5">
+          <a href="">
+            <img src="../../assets/images/Portfolio/Portfolio/academy4.png" alt="Young Talents FC Image 2">
           </a>
-          <a href="../../assets/images/Portfolio/Portfolio-Gallery/6.jpg">
-            <img src="../../assets/images/Portfolio/Portfolio-Gallery/6.jpg" alt="Young Talents FC Image 6">
+          <a href="">
+            <img src="../../assets/images/Portfolio/Portfolio/academy2.JPG" alt="Young Talents FC Image 2">
           </a>
         </div>
 
         <!-- Club Challenges -->
         <div class="sub-section">
-          <h3 class="sub-heading">Club Challenges:</h3>
+          <h3 class="sub-heading">Features of training</h3>
           <ul>
-            <li><i class="fa-solid fa-check"></i>Fostering Football Excellence in Youth.</li>
-            <li><i class="fa-solid fa-check"></i>Nurturing Talent and Skill Development.</li>
-            <li><i class="fa-solid fa-check"></i>Building a Strong Team Spirit.</li>
+            <li><i class="fa-solid fa-check"></i>3-5 years old</li>
+            <p>Emphasis on developmental activities for coordination</p>
+            <li><i class="fa-solid fa-check"></i>6-8 years old</li>
+            <p>We do not use evaluative statements - every child is a “champion” for us, we do not play for scores during training.
+            </p>
+            <li><i class="fa-solid fa-check"></i>9-12 years old</li>
+            <p>We cultivate team spirit and teach how to act strategically, using logic.</p>
           </ul>
         </div>
 

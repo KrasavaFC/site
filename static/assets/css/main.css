@@ -265,8 +265,8 @@ section{
 
 /*----- 4- Page Title CSS -----*/
 .page-title{
-    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/PageTitle/pageTitle.jpg");
-    background:         linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/PageTitle/pageTitle.jpg");
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Portfolio/Portfolio/banner_academy.jpg");
+    background:         linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Portfolio/Portfolio/banner_academy.jpg");
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center;
@@ -1510,9 +1510,9 @@ input:-webkit-autofill:active {
 /*----- 7- Awards -----*/
 .awards{
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("../../assets/images/Background/Awards.jpg");
+    url("../../assets/images/Background/selebration.JPG");
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
-    url("../../assets/images/Background/Awards.jpg");
+    url("../../assets/images/Background/selebration.JPG");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;

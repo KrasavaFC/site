@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
   import Footer from "../Footer.svelte";
   import Header from "../Header.svelte";
 </script>
@@ -42,9 +42,9 @@
     <!-- Button for Defenders -->
     <li><a class="button" href="#midfielders">Midfielders</a></li>
     <!-- Button for Midfielders -->
-    <li><a class="button" href="#forwards">Forwards</a></li>
+    <!--<li><a class="button" href="#forwards">Forwards</a></li>-->
     <!-- Button for Forwards -->
-    <li><a class="button" href="#coaches">Coaches</a></li>
+    <!--<li><a class="button" href="#coaches">Coaches</a></li>-->
     <!-- Button for Coaches -->
   </ul>
 
@@ -56,12 +56,12 @@
 
     <!-- Goalkeepers -->
     <div class="box-container">
-      <!-- Goalkeeper 1 - John Smith -->
+      <!-- Goalkeeper 1 - Ioannis Pieri -->
       <div class="team-item">
         <!-- Team Member Image and Social Icons -->
         <div class="team-image">
           <img
-            src="../../assets/images/Team/Goalkeepers/1.jpg"
+            src="../../assets/images/Team/Goalkeepers/Ioannis.jpg"
             alt="Team-Image"
           />
           <!-- Team Member Image -->
@@ -78,20 +78,22 @@
         </div>
         <!-- Team Member Details -->
         <div class="team-content">
-          <span>25</span>
+          <span>1</span>
           <!-- Team Member Jersey Number -->
-          <a href="../../pages/Team/Player-Single.html"><h3>John Smith</h3></a>
+          <a href="../../pages/Team/Player-Single.html"
+            ><h3>Ioannis Pieri</h3></a
+          >
           <!-- Team Member Name -->
           <p>GoalKeeper</p>
           <!-- Team Member Designation -->
         </div>
       </div>
 
-      <!-- Goalkeeper 2 - Michael Johnson -->
+      <!-- Goalkeeper 2 - Patryk Procek -->
       <div class="team-item">
         <div class="team-image">
           <img
-            src="../../assets/images/Team/Goalkeepers/2.jpg"
+            src="../../assets/images/Team/Goalkeepers/PatrykProcek.jpg"
             alt="Team-Image"
           />
           <div class="icon-container">
@@ -102,16 +104,16 @@
           </div>
         </div>
         <div class="team-content">
-          <span>12</span>
+          <span>95</span>
           <a href="../../pages/Team/Player-Single.html"
-            ><h3>Michael Johnson</h3></a
+            ><h3>Patryk Procek</h3></a
           >
           <p>GoalKeeper</p>
         </div>
       </div>
 
       <!-- Goalkeeper 3 - Christopher Brown -->
-      <div class="team-item">
+      <!-- <div class="team-item">
         <div class="team-image">
           <img
             src="../../assets/images/Team/Goalkeepers/3.jpg"
@@ -131,7 +133,7 @@
           >
           <p>GoalKeeper</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -142,11 +144,11 @@
     </div>
 
     <div class="box-container">
-      <!-- Defender 1 - Daniel Davis -->
+      <!-- Defender 1 - Dimitris Kyprianou -->
       <div class="team-item">
         <div class="team-image">
           <img
-            src="../../assets/images/Team/Defenders/1.jpg"
+            src="../../assets/images/Team/Defenders/DimitrisKyprianou.jpeg"
             alt="Team-Image"
           />
           <div class="icon-container">
@@ -157,41 +159,19 @@
           </div>
         </div>
         <div class="team-content">
-          <span>03</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Daniel Davis</h3></a
-          >
-          <p>Defender</p>
-        </div>
-      </div>
-
-      <!-- Defender 2 - Matthew White -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/2.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>27</span>
+          <span>25</span>
           <a href="../../pages/Team/Player-Single.html"
-            ><h3>Matthew White</h3></a
+            ><h3>Dimitris Kyprianou</h3></a
           >
           <p>Defender</p>
         </div>
       </div>
 
-      <!-- Defender 3 - Alexander Turner -->
+      <!-- Defender 2 - Vangelis Kyriacou -->
       <div class="team-item">
         <div class="team-image">
           <img
-            src="../../assets/images/Team/Defenders/3.jpg"
+            src="../../assets/images/Team/Defenders/VangelisKyriacou.jpeg"
             alt="Team-Image"
           />
           <div class="icon-container">
@@ -202,19 +182,19 @@
           </div>
         </div>
         <div class="team-content">
-          <span>09</span>
+          <span>32</span>
           <a href="../../pages/Team/Player-Single.html"
-            ><h3>Alexander Turner</h3></a
+            ><h3>Vangelis Kyriacou</h3></a
           >
           <p>Defender</p>
         </div>
       </div>
 
-      <!-- Defender 4 - Robert Harris -->
+      <!-- Defender 3 - Constantinos Demetriou -->
       <div class="team-item">
         <div class="team-image">
           <img
-            src="../../assets/images/Team/Defenders/4.jpg"
+            src="../../assets/images/Team/Defenders/ConstantinosDemetrio.jpeg"
             alt="Team-Image"
           />
           <div class="icon-container">
@@ -225,19 +205,19 @@
           </div>
         </div>
         <div class="team-content">
-          <span>15</span>
+          <span>77</span>
           <a href="../../pages/Team/Player-Single.html"
-            ><h3>Robert Harris</h3></a
+            ><h3>Constantinos Demetrio</h3></a
           >
           <p>Defender</p>
         </div>
       </div>
 
-      <!-- Defender 5 - William Martin -->
+      <!-- Defender 4 - Martinos Christofi -->
       <div class="team-item">
         <div class="team-image">
           <img
-            src="../../assets/images/Team/Defenders/5.jpg"
+            src="../../assets/images/Team/Defenders/MartinosChristofi.jpeg"
             alt="Team-Image"
           />
           <div class="icon-container">
@@ -248,60 +228,16 @@
           </div>
         </div>
         <div class="team-content">
-          <span>21</span>
+          <span>93</span>
           <a href="../../pages/Team/Player-Single.html"
-            ><h3>William Martin</h3></a
+            ><h3>Martinos Christofi</h3></a
           >
           <p>Defender</p>
         </div>
       </div>
 
-      <!-- Defender 6 - Thomas Clark -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/6.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>36</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Thomas Clark</h3></a
-          >
-          <p>Defender</p>
-        </div>
-      </div>
-
-      <!-- Defender 7 - Richard Hall -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/7.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>06</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Richard Hall</h3></a
-          >
-          <p>Defender</p>
-        </div>
-      </div>
-
-      <!-- Defender 8 - Joseph Young -->
-      <div class="team-item">
+      <!-- Defender 5 - Joseph Young -->
+      <!-- <div class="team-item">
         <div class="team-image">
           <img
             src="../../assets/images/Team/Defenders/8.jpg"
@@ -320,7 +256,7 @@
           >
           <p>Defender</p>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
 
@@ -331,11 +267,11 @@
     </div>
 
     <div class="box-container">
-      <!-- Midfielder 1 - David Scott -->
+      <!-- Midfielder 1 - Andreas Komodikis -->
       <div class="team-item">
         <div class="team-image">
           <img
-            src="../../assets/images/Team/Midfielders/1.jpg"
+            src="../../assets/images/Team/Midfielders/AndreasKomodikis.jpeg"
             alt="Team-Image"
           />
           <div class="icon-container">
@@ -346,17 +282,86 @@
           </div>
         </div>
         <div class="team-content">
-          <span>14</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>David Scott</h3></a>
+          <span>7</span>
+          <a href="../../pages/Team/Player-Single.html"
+            ><h3>Andreas Komodikis</h3></a
+          >
           <p>midfielder</p>
         </div>
       </div>
 
-      <!-- Midfielder 2 - Benjamin Lewis -->
+      <!-- Midfielder 2 - Curtis Yebli -->
       <div class="team-item">
         <div class="team-image">
           <img
-            src="../../assets/images/Team/Midfielders/2.jpg"
+            src="../../assets/images/Team/Midfielders/CurtisYebli.jpeg"
+            alt="Team-Image"
+          />
+          <div class="icon-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="team-content">
+          <span>8</span>
+          <a href="../../pages/Team/Player-Single.html"><h3>Curtis Yebli</h3></a
+          >
+          <p>midfielder</p>
+        </div>
+      </div>
+
+      <!-- Midfielder 3 - Márcio Meira -->
+      <div class="team-item">
+        <div class="team-image">
+          <img
+            src="../../assets/images/Team/Midfielders/MarcioMeira.jpeg"
+            alt="Team-Image"
+          />
+          <div class="icon-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="team-content">
+          <span>10</span>
+          <a href="../../pages/Team/Player-Single.html"><h3>Márcio Meira</h3></a
+          >
+          <p>midfielder</p>
+        </div>
+      </div>
+
+      <!-- Midfielder 4 - Theodosis Kyprou -->
+      <div class="team-item">
+        <div class="team-image">
+          <img
+            src="../../assets/images/Team/Midfielders/TheodosisKyprou.jpeg"
+            alt="Team-Image"
+          />
+          <div class="icon-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="team-content">
+          <span>17</span>
+          <a href="../../pages/Team/Player-Single.html"
+            ><h3>Theodosis Kyprou</h3></a
+          >
+          <p>midfielder</p>
+        </div>
+      </div>
+
+      <!-- Midfielder 5 - Nikolas Tarapoulouzis -->
+      <div class="team-item">
+        <div class="team-image">
+          <img
+            src="../../assets/images/Team/Midfielders/NikolasTarapoulouzis.jpeg"
             alt="Team-Image"
           />
           <div class="icon-container">
@@ -369,106 +374,17 @@
         <div class="team-content">
           <span>30</span>
           <a href="../../pages/Team/Player-Single.html"
-            ><h3>Benjamin Lewis</h3></a
+            ><h3>Nikolas Tarapoulouzis</h3></a
           >
           <p>midfielder</p>
         </div>
       </div>
 
-      <!-- Midfielder 3 - James King -->
+      <!-- Midfielder 6 - Osman Koroma -->
       <div class="team-item">
         <div class="team-image">
           <img
-            src="../../assets/images/Team/Midfielders/3.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>02</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>James King</h3></a>
-          <p>midfielder</p>
-        </div>
-      </div>
-
-      <!-- Midfielder 4 - Charles Taylor -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/4.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>19</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Charles Taylor</h3></a
-          >
-          <p>midfielder</p>
-        </div>
-      </div>
-
-      <!-- Midfielder 5 - Andrew Wilson -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/5.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>22</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Andrew Wilson</h3></a
-          >
-          <p>midfielder</p>
-        </div>
-      </div>
-
-      <!-- Midfielder 6 - Edward Moore -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/6.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>08</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Edward Moore</h3></a
-          >
-          <p>midfielder</p>
-        </div>
-      </div>
-
-      <!-- Midfielder 7 - Henry Adams -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/7.jpg"
+            src="../../assets/images/Team/Midfielders/OsmanKoroma.jpeg"
             alt="Team-Image"
           />
           <div class="icon-container">
@@ -480,13 +396,14 @@
         </div>
         <div class="team-content">
           <span>33</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Henry Adams</h3></a>
+          <a href="../../pages/Team/Player-Single.html"><h3>Osman Koroma</h3></a
+          >
           <p>midfielder</p>
         </div>
       </div>
 
-      <!-- Midfielder 8 - George Walker -->
-      <div class="team-item">
+      <!-- Midfielder 7 - George Walker -->
+      <!--  <div class="team-item">
         <div class="team-image">
           <img
             src="../../assets/images/Team/Midfielders/8.jpg"
@@ -506,7 +423,7 @@
           >
           <p>midfielder</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -517,10 +434,13 @@
     </div>
 
     <div class="box-container">
-      <!-- Forward 1 - Oliver White -->
+      <!-- Forward 1 - Marian Suto -->
       <div class="team-item">
         <div class="team-image">
-          <img src="../../assets/images/Team/Forwards/1.jpg" alt="Team-Image" />
+          <img
+            src="../../assets/images/Team/Forwards/MarianSuto.jpeg"
+            alt="Team-Image"
+          />
           <div class="icon-container">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -529,17 +449,19 @@
           </div>
         </div>
         <div class="team-content">
-          <span>07</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Oliver White</h3></a
-          >
+          <span>9</span>
+          <a href="../../pages/Team/Player-Single.html"><h3>Marian Suto</h3></a>
           <p>forward</p>
         </div>
       </div>
 
-      <!-- Forward 2 - Harry Turner -->
+      <!-- Forward 2 - Theodoros losifidis -->
       <div class="team-item">
         <div class="team-image">
-          <img src="../../assets/images/Team/Forwards/2.jpg" alt="Team-Image" />
+          <img
+            src="../../assets/images/Team/Forwards/Theodoroslosifidis.jpeg"
+            alt="Team-Image"
+          />
           <div class="icon-container">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -549,32 +471,15 @@
         </div>
         <div class="team-content">
           <span>26</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Harry Turner</h3></a
+          <a href="../../pages/Team/Player-Single.html"
+            ><h3>Theodoros Losifidis</h3></a
           >
           <p>forward</p>
         </div>
       </div>
 
-      <!-- Forward 3 - Jack Harris -->
-      <div class="team-item">
-        <div class="team-image">
-          <img src="../../assets/images/Team/Forwards/3.jpg" alt="Team-Image" />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>13</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Jack Harris</h3></a>
-          <p>forward</p>
-        </div>
-      </div>
-
-      <!-- Forward 4 - Samuel Martin -->
-      <div class="team-item">
+      <!-- Forward 3 - Samuel Martin -->
+      <!--<div class="team-item">
         <div class="team-image">
           <img src="../../assets/images/Team/Forwards/4.jpg" alt="Team-Image" />
           <div class="icon-container">
@@ -591,43 +496,46 @@
           >
           <p>forward</p>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
 
   <!-- Coaches -->
-  <div class="team-gallery" id="coaches">
+  <!--<div class="team-gallery" id="coaches">
     <div class="sub-heading">
       <h3>Coaches</h3>
     </div>
 
-    <div class="box-container">
-      <!-- Coach 1 -->
-      <div class="team-item">
-        <div class="team-image">
-          <img src="../../assets/images/Team/Coaches/1.jpg" alt="Coach-Pic" />
-          <!-- Coach Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <a href="../../pages/Team/Coach-Single.html"><h3>Joseph Davis</h3></a>
-          <!-- Coach Name -->
-          <p>Head Coach</p>
-          <!-- Coach Designation -->
-        </div>
-      </div>
+    <div class="box-container">-->
 
-      <!-- Coach 2 -->
-      <div class="team-item">
+  <!-- Coach 1 -->
+
+  <!--<div class="team-item">
+        <div class="team-image">
+          <img src="../../assets/images/Team/Coaches/1.jpg" alt="Coach-Pic" />-->
+
+  <!-- Coach Image
+          <div class="icon-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>-->
+  <!-- Facebook Icon
+            <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+  <!-- LinkedIn Icon 
+            <a href="#"><i class="fab fa-twitter"></i></a>-->
+  <!-- Twitter Icon
+            <a href="#"><i class="fab fa-instagram"></i></a>-->
+  <!-- Instagram Icon -->
+  <!--</div>
+        </div>
+        <div class="team-content"> -->
+  <!-- <a href="../../pages/Team/Coach-Single.html"><h3>Joseph Davis</h3></a> -->
+  <!-- Coach Name -->
+  <!-- <p>Head Coach</p> -->
+  <!-- Coach Designation -->
+  <!--  </div>
+      </div>-->
+
+  <!-- Coach 2 -->
+  <!-- <div class="team-item">
         <div class="team-image">
           <img src="../../assets/images/Team/Coaches/2.jpg" alt="Coach-Pic" />
           <div class="icon-container">
@@ -641,10 +549,10 @@
           <a href="../../pages/Team/Coach-Single.html"><h3>Thomas Clark</h3></a>
           <p>Assistant Coach</p>
         </div>
-      </div>
+      </div>-->
 
-      <!-- Coach 3 -->
-      <div class="team-item">
+  <!-- Coach 3 -->
+  <!-- <div class="team-item">
         <div class="team-image">
           <img src="../../assets/images/Team/Coaches/3.jpg" alt="Coach-Pic" />
           <div class="icon-container">
@@ -658,10 +566,10 @@
           <a href="../../pages/Team/Coach-Single.html"><h3>James Young</h3></a>
           <p>Goalkeeping Coach</p>
         </div>
-      </div>
+      </div>-->
 
-      <!-- Coach 4 -->
-      <div class="team-item">
+  <!-- Coach 4 -->
+  <!--<div class="team-item">
         <div class="team-image">
           <img src="../../assets/images/Team/Coaches/4.jpg" alt="Coach-Pic" />
           <div class="icon-container">
@@ -676,10 +584,10 @@
           >
           <p>Fitness Coach</p>
         </div>
-      </div>
+      </div>-->
 
-      <!-- Coach 5 -->
-      <div class="team-item">
+  <!-- Coach 5 -->
+  <!-- <div class="team-item">
         <div class="team-image">
           <img src="../../assets/images/Team/Coaches/5.jpg" alt="Coach-Pic" />
           <div class="icon-container">
@@ -693,10 +601,10 @@
           <a href="../../pages/Team/Coach-Single.html"><h3>Daniel King</h3></a>
           <p>Tactical Analyst</p>
         </div>
-      </div>
+      </div>-->
 
-      <!-- Coach 6 -->
-      <div class="team-item">
+  <!-- Coach 6 -->
+  <!-- <div class="team-item">
         <div class="team-image">
           <img src="../../assets/images/Team/Coaches/6.jpg" alt="Coach-Pic" />
           <div class="icon-container">
@@ -712,10 +620,10 @@
           >
           <p>Technical Director</p>
         </div>
-      </div>
+      </div>-->
 
-      <!-- Coach 7 -->
-      <div class="team-item">
+  <!-- Coach 7 -->
+  <!--<div class="team-item">
         <div class="team-image">
           <img src="../../assets/images/Team/Coaches/7.jpg" alt="Coach-Pic" />
           <div class="icon-container">
@@ -730,10 +638,10 @@
           >
           <p>Defensive Coach</p>
         </div>
-      </div>
+      </div>-->
 
-      <!-- Coach 8 -->
-      <div class="team-item">
+  <!-- Coach 8 -->
+  <!-- <div class="team-item">
         <div class="team-image">
           <img src="../../assets/images/Team/Coaches/8.jpg" alt="Coach-Pic" />
           <div class="icon-container">
@@ -750,8 +658,8 @@
           <p>Technical Coach</p>
         </div>
       </div>
-    </div>
-  </div>
+    </div> -->
+  <!-- </div>-->
 </section>
 <!-- ==================== Team Area (End) ==================== -->
 
