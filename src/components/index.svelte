@@ -157,21 +157,24 @@
     <div class="upcoming-container">
       <!-- Match 1 -->
       <div class="match-item">
-        <a href="./pages/Result/Result-Single.html">
+        <a href="https://soccer365.net/games/2217314/">
           <div class="match-detail">
-            <div class="league">Champions League</div>
-            <div class="time">03 Dec 2023 - 8:30 p.m.</div>
-            <div class="venue">City Stadium, Pakistan</div>
+            <div class="league">Cyprus Second Division 2024/25</div>
+            <div class="time">26 Apr 2025 - 16:00 p.m.</div>
+            <div class="venue">Koinotiko Stadio Erimis (Erimi)</div>
           </div>
           <div class="match-intro">
             <div class="team-logo">
-              <img src="./assets/images/Club-Teams/Royal.png" alt="logo" />
-              <h3>Royal Rebels</h3>
+              <img src="./assets/images/Club-Teams/FCKrasava.png" alt="logo" />
+              <h3>Krasava ENY Ypsonas</h3>
             </div>
-            <div class="result"><span>2</span><span>-</span><span>1</span></div>
+            <div class="result"><span>1</span><span>-</span><span>0</span></div>
             <div class="team-logo">
-              <img src="./assets/images/Club-Teams/Eagle.png" alt="logo" />
-              <h3>Eagles United</h3>
+              <img
+                src="./assets/images/Club-Teams/Ahironas-Onisilos.png"
+                alt="logo"
+              />
+              <h3>Ahironas-Onisilos</h3>
             </div>
           </div>
         </a>
@@ -179,21 +182,43 @@
 
       <!-- Match 2 -->
       <div class="match-item">
-        <a href="./pages/Result/Result-Single.html">
+        <a href="https://soccer365.net/games/2217307/">
           <div class="match-detail">
-            <div class="league">Champions League</div>
-            <div class="time">01 Dec 2023 - 6:45 p.m.</div>
-            <div class="venue">City Stadium, Pakistan</div>
+            <div class="league">Cyprus Second Division 2024/25</div>
+            <div class="time">12 Apr 2025 - 16:00 p.m.</div>
+            <div class="venue">Koinotiko Stadio Parekklisias (Parekklisia)</div>
           </div>
           <div class="match-intro">
             <div class="team-logo">
-              <img src="./assets/images/Club-Teams/Knights.png" alt="logo" />
-              <h3>Nova Knights</h3>
+              <img src="./assets/images/Club-Teams/AEZakakiou.png" alt="logo" />
+              <h3>AE Zakakiou</h3>
             </div>
-            <div class="result"><span>2</span><span>-</span><span>2</span></div>
+            <div class="result"><span>0</span><span>-</span><span>1</span></div>
             <div class="team-logo">
-              <img src="./assets/images/Club-Teams/Royal.png" alt="logo" />
-              <h3>Royal Rebels</h3>
+              <img src="./assets/images/Club-Teams/FCKrasava.png" alt="logo" />
+              <h3>Krasava ENY Ypsonas</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Match 3 -->
+      <div class="match-item">
+        <a href="https://soccer365.net/games/2217299/">
+          <div class="match-detail">
+            <div class="league">Cyprus Second Division 2024/25</div>
+            <div class="time">06 Apr 2025 - 15:30 p.m.</div>
+            <div class="venue">Koinotiko Stadio Erimis (Erimi)</div>
+          </div>
+          <div class="match-intro">
+            <div class="team-logo">
+              <img src="./assets/images/Club-Teams/FCKrasava.png" alt="logo" />
+              <h3>Krasava ENY Ypsonas</h3>
+            </div>
+            <div class="result"><span>3</span><span>-</span><span>0</span></div>
+            <div class="team-logo">
+              <img src="./assets/images/Club-Teams/ASIL.png" alt="logo" />
+              <h3>ASIL Lysi</h3>
             </div>
           </div>
         </a>
@@ -230,54 +255,57 @@
           <div class="point-item">
             <div class="box">1</div>
             <div class="box name">
-              <img src="./assets/images/Club-Teams/Royal.png" alt="team-logo" />
-              <span>royal rebels</span>
+              <img
+                src="./assets/images/Club-Teams/AEKLarnaka.png"
+                alt="team-logo"
+              />
+              <span>AEK Larnaca</span>
             </div>
-            <div class="box">5</div>
-            <div class="box">4</div>
-            <div class="box">1</div>
             <div class="box">0</div>
-            <div class="box">10</div>
-            <div class="box">5</div>
-            <div class="box">5</div>
-            <div class="box">13</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
           </div>
 
           <!-- Team-2 Point Item -->
           <div class="point-item">
             <div class="box">2</div>
             <div class="box name">
-              <img src="./assets/images/Club-Teams/Eagle.png" alt="team-logo" />
-              <span>Eagles United</span>
+              <img
+                src="./assets/images/Club-Teams/AELLimassol.png"
+                alt="team-logo"
+              />
+              <span>AEL Limassol</span>
             </div>
-            <div class="box">5</div>
-            <div class="box">3</div>
-            <div class="box">1</div>
-            <div class="box">1</div>
-            <div class="box">8</div>
-            <div class="box">4</div>
-            <div class="box">4</div>
-            <div class="box">10</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
           </div>
 
           <!-- Team-3 Point Item -->
           <div class="point-item">
             <div class="box">3</div>
             <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/Knights.png"
-                alt="team-logo"
-              />
-              <span>Nova Knights</span>
+              <img src="./assets/images/Club-Teams/APOEL.png" alt="team-logo" />
+              <span>APOEL Nicosia</span>
             </div>
-            <div class="box">5</div>
-            <div class="box">3</div>
             <div class="box">0</div>
-            <div class="box">2</div>
-            <div class="box">9</div>
-            <div class="box">7</div>
-            <div class="box">2</div>
-            <div class="box">9</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
           </div>
 
           <!-- Team-4 Point Item -->
@@ -285,36 +313,39 @@
             <div class="box">4</div>
             <div class="box name">
               <img
-                src="./assets/images/Club-Teams/Aurora.png"
+                src="./assets/images/Club-Teams/Akritas.png"
                 alt="team-logo"
               />
-              <span>Aurora Club</span>
+              <span>Akritas</span>
             </div>
-            <div class="box">5</div>
-            <div class="box">2</div>
-            <div class="box">2</div>
-            <div class="box">1</div>
-            <div class="box">7</div>
-            <div class="box">6</div>
-            <div class="box">1</div>
-            <div class="box">8</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
           </div>
 
           <!-- Team-5 Point Item -->
           <div class="point-item">
             <div class="box">5</div>
             <div class="box name">
-              <img src="./assets/images/Club-Teams/Lions.png" alt="team-logo" />
-              <span>Liberty Lions</span>
+              <img
+                src="./assets/images/Club-Teams/Anorthosis.png"
+                alt="team-logo"
+              />
+              <span>Anorthosis Famagusta</span>
             </div>
-            <div class="box">5</div>
-            <div class="box">2</div>
-            <div class="box">2</div>
-            <div class="box">1</div>
-            <div class="box">6</div>
-            <div class="box">5</div>
-            <div class="box">1</div>
-            <div class="box">8</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
           </div>
 
           <!-- Team-6 Point Item -->
@@ -322,19 +353,19 @@
             <div class="box">6</div>
             <div class="box name">
               <img
-                src="./assets/images/Club-Teams/Arrows.png"
+                src="./assets/images/Club-Teams/ApollonLimassol.png"
                 alt="team-logo"
               />
-              <span>Silver Arrows</span>
+              <span>Apollon Limassol</span>
             </div>
-            <div class="box">5</div>
-            <div class="box">2</div>
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">8</div>
-            <div class="box">9</div>
-            <div class="box">-1</div>
-            <div class="box">7</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
           </div>
 
           <!-- Team-7 Point Item -->
@@ -342,19 +373,19 @@
             <div class="box">7</div>
             <div class="box name">
               <img
-                src="./assets/images/Club-Teams/Rovers.png"
+                src="./assets/images/Club-Teams/ArisLimassol.png"
                 alt="team-logo"
               />
-              <span>Royal Rovers</span>
+              <span>Aris Limassol</span>
             </div>
-            <div class="box">5</div>
-            <div class="box">1</div>
-            <div class="box">3</div>
-            <div class="box">1</div>
-            <div class="box">5</div>
-            <div class="box">5</div>
             <div class="box">0</div>
-            <div class="box">6</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
           </div>
 
           <!-- Team-8 Point Item -->
@@ -362,19 +393,19 @@
             <div class="box">8</div>
             <div class="box name">
               <img
-                src="./assets/images/Club-Teams/Infinite.png"
+                src="./assets/images/Club-Teams/EnosisNeon.png"
                 alt="team-logo"
               />
-              <span>Infinite Club</span>
+              <span>Enosis Neon Paralimniou</span>
             </div>
-            <div class="box">5</div>
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">2</div>
-            <div class="box">6</div>
-            <div class="box">7</div>
-            <div class="box">-1</div>
-            <div class="box">5</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
           </div>
 
           <!-- Team-9 Point Item -->
@@ -382,19 +413,119 @@
             <div class="box">9</div>
             <div class="box name">
               <img
-                src="./assets/images/Club-Teams/Phoenix.png"
+                src="./assets/images/Club-Teams/EthnikosAchnas.png"
                 alt="team-logo"
               />
-              <span>Phoenix Titans</span>
+              <span>Ethnikos Achnas</span>
             </div>
-            <div class="box">5</div>
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">2</div>
-            <div class="box">5</div>
-            <div class="box">7</div>
-            <div class="box">-2</div>
-            <div class="box">5</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+          </div>
+
+          <!-- Team-10 Point Item -->
+          <div class="point-item">
+            <div class="box">10</div>
+            <div class="box name">
+              <img
+                src="./assets/images/Club-Teams/FCKrasava.png"
+                alt="team-logo"
+              />
+              <span>FC Krasava ENY</span>
+            </div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+          </div>
+
+          <!-- Team-11 Point Item -->
+          <div class="point-item">
+            <div class="box">11</div>
+            <div class="box name">
+              <img
+                src="./assets/images/Club-Teams/OlympiakosNicosia.png"
+                alt="team-logo"
+              />
+              <span>Olympiakos Nicosia</span>
+            </div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+          </div>
+
+          <!-- Team-12 Point Item -->
+          <div class="point-item">
+            <div class="box">12</div>
+            <div class="box name">
+              <img
+                src="./assets/images/Club-Teams/OmoniaAradippou.png"
+                alt="team-logo"
+              />
+              <span>Omonia Aradippou</span>
+            </div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+          </div>
+
+          <!-- Team-13 Point Item -->
+          <div class="point-item">
+            <div class="box">13</div>
+            <div class="box name">
+              <img
+                src="./assets/images/Club-Teams/OmoniaNicosia.png"
+                alt="team-logo"
+              />
+              <span>Omonia Nicosia</span>
+            </div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+          </div>
+
+          <!-- Team-14 Point Item -->
+          <div class="point-item">
+            <div class="box">14</div>
+            <div class="box name">
+              <img
+                src="./assets/images/Club-Teams/PafosFC.png"
+                alt="team-logo"
+              />
+              <span>Pafos FC</span>
+            </div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
+            <div class="box">0</div>
           </div>
         </div>
       </div>
@@ -415,19 +546,19 @@
     <div class="match-item">
       <a href="./pages/Pages/Fixture-Single.html">
         <div class="match-detail">
-          <div class="league">Champions League</div>
-          <div class="time">15 Dec 2023 - 8:30 p.m.</div>
-          <div class="venue">City Stadium, Pakistan</div>
+          <div class="league">Cypriot First Division, 1-round</div>
+          <div class="time">23 Aug 2025 - 18:00 p.m.</div>
+          <!--<div class="venue">City Stadium, Pakistan</div>-->
         </div>
         <div class="match-intro">
           <div class="team-logo">
-            <img src="./assets/images/Club-Teams/Royal.png" alt="logo" />
-            <h3>Royal Rebels</h3>
+            <img src="./assets/images/Club-Teams/FCKrasava.png" alt="logo" />
+            <h3>Krasava ENY Ypsonas</h3>
           </div>
           <div class="result"><span>VS</span></div>
           <div class="team-logo">
-            <img src="./assets/images/Club-Teams/Aurora.png" alt="logo" />
-            <h3>Aurora Club</h3>
+            <img src="./assets/images/Club-Teams/APOEL.png" alt="logo" />
+            <h3>APOEL Nicosia</h3>
           </div>
         </div>
       </a>
@@ -435,7 +566,7 @@
         <a href="#"
           ><i class="fas fa-ticket-alt"></i> <span>Buy ticket</span>
         </a>
-        <a href="./pages/Pages/Fixture-Single.html"
+        <a href="https://soccer365.net/games/2295242/"
           ><i class="fa-solid fa-pen-to-square"></i>
           <span>Match Report</span></a
         >
@@ -446,19 +577,22 @@
     <div class="match-item">
       <a href="./pages/Pages/Fixture-Single.html">
         <div class="match-detail">
-          <div class="league">Champions League</div>
-          <div class="time">27 Dec 2023 - 6:45 p.m.</div>
-          <div class="venue">City Stadium, Pakistan</div>
+          <div class="league">Cypriot First Division, 2-round</div>
+          <div class="time">30 Aug 2025 - 18:00 p.m.</div>
+          <!-- <div class="venue">City Stadium, Pakistan</div> -->
         </div>
         <div class="match-intro">
           <div class="team-logo">
-            <img src="./assets/images/Club-Teams/Phoenix.png" alt="logo" />
-            <h3>Phoenix Titans</h3>
+            <img
+              src="./assets/images/Club-Teams/ApollonLimassol.png"
+              alt="logo"
+            />
+            <h3>Apollon Limassol</h3>
           </div>
           <div class="result"><span>VS</span></div>
           <div class="team-logo">
-            <img src="./assets/images/Club-Teams/Royal.png" alt="logo" />
-            <h3>Royal Rebels</h3>
+            <img src="./assets/images/Club-Teams/FCKrasava.png" alt="logo" />
+            <h3>Krasava ENY Ypsonas</h3>
           </div>
         </div>
       </a>
@@ -466,7 +600,7 @@
         <a href="#"
           ><i class="fas fa-ticket-alt"></i> <span>Buy ticket</span>
         </a>
-        <a href="./pages/Pages/Fixture-Single.html"
+        <a href="https://soccer365.ru/games/2295246/"
           ><i class="fa-solid fa-pen-to-square"></i>
           <span>Match Report</span></a
         >
@@ -549,7 +683,70 @@
       <!-- Team Member 1 -->
       <div class="swiper-slide team-item">
         <div class="team-image">
-          <img src="./assets/images/Team/Goalkeepers/1.jpg" alt="Team-Image" />
+          <img
+            src="../../assets/images/Team/Goalkeepers/IoannisPieriteam.jpeg"
+            alt="Team-Image"
+          />
+          <!-- Team Member Image -->
+          <div class="icon-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <!-- Facebook Icon -->
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <!-- LinkedIn Icon -->
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <!-- Twitter Icon -->
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <!-- Instagram Icon -->
+          </div>
+        </div>
+        <!-- Team Member Details -->
+        <div class="team-content">
+          <span>1</span>
+          <!-- Team Member Jersey Number -->
+          <a href="../../pages/Team/Player-Single.html"
+            ><h3>Ioannis Pieri</h3></a
+          >
+          <!-- Team Member Name -->
+          <p>GoalKeeper</p>
+          <!-- Team Member Designation -->
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="swiper-slide team-item">
+        <div class="team-image">
+          <img
+            src="../../assets/images/Team/Goalkeepers/PatrykProcekteam.jpg"
+            alt="Team-Image"
+          />
+          <!-- Team Member Image -->
+          <div class="icon-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <!-- Facebook Icon -->
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <!-- LinkedIn Icon -->
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <!-- Twitter Icon -->
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <!-- Instagram Icon -->
+          </div>
+        </div>
+        <div class="team-content">
+          <span>95</span>
+          <a href="./pages/Team/Player-Single.html"><h3>Patryk Procek</h3></a>
+          <!-- Team Member Name -->
+          <p>GoalKeeper</p>
+          <!-- Team Member Designation -->
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="swiper-slide team-item">
+        <div class="team-image">
+          <img
+            src="../../assets/images/Team/Defenders/DimitrisKyprianou.jpeg"
+            alt="Team-Image"
+          />
           <!-- Team Member Image -->
           <div class="icon-container">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -564,61 +761,11 @@
         </div>
         <div class="team-content">
           <span>25</span>
-          <a href="./pages/Team/Player-Single.html"><h3>John Smith</h3></a>
-          <!-- Team Member Name -->
-          <p>GoalKeeper</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 2 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Goalkeepers/2.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>12</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Michael Johnson</h3></a>
-          <!-- Team Member Name -->
-          <p>GoalKeeper</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 3 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Goalkeepers/3.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>18</span>
           <a href="./pages/Team/Player-Single.html"
-            ><h3>Christopher Brown</h3></a
+            ><h3>Dimitris Kyprianou</h3></a
           >
           <!-- Team Member Name -->
-          <p>GoalKeeper</p>
+          <p>Defender</p>
           <!-- Team Member Designation -->
         </div>
       </div>
@@ -626,7 +773,10 @@
       <!-- Team Member 4 -->
       <div class="swiper-slide team-item">
         <div class="team-image">
-          <img src="./assets/images/Team/Defenders/1.jpg" alt="Team-Image" />
+          <img
+            src="../../assets/images/Team/Defenders/VangelisKyriacouteam.jpeg"
+            alt="Team-Image"
+          />
           <!-- Team Member Image -->
           <div class="icon-container">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -640,8 +790,10 @@
           </div>
         </div>
         <div class="team-content">
-          <span>03</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Daniel Davis</h3></a>
+          <span>32</span>
+          <a href="./pages/Team/Player-Single.html"
+            ><h3>Vangelis Kyriacou</h3></a
+          >
           <!-- Team Member Name -->
           <p>Defender</p>
           <!-- Team Member Designation -->
@@ -651,7 +803,10 @@
       <!-- Team Member 5 -->
       <div class="swiper-slide team-item">
         <div class="team-image">
-          <img src="./assets/images/Team/Defenders/2.jpg" alt="Team-Image" />
+          <img
+            src="../../assets/images/Team/Defenders/ConstantinosDemetriouteam.jpeg"
+            alt="Team-Image"
+          />
           <!-- Team Member Image -->
           <div class="icon-container">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -665,8 +820,10 @@
           </div>
         </div>
         <div class="team-content">
-          <span>27</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Matthew White</h3></a>
+          <span>77</span>
+          <a href="./pages/Team/Player-Single.html"
+            ><h3>Constantinos Demetrio</h3></a
+          >
           <!-- Team Member Name -->
           <p>Defender</p>
           <!-- Team Member Designation -->
@@ -676,7 +833,10 @@
       <!-- Team Member 6 -->
       <div class="swiper-slide team-item">
         <div class="team-image">
-          <img src="./assets/images/Team/Defenders/3.jpg" alt="Team-Image" />
+          <img
+            src="../../assets/images/Team/Midfielders/AndreasKomodikisteam.jpeg"
+            alt="Team-Image"
+          />
           <!-- Team Member Image -->
           <div class="icon-container">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -690,11 +850,12 @@
           </div>
         </div>
         <div class="team-content">
-          <span>09</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Alexander Turner</h3></a
+          <span>7</span>
+          <a href="./pages/Team/Player-Single.html"
+            ><h3>Andreas Komodikis</h3></a
           >
           <!-- Team Member Name -->
-          <p>Defender</p>
+          <p>Midfielder</p>
           <!-- Team Member Designation -->
         </div>
       </div>
@@ -702,7 +863,10 @@
       <!-- Team Member 7 -->
       <div class="swiper-slide team-item">
         <div class="team-image">
-          <img src="./assets/images/Team/Defenders/4.jpg" alt="Team-Image" />
+          <img
+            src="../../assets/images/Team/Midfielders/CurtisYebliteam.jpeg"
+            alt="Team-Image"
+          />
           <!-- Team Member Image -->
           <div class="icon-container">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -716,10 +880,10 @@
           </div>
         </div>
         <div class="team-content">
-          <span>15</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Robert Harris</h3></a>
+          <span>8</span>
+          <a href="./pages/Team/Player-Single.html"><h3>Curtis Yebli</h3></a>
           <!-- Team Member Name -->
-          <p>Defender</p>
+          <p>Midfielder</p>
           <!-- Team Member Designation -->
         </div>
       </div>
@@ -727,282 +891,10 @@
       <!-- Team Member 8 -->
       <div class="swiper-slide team-item">
         <div class="team-image">
-          <img src="./assets/images/Team/Defenders/5.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>21</span>
-          <a href="./pages/Team/Player-Single.html"><h3>William Martin</h3></a>
-          <!-- Team Member Name -->
-          <p>Defender</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 9 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Defenders/6.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>36</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Thomas Clark</h3></a>
-          <!-- Team Member Name -->
-          <p>Defender</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 10 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Defenders/7.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>06</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Richard Hall</h3></a>
-          <!-- Team Member Name -->
-          <p>Defender</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 11 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Defenders/8.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>28</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Joseph Young</h3></a>
-          <!-- Team Member Name -->
-          <p>Defender</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 12 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Midfielders/1.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>14</span>
-          <a href="./pages/Team/Player-Single.html"><h3>David Scott</h3></a>
-          <!-- Team Member Name -->
-          <p>midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 13 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Midfielders/2.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>30</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Benjamin Lewis</h3></a>
-          <!-- Team Member Name -->
-          <p>midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 14 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Midfielders/3.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>02</span>
-          <a href="./pages/Team/Player-Single.html"><h3>James King</h3></a>
-          <!-- Team Member Name -->
-          <p>midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 15 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Midfielders/4.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>19</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Charles Taylor</h3></a>
-          <!-- Team Member Name -->
-          <p>midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 16 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Midfielders/5.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>22</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Andrew Wilson</h3></a>
-          <!-- Team Member Name -->
-          <p>midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 17 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Midfielders/6.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>08</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Edward Moore</h3></a>
-          <!-- Team Member Name -->
-          <p>midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 18 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Midfielders/7.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>33</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Henry Adams</h3></a>
-          <!-- Team Member Name -->
-          <p>midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 19 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Midfielders/8.jpg" alt="Team-Image" />
+          <img
+            src="../../assets/images/Team/Midfielders/MarcioMeirateam.jpeg"
+            alt="Team-Image"
+          />
           <!-- Team Member Image -->
           <div class="icon-container">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -1017,17 +909,20 @@
         </div>
         <div class="team-content">
           <span>10</span>
-          <a href="./pages/Team/Player-Single.html"><h3>George Walker</h3></a>
+          <a href="./pages/Team/Player-Single.html"><h3>Márcio Meira</h3></a>
           <!-- Team Member Name -->
-          <p>midfielder</p>
+          <p>Midfielder</p>
           <!-- Team Member Designation -->
         </div>
       </div>
 
-      <!-- Team Member 20 -->
+      <!-- Team Member 9 -->
       <div class="swiper-slide team-item">
         <div class="team-image">
-          <img src="./assets/images/Team/Forwards/1.jpg" alt="Team-Image" />
+          <img
+            src="../../assets/images/Team/Midfielders/TheodosisKyprouteam.jpeg"
+            alt="Team-Image"
+          />
           <!-- Team Member Image -->
           <div class="icon-container">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -1041,18 +936,108 @@
           </div>
         </div>
         <div class="team-content">
-          <span>07</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Oliver White</h3></a>
+          <span>17</span>
+          <a href="./pages/Team/Player-Single.html"><h3>Theodosis Kyprou</h3></a
+          >
           <!-- Team Member Name -->
-          <p>forward</p>
+          <p>Midfielder</p>
           <!-- Team Member Designation -->
         </div>
       </div>
 
-      <!-- Team Member 21 -->
+      <!-- Team Member 10 -->
       <div class="swiper-slide team-item">
         <div class="team-image">
-          <img src="./assets/images/Team/Forwards/2.jpg" alt="Team-Image" />
+          <img
+            src="../../assets/images/Team/Midfielders/NikolasTarapoulouzisteam.jpeg"
+            alt="Team-Image"
+          />
+          <!-- Team Member Image -->
+          <div class="icon-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <!-- Facebook Icon -->
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <!-- LinkedIn Icon -->
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <!-- Twitter Icon -->
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <!-- Instagram Icon -->
+          </div>
+        </div>
+        <div class="team-content">
+          <span>30</span>
+          <a href="./pages/Team/Player-Single.html"
+            ><h3>Nikolas Tarapoulouzis</h3></a
+          >
+          <!-- Team Member Name -->
+          <p>Midfielder</p>
+          <!-- Team Member Designation -->
+        </div>
+      </div>
+
+      <!-- Team Member 11 -->
+      <div class="swiper-slide team-item">
+        <div class="team-image">
+          <img
+            src="../../assets/images/Team/Midfielders/OsmanKoroma.jpeg"
+            alt="Team-Image"
+          />
+          <!-- Team Member Image -->
+          <div class="icon-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <!-- Facebook Icon -->
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <!-- LinkedIn Icon -->
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <!-- Twitter Icon -->
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <!-- Instagram Icon -->
+          </div>
+        </div>
+        <div class="team-content">
+          <span>33</span>
+          <a href="./pages/Team/Player-Single.html"><h3>Osman Koroma</h3></a>
+          <!-- Team Member Name -->
+          <p>Midfielder</p>
+          <!-- Team Member Designation -->
+        </div>
+      </div>
+
+      <!-- Team Member 12 -->
+      <div class="swiper-slide team-item">
+        <div class="team-image">
+          <img
+            src="../../assets/images/Team/Forwards/MarianSutoteam.jpeg"
+            alt="Team-Image"
+          />
+          <!-- Team Member Image -->
+          <div class="icon-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <!-- Facebook Icon -->
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <!-- LinkedIn Icon -->
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <!-- Twitter Icon -->
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <!-- Instagram Icon -->
+          </div>
+        </div>
+        <div class="team-content">
+          <span>9</span>
+          <a href="./pages/Team/Player-Single.html"><h3>Marian Suto</h3></a>
+          <!-- Team Member Name -->
+          <p>Forward</p>
+          <!-- Team Member Designation -->
+        </div>
+      </div>
+
+      <!-- Team Member 13 -->
+      <div class="swiper-slide team-item">
+        <div class="team-image">
+          <img
+            src="../../assets/images/Team/Forwards/Theodoroslosifidisteam.jpeg"
+            alt="Team-Image"
+          />
           <!-- Team Member Image -->
           <div class="icon-container">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -1067,62 +1052,41 @@
         </div>
         <div class="team-content">
           <span>26</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Harry Turner</h3></a>
+          <a href="./pages/Team/Player-Single.html"
+            ><h3>Theodoros Losifidis</h3></a
+          >
           <!-- Team Member Name -->
-          <p>forward</p>
+          <p>Forward</p>
           <!-- Team Member Designation -->
         </div>
       </div>
 
-      <!-- Team Member 22 -->
+      <!-- Team Member 23 
       <div class="swiper-slide team-item">
         <div class="team-image">
-          <img src="./assets/images/Team/Forwards/3.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>13</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Jack Harris</h3></a>
-          <!-- Team Member Name -->
-          <p>forward</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 23 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Forwards/4.jpg" alt="Team-Image" />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
+          <img src="./assets/images/Team/Forwards/4.jpg" alt="Team-Image" />-->
+      <!-- Team Member Image -->
+      <!--  <div class="icon-container">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>-->
+      <!-- Facebook Icon -->
+      <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+      <!-- LinkedIn Icon -->
+      <!-- <a href="#"><i class="fab fa-twitter"></i></a>-->
+      <!-- Twitter Icon -->
+      <!-- <a href="#"><i class="fab fa-instagram"></i></a>-->
+      <!-- Instagram Icon -->
+      <!--  </div>
         </div>
         <div class="team-content">
           <span>04</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Samuel Martin</h3></a>
-          <!-- Team Member Name -->
-          <p>forward</p>
-          <!-- Team Member Designation -->
-        </div>
+          <a href="./pages/Team/Player-Single.html"><h3>Samuel Martin</h3></a>-->
+      <!-- Team Member Name -->
+      <!-- <p>forward</p>-->
+      <!-- Team Member Designation -->
+      <!--</div>
       </div>
+    </div>
+  </div>-->
     </div>
   </div>
 </section>
@@ -1383,7 +1347,7 @@
     <div class="swiper-wrapper">
       <!-- Award 1 -->
       <div class="swiper-slide award-item">
-        <img src="/assets/images/Krasava/trophy.png" alt="Award Image" />
+        <img src="/assets/images/Krasava/trophy.JPG" alt="Award Image" />
         <!-- Award Image -->
         <h4>Cypriot 2nd tier champion<br /> 2025</h4>
         <!-- Award Title and Year -->
