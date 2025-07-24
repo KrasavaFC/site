@@ -1,10 +1,8 @@
-
-<script lang='ts'>
+<script lang="ts">
   import Footer from "./Footer.svelte";
   import Header from "./Header.svelte";
-
-
 </script>
+
 <!-- ==================== Scroll-Top Area (Start) ==================== -->
 <a href="#" class="scroll-top">
   <i class="fa-solid fa-arrow-up-long"></i>
@@ -27,55 +25,48 @@
         <div class="content">
           <div class="text">
             <h5>
-              <span>Welcome to Royal Rebels</span><i class="fa-solid fa-futbol"
+              <span>Welcome to Krasava Footbal Club</span><i
+                class="fa-solid fa-futbol"
               ></i>
             </h5>
             <!-- Slide Subheading -->
             <h3>Experience the Thrill of Our Football Club</h3>
             <!-- Slide Heading -->
-            <a href="./pages/Contact/Contact.html" class="btn">Join Now</a>
+            <a href="/contact" class="btn">Join Now</a>
             <!-- Contact Button -->
           </div>
         </div>
       </div>
 
       <!-- Home Slide-2 -->
-      <div class="swiper-slide home-item">
+      <!-- <div class="swiper-slide home-item">
         <img src="./assets/images/Home/Home-2.jpg" alt="Home Image" />
-        <!-- Slide Image -->
         <div class="content">
           <div class="text">
             <h5>
               <span>Welcome to Royal Rebels</span><i class="fa-solid fa-futbol"
               ></i>
             </h5>
-            <!-- Slide Subheading -->
             <h3>Unleash Your Passion for Football with Us</h3>
-            <!-- Slide Heading -->
             <a href="./pages/Contact/Contact.html" class="btn">Join Now</a>
-            <!-- Contact Button -->
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Home Slide-3 -->
-      <div class="swiper-slide home-item">
+      <!-- <div class="swiper-slide home-item">
         <img src="./assets/images/Home/Home-3.jpg" alt="Home Image" />
-        <!-- Slide Image -->
         <div class="content">
           <div class="text">
             <h5>
               <span>Welcome to Royal Rebels</span><i class="fa-solid fa-futbol"
               ></i>
             </h5>
-            <!-- Slide Subheading -->
             <h3>Elevate Your Football Experience with Us!</h3>
-            <!-- Slide Heading -->
             <a href="./pages/Contact/Contact.html" class="btn">Join Now</a>
-            <!-- Contact Button -->
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Home Slider Pagination -->
@@ -1392,99 +1383,76 @@
     <div class="swiper-wrapper">
       <!-- Award 1 -->
       <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-1.png" alt="Award Image" />
+        <img src="/assets/images/Krasava/trophy.png" alt="Award Image" />
         <!-- Award Image -->
-        <h4>Champion League <br /> 2000</h4>
+        <h4>Cypriot 2nd tier champion<br /> 2025</h4>
         <!-- Award Title and Year -->
       </div>
-
       <!-- Award 2 -->
-      <div class="swiper-slide award-item">
+      <!-- <div class="swiper-slide award-item">
         <img src="./assets/images/Awards/Award-2.png" alt="Award Image" />
-        <!-- Award Image -->
         <h4>National League <br /> 2004</h4>
-        <!-- Award Title and Year -->
-      </div>
+      </div> -->
 
       <!-- Award 3 -->
-      <div class="swiper-slide award-item">
+      <!-- <div class="swiper-slide award-item">
         <img src="./assets/images/Awards/Award-3.png" alt="Award Image" />
-        <!-- Award Image -->
         <h4>Premier League <br /> 2008</h4>
-        <!-- Award Title and Year -->
-      </div>
+      </div> -->
 
       <!-- Award 4 -->
-      <div class="swiper-slide award-item">
+      <!-- <div class="swiper-slide award-item">
         <img src="./assets/images/Awards/Award-4.png" alt="Award Image" />
-        <!-- Award Image -->
         <h4>National Cup <br /> 2012</h4>
-        <!-- Award Title and Year -->
-      </div>
+      </div> -->
 
       <!-- Award 5 -->
-      <div class="swiper-slide award-item">
+      <!-- <div class="swiper-slide award-item">
         <img src="./assets/images/Awards/Award-5.png" alt="Award Image" />
-        <!-- Award Image -->
         <h4>Champion League <br /> 2016</h4>
-        <!-- Award Title and Year -->
-      </div>
+      </div> -->
 
       <!-- Award 6 -->
-      <div class="swiper-slide award-item">
+      <!-- <div class="swiper-slide award-item">
         <img src="./assets/images/Awards/Award-6.png" alt="Award Image" />
-        <!-- Award Image -->
         <h4>Premier League <br /> 2020</h4>
-        <!-- Award Title and Year -->
-      </div>
+      </div> -->
 
       <!-- Award 1 -->
-      <div class="swiper-slide award-item">
+      <!-- <div class="swiper-slide award-item">
         <img src="./assets/images/Awards/Award-1.png" alt="Award Image" />
-        <!-- Award Image -->
         <h4>Champion League <br /> 2000</h4>
-        <!-- Award Title and Year -->
-      </div>
+      </div> -->
 
       <!-- Award 2 -->
-      <div class="swiper-slide award-item">
+      <!-- <div class="swiper-slide award-item">
         <img src="./assets/images/Awards/Award-2.png" alt="Award Image" />
-        <!-- Award Image -->
         <h4>National League <br /> 2004</h4>
-        <!-- Award Title and Year -->
-      </div>
+      </div> -->
 
       <!-- Award 3 -->
-      <div class="swiper-slide award-item">
+      <!-- <div class="swiper-slide award-item">
         <img src="./assets/images/Awards/Award-3.png" alt="" />
-        <!-- Award Image -->
         <h4>Premier League <br /> 2008</h4>
-        <!-- Award Title and Year -->
-      </div>
+      </div> -->
 
       <!-- Award 4 -->
-      <div class="swiper-slide award-item">
+      <!-- <div class="swiper-slide award-item">
         <img src="./assets/images/Awards/Award-4.png" alt="Award Image" />
-        <!-- Award Image -->
         <h4>National Cup <br /> 2012</h4>
-        <!-- Award Title and Year -->
-      </div>
+      </div> -->
 
       <!-- Award 5 -->
-      <div class="swiper-slide award-item">
+      <!-- <div class="swiper-slide award-item">
         <img src="./assets/images/Awards/Award-5.png" alt="Award Image" />
-        <!-- Award Image -->
         <h4>Champion League <br /> 2016</h4>
-        <!-- Award Title and Year -->
-      </div>
+      </div> -->
 
       <!-- Award 6 -->
-      <div class="swiper-slide award-item">
+      <!-- <div class="swiper-slide award-item">
         <img src="./assets/images/Awards/Award-6.png" alt="Award Image" />
-        <!-- Award Image -->
         <h4>Premier League <br /> 2020</h4>
-        <!-- Award Title and Year -->
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -2071,5 +2039,5 @@
 <!-- ==================== Sponsors Area Area (End) ==================== -->
 
 <!-- ==================== Footer Area (Start) ==================== -->
- <Footer />
+<Footer />
 <!-- ==================== Footer Area (End) ==================== -->
