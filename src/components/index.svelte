@@ -25,14 +25,14 @@
         <div class="content">
           <div class="text">
             <h5>
-              <span>Welcome to Krasava Footbal Club</span><i
+              <span>WELCOME TO KRASAVA FOOTBALL CLUB</span><i
                 class="fa-solid fa-futbol"
               ></i>
             </h5>
             <!-- Slide Subheading -->
-            <h3>Experience the Thrill of Our Football Club</h3>
+            <h3>Fearless. Independent. United by Football.</h3>
             <!-- Slide Heading -->
-            <a href="/contact" class="btn">Join Now</a>
+            <a href="/contact" class="btn">Join the journey</a>
             <!-- Contact Button -->
           </div>
         </div>
@@ -86,11 +86,11 @@
     <!-- About Image -->
     <div class="image">
       <div class="sub-image one">
-        <img src="./assets/images/About/About-1.jpg" alt="About-Image1" />
+        <img src="./assets/images/About/about.JPG" alt="About-Image1" />
       </div>
       <div class="sub-image two">
-        <img src="./assets/images/About/About-2.jpg" alt="About-Image2" />
-        <img src="./assets/images/About/About-3.jpg" alt="About-Image3" />
+        <img src="./assets/images/About/about2.JPG" alt="About-Image2" />
+        <img src="./assets/images/About/about3.JPG" alt="About-Image3" />
       </div>
     </div>
 
@@ -98,43 +98,42 @@
     <div class="content">
       <div class="heading">
         <h2>
-          <span>passion</span> for the Game, Dedication to
-          <span>Excellence</span>
+          <span>passion</span> for the Game. <span>Commitment</span> to Values. The Road to
+          <span>Success.</span>
         </h2>
         <!-- Main Heading -->
       </div>
 
       <p>
-        Join us in celebrating the spirit of football. Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Eum voluptatibus dolores. Join us in
-        celebrating the spirit of football. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Eum voluptatibus dolores.
+        FC Krasava was founded as an honest and independent alternative in the football world. Today, the team is based in Cyprus and continues to grow with a spirit of openness, accessibility, and transparency.
+        Built entirely on private investment, the club is open to young talent and united by a strong digital and football community.
       </p>
+      <p>In just three years, we’ve gone from newcomers to champions — earning promotion to the Cypriot First Division. And this is only the beginning.</p>
       <!-- Description -->
 
       <!-- Key Features -->
       <ul class="features">
         <li>
           <i class="fas fa-futbol"></i><span
-            >Fostering Talent and Team Spirit</span
+            >Developing young talent</span
           >
         </li>
         <!-- Feature 1 -->
         <li>
           <i class="fas fa-futbol"></i><span
-            >Building a Strong Football Community</span
+            >Transparency and integrity</span
           >
         </li>
         <!-- Feature 2 -->
         <li>
           <i class="fas fa-futbol"></i><span
-            >Training and Development Programs</span
+            >A strong football community</span
           >
         </li>
         <!-- Feature 3 -->
         <li>
           <i class="fas fa-futbol"></i><span
-            >Competing with Integrity and Passion</span
+            >Winning with passion and purpose</span
           >
         </li>
         <!-- Feature 4 -->
@@ -1433,7 +1432,7 @@
     <div class="product-item">
       <div class="image">
         <img
-          src="./assets/images/Shop/Products/Product-1.jpg"
+          src="./assets/images/Shop/Products/tshirt.png"
           alt="Product-Image"
         />
         <!-- Product Image -->
@@ -1450,17 +1449,17 @@
         </div>
       </div>
       <div class="content">
-        <div class="rating">
-          <!-- Product Rating -->
+       <!--<div class="rating">
+          Product Rating
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
-        </div>
-        <a href="./pages/Shop/Product-Single.html"><h3>Football</h3></a>
+        </div>-->
+        <a href="./pages/Shop/Product-Single.html"><h3>Away T-Shirt 2024/25</h3></a>
         <!-- Product Title -->
-        <div class="price">$40.00 <span>$50.00</span></div>
+        <div class="price">$40.00 <!-- <span>€45.00</span>--></div>
         <!-- Product Price -->
       </div>
     </div>
@@ -1486,17 +1485,17 @@
         </div>
       </div>
       <div class="content">
-        <div class="rating">
-          <!-- Product Rating -->
+        <!--<div class="rating">
+          Product Rating
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
-        </div>
-        <a href="./pages/Shop/Product-Single.html"><h3>Home Jersey</h3></a>
+        </div>-->
+        <a href="./pages/Shop/Product-Single.html"><h3>Monthly Academy Membership</h3></a>
         <!-- Product Title -->
-        <div class="price">$40.00 <span>$50.00</span></div>
+        <div class="price">€190,00 <!-- <span>€190,00</span> --></div>
         <!-- Product Price -->
       </div>
     </div>
@@ -1522,161 +1521,9 @@
         </div>
       </div>
       <div class="content">
-        <div class="rating">
-          <!-- Product Rating -->
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <a href="./pages/Shop/Product-Single.html"><h3>Hoodie</h3></a>
+        <a href="./pages/Shop/Product-Single.html"><h3>Kids Uniform</h3></a>
         <!-- Product Title -->
-        <div class="price">$40.00 <span>$50.00</span></div>
-        <!-- Product Price -->
-      </div>
-    </div>
-
-    <!-- Product-4 -->
-    <div class="product-item">
-      <div class="image">
-        <img
-          src="./assets/images/Shop/Products/Product-4.jpg"
-          alt="Product-Image"
-        />
-        <!-- Product Image -->
-        <div class="options">
-          <a href="./pages/Shop/Wishlist.html" class="icon"
-            ><i class="far fa-heart"></i></a
-          ><!-- Add to Wishlist Button -->
-          <a href="./pages/Shop/Cart.html" class="icon"
-            ><i class="fa-solid fa-cart-shopping"></i></a
-          ><!-- Add to Cart Button -->
-          <a href="./pages/Shop/Product-Single.html" class="icon"
-            ><i class="fa-solid fa-magnifying-glass"></i></a
-          ><!-- Product Detail Page Button -->
-        </div>
-      </div>
-      <div class="content">
-        <div class="rating">
-          <!-- Product Rating -->
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <a href="./pages/Shop/Product-Single.html"><h3>Soccer Cap</h3></a>
-        <!-- Product Title -->
-        <div class="price">$40.00 <span>$50.00</span></div>
-        <!-- Product Price -->
-      </div>
-    </div>
-
-    <!-- Product-5 -->
-    <div class="product-item">
-      <div class="image">
-        <img
-          src="./assets/images/Shop/Products/Product-5.jpg"
-          alt="Product-Image"
-        />
-        <!-- Product Image -->
-        <div class="options">
-          <a href="./pages/Shop/Wishlist.html" class="icon"
-            ><i class="far fa-heart"></i></a
-          ><!-- Add to Wishlist Button -->
-          <a href="./pages/Shop/Cart.html" class="icon"
-            ><i class="fa-solid fa-cart-shopping"></i></a
-          ><!-- Add to Cart Button -->
-          <a href="./pages/Shop/Product-Single.html" class="icon"
-            ><i class="fa-solid fa-magnifying-glass"></i></a
-          ><!-- Product Detail Page Button -->
-        </div>
-      </div>
-      <div class="content">
-        <div class="rating">
-          <!-- Product Rating -->
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <a href="./pages/Shop/Product-Single.html"><h3>Sneakers</h3></a>
-        <!-- Product Title -->
-        <div class="price">$40.00 <span>$50.00</span></div>
-        <!-- Product Price -->
-      </div>
-    </div>
-
-    <!-- Product-6 -->
-    <div class="product-item">
-      <div class="image">
-        <img
-          src="./assets/images/Shop/Products/Product-6.jpg"
-          alt="Product-Image"
-        />
-        <!-- Product Image -->
-        <div class="options">
-          <a href="./pages/Shop/Wishlist.html" class="icon"
-            ><i class="far fa-heart"></i></a
-          ><!-- Add to Wishlist Button -->
-          <a href="./pages/Shop/Cart.html" class="icon"
-            ><i class="fa-solid fa-cart-shopping"></i></a
-          ><!-- Add to Cart Button -->
-          <a href="./pages/Shop/Product-Single.html" class="icon"
-            ><i class="fa-solid fa-magnifying-glass"></i></a
-          ><!-- Product Detail Page Button -->
-        </div>
-      </div>
-      <div class="content">
-        <div class="rating">
-          <!-- Product Rating -->
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <a href="./pages/Shop/Product-Single.html"><h3>Socks</h3></a>
-        <!-- Product Title -->
-        <div class="price">$40.00 <span>$50.00</span></div>
-        <!-- Product Price -->
-      </div>
-    </div>
-
-    <!-- Product-7 -->
-    <div class="product-item">
-      <div class="image">
-        <img
-          src="./assets/images/Shop/Products/Product-7.jpg"
-          alt="Product-Image"
-        />
-        <!-- Product Image -->
-        <div class="options">
-          <a href="./pages/Shop/Wishlist.html" class="icon"
-            ><i class="far fa-heart"></i></a
-          ><!-- Add to Wishlist Button -->
-          <a href="./pages/Shop/Cart.html" class="icon"
-            ><i class="fa-solid fa-cart-shopping"></i></a
-          ><!-- Add to Cart Button -->
-          <a href="./pages/Shop/Product-Single.html" class="icon"
-            ><i class="fa-solid fa-magnifying-glass"></i></a
-          ><!-- Product Detail Page Button -->
-        </div>
-      </div>
-      <div class="content">
-        <div class="rating">
-          <!-- Product Rating -->
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <a href="./pages/Shop/Product-Single.html"><h3>Backpack</h3></a>
-        <!-- Product Title -->
-        <div class="price">$40.00 <span>$50.00</span></div>
+        <div class="price">€40.00 <span>€50.00</span></div>
         <!-- Product Price -->
       </div>
     </div>
