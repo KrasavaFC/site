@@ -98,37 +98,38 @@
     <div class="content">
       <div class="heading">
         <h2>
-          <span>passion</span> for the Game. <span>Commitment</span> to Values. The Road to
+          <span>passion</span> for the Game. <span>Commitment</span> to Values.
+          The Road to
           <span>Success.</span>
         </h2>
         <!-- Main Heading -->
       </div>
 
       <p>
-        FC Krasava was founded as an honest and independent alternative in the football world. Today, the team is based in Cyprus and continues to grow with a spirit of openness, accessibility, and transparency.
-        Built entirely on private investment, the club is open to young talent and united by a strong digital and football community.
+        FC Krasava was founded as an honest and independent alternative in the
+        football world. Today, the team is based in Cyprus and continues to grow
+        with a spirit of openness, accessibility, and transparency. Built
+        entirely on private investment, the club is open to young talent and
+        united by a strong digital and football community.
       </p>
-      <p>In just three years, we’ve gone from newcomers to champions — earning promotion to the Cypriot First Division. And this is only the beginning.</p>
+      <p>
+        In just three years, we’ve gone from newcomers to champions — earning
+        promotion to the Cypriot First Division. And this is only the beginning.
+      </p>
       <!-- Description -->
 
       <!-- Key Features -->
       <ul class="features">
         <li>
-          <i class="fas fa-futbol"></i><span
-            >Developing young talent</span
-          >
+          <i class="fas fa-futbol"></i><span>Developing young talent</span>
         </li>
         <!-- Feature 1 -->
         <li>
-          <i class="fas fa-futbol"></i><span
-            >Transparency and integrity</span
-          >
+          <i class="fas fa-futbol"></i><span>Transparency and integrity</span>
         </li>
         <!-- Feature 2 -->
         <li>
-          <i class="fas fa-futbol"></i><span
-            >A strong football community</span
-          >
+          <i class="fas fa-futbol"></i><span>A strong football community</span>
         </li>
         <!-- Feature 3 -->
         <li>
@@ -1110,13 +1111,9 @@
   <!-- Portfolio Tab Buttons -->
   <ul class="tab-buttons">
     <li class="button active" data-filter="*">all</li>
-    <!-- Button for displaying all portfolio items -->
-    <li class="button" data-filter=".player">Player</li>
-    <!-- Button for filtering by player -->
-    <li class="button" data-filter=".trophy">Trophy</li>
-    <!-- Button for filtering by trophy -->
-    <li class="button" data-filter=".community">Community</li>
-    <!-- Button for filtering by community -->
+    <li class="button" data-filter=".player">About</li>
+    <li class="button" data-filter=".trophy">Academy</li>
+    <!-- <li class="button" data-filter=".community">Community</li> -->
   </ul>
 
   <!-- Portfolio Items Container -->
@@ -1125,18 +1122,18 @@
     <div class="portfolio-item player">
       <div class="portfolio-content">
         <img
-          src="./assets/images/Portfolio/Portfolio/Portfolio-1.jpg"
+          src="./assets/images/Krasava/Photo-400_resized.jpg"
           alt="Young Talents"
         />
         <!-- Portfolio Image -->
         <div class="content">
           <!-- Buttons container -->
           <div class="btn-container">
-            <a
+            <!-- <a
               class="view"
               href="./assets/images/Portfolio/Portfolio/Portfolio-1.jpg"
               ><i class="fa-solid fa-camera-retro"></i></a
-            >
+            > -->
             <!-- View image button -->
             <a href="./pages/Pages/Portfolio-Single.html"
               ><i class="fa-solid fa-link"></i></a
@@ -1145,10 +1142,10 @@
           </div>
           <!-- Text content -->
           <div class="text">
-            <p>Player</p>
+            <!-- <p>Player</p> -->
             <!-- Portfolio Category -->
             <a href="./pages/Pages/Portfolio-Single.html"
-              ><h3>Young Talents</h3></a
+              ><h3>About</h3></a
             >
             <!-- Portfolio Title -->
           </div>
@@ -1160,176 +1157,137 @@
     <div class="portfolio-item trophy">
       <div class="portfolio-content">
         <img
-          src="./assets/images/Portfolio/Portfolio/Portfolio-2.jpg"
+          src="./assets/images/Portfolio/Portfolio/academy5.JPG"
           alt="International Wins"
         />
-        <!-- Portfolio Image -->
         <div class="content">
-          <!-- Buttons container -->
           <div class="btn-container">
-            <a
+            <!-- <a
               class="view"
-              href="./assets/images/Portfolio/Portfolio/Portfolio-2.jpg"
+              href="./assets/images/Portfolio/Portfolio/academy5.JPG"
               ><i class="fa-solid fa-camera-retro"></i></a
-            >
-            <!-- View image button -->
-            <a href="./pages/Pages/Portfolio-Single.html"
+            > -->
+            <a href="/academy"
               ><i class="fa-solid fa-link"></i></a
             >
-            <!-- Link to portfolio single page -->
           </div>
-          <!-- Text content -->
           <div class="text">
-            <p>Trophy</p>
-            <!-- Portfolio Category -->
-            <a href="./pages/Pages/Portfolio-Single.html"
-              ><h3>International Wins</h3></a
+            <!-- <p>Trophy</p> -->
+            <a href="/academy"
+              ><h3>Academy</h3></a
             >
-            <!-- Portfolio Title -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Portfolio Item 2 - Fan Engagement -->
-    <div class="portfolio-item community">
+    <!-- <div class="portfolio-item community">
       <div class="portfolio-content">
         <img
           src="./assets/images/Portfolio/Portfolio/Portfolio-3.jpg"
           alt="Fan Engagement"
         />
-        <!-- Portfolio Image -->
         <div class="content">
-          <!-- Buttons container -->
           <div class="btn-container">
             <a
               class="view"
               href="./assets/images/Portfolio/Portfolio/Portfolio-3.jpg"
               ><i class="fa-solid fa-camera-retro"></i></a
             >
-            <!-- View image button -->
             <a href="./pages/Pages/Portfolio-Single.html"
               ><i class="fa-solid fa-link"></i></a
             >
-            <!-- Link to portfolio single page -->
           </div>
-          <!-- Text content -->
           <div class="text">
             <p>Community</p>
-            <!-- Portfolio Category -->
             <a href="./pages/Pages/Portfolio-Single.html"
               ><h3>Fan Engagement</h3></a
             >
-            <!-- Portfolio Title -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Portfolio Item 4 - Championship Victories -->
     <div class="portfolio-item trophy">
       <div class="portfolio-content">
         <img
           src="./assets/images/Portfolio/Portfolio/Portfolio-4.jpg"
           alt="Championship Victories"
         />
-        <!-- Portfolio Image -->
         <div class="content">
-          <!-- Buttons container -->
           <div class="btn-container">
             <a
               class="view"
               href="./assets/images/Portfolio/Portfolio/Portfolio-4.jpg"
               ><i class="fa-solid fa-camera-retro"></i></a
             >
-            <!-- View image button -->
             <a href="./pages/Pages/Portfolio-Single.html"
               ><i class="fa-solid fa-link"></i></a
             >
-            <!-- Link to portfolio single page -->
           </div>
-          <!-- Text content -->
           <div class="text">
             <p>Trophy</p>
-            <!-- Portfolio Category -->
             <a href="./pages/Pages/Portfolio-Single.html"
               ><h3>Championship Victories</h3></a
             >
-            <!-- Portfolio Title -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Portfolio Item 5 - Goal Machines -->
     <div class="portfolio-item player">
       <div class="portfolio-content">
         <img
           src="./assets/images/Portfolio/Portfolio/Portfolio-5.jpg"
           alt="Goal Machines"
         />
-        <!-- Portfolio Image -->
         <div class="content">
-          <!-- Buttons container -->
           <div class="btn-container">
             <a
               class="view"
               href="./assets/images/Portfolio/Portfolio/Portfolio-5.jpg"
               ><i class="fa-solid fa-camera-retro"></i></a
             >
-            <!-- View image button -->
             <a href="./pages/Pages/Portfolio-Single.html"
               ><i class="fa-solid fa-link"></i></a
             >
-            <!-- Link to portfolio single page -->
           </div>
-          <!-- Text content -->
           <div class="text">
             <p>Player</p>
-            <!-- Portfolio Category -->
             <a href="./pages/Pages/Portfolio-Single.html"
               ><h3>Goal Machines</h3></a
             >
-            <!-- Portfolio Title -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Portfolio Item 6 - Youth Development -->
     <div class="portfolio-item community">
       <div class="portfolio-content">
         <img
           src="./assets/images/Portfolio/Portfolio/Portfolio-6.jpg"
           alt="Youth Development"
         />
-        <!-- Portfolio Image -->
         <div class="content">
-          <!-- Buttons container -->
           <div class="btn-container">
             <a
               class="view"
               href="./assets/images/Portfolio/Portfolio/Portfolio-6.jpg"
               ><i class="fa-solid fa-camera-retro"></i></a
             >
-            <!-- View image button -->
             <a href="./pages/Pages/Portfolio-Single.html"
               ><i class="fa-solid fa-link"></i></a
             >
-            <!-- Link to portfolio single page -->
           </div>
-          <!-- Text content -->
           <div class="text">
             <p>Community</p>
-            <!-- Portfolio Category -->
             <a href="./pages/Pages/Portfolio-Single.html"
               ><h3>Youth Development</h3></a
             >
-            <!-- Portfolio Title -->
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 <!-- ==================== Portfolio Area (End) ==================== -->
@@ -1424,7 +1382,7 @@
 <!-- ==================== Products Area (Start) ==================== -->
 <section class="home-shop">
   <div class="heading">
-    <h2>Our <span>Products</span></h2>
+    <h2>Our <span>Market</span></h2>
   </div>
 
   <div class="box-container">
@@ -1449,7 +1407,7 @@
         </div>
       </div>
       <div class="content">
-       <!--<div class="rating">
+        <!--<div class="rating">
           Product Rating
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
@@ -1457,18 +1415,18 @@
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
         </div>-->
-        <a href="./pages/Shop/Product-Single.html"><h3>Away T-Shirt 2024/25</h3></a>
+        <a href="./pages/Shop/Product-Single.html"
+          ><h3>Away T-Shirt 2024/25</h3></a
+        >
         <!-- Product Title -->
         <div class="price">$40.00 <!-- <span>€45.00</span>--></div>
         <!-- Product Price -->
       </div>
     </div>
-
-    <!-- Product-2 -->
     <div class="product-item">
       <div class="image">
         <img
-          src="./assets/images/Shop/Products/Product-2.jpg"
+          src="./assets/images/Shop/Products/tshirt.png"
           alt="Product-Image"
         />
         <!-- Product Image -->
@@ -1493,18 +1451,88 @@
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
         </div>-->
-        <a href="./pages/Shop/Product-Single.html"><h3>Monthly Academy Membership</h3></a>
+        <a href="./pages/Shop/Product-Single.html"
+          ><h3>Away T-Shirt 2024/25</h3></a
+        >
         <!-- Product Title -->
-        <div class="price">€190,00 <!-- <span>€190,00</span> --></div>
+        <div class="price">$40.00 <!-- <span>€45.00</span>--></div>
         <!-- Product Price -->
       </div>
     </div>
+    <div class="product-item">
+      <div class="image">
+        <img
+          src="./assets/images/Shop/Products/tshirt.png"
+          alt="Product-Image"
+        />
+        <!-- Product Image -->
+        <div class="options">
+          <a href="./pages/Shop/Wishlist.html" class="icon"
+            ><i class="far fa-heart"></i></a
+          ><!-- Add to Wishlist Button -->
+          <a href="./pages/Shop/Cart.html" class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i></a
+          ><!-- Add to Cart Button -->
+          <a href="./pages/Shop/Product-Single.html" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i></a
+          ><!-- Product Detail Page Button -->
+        </div>
+      </div>
+      <div class="content">
+        <!--<div class="rating">
+          Product Rating
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>-->
+        <a href="./pages/Shop/Product-Single.html"
+          ><h3>Away T-Shirt 2024/25</h3></a
+        >
+        <!-- Product Title -->
+        <div class="price">$40.00 <!-- <span>€45.00</span>--></div>
+        <!-- Product Price -->
+      </div>
+    </div>
+    <!-- Product-2 -->
+    <!-- <div class="product-item">
+      <div class="image">
+        <img
+          src="./assets/images/Shop/Products/Product-2.jpg"
+          alt="Product-Image"
+        />
+        <div class="options">
+          <a href="./pages/Shop/Wishlist.html" class="icon"
+            ><i class="far fa-heart"></i></a
+          >
+          <a href="./pages/Shop/Cart.html" class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i></a
+          >
+          <a href="./pages/Shop/Product-Single.html" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i></a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <div class="rating">
+          Product Rating
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a href="./pages/Shop/Product-Single.html"><h3>Monthly Academy Membership</h3></a>
+        <div class="price">€190,00</div>
+      </div>
+    </div> -->
 
     <!-- Product-3 -->
     <div class="product-item">
       <div class="image">
         <img
-          src="./assets/images/Shop/Products/Product-3.jpg"
+          src="./assets/images/Shop/Products/tshirt.png"
           alt="Product-Image"
         />
         <!-- Product Image -->
@@ -1527,30 +1555,28 @@
         <!-- Product Price -->
       </div>
     </div>
-
-    <!-- Product-8 -->
+    <!-- 
     <div class="product-item">
       <div class="image">
         <img
           src="./assets/images/Shop/Products/Product-8.jpg"
           alt="Product-Image"
         />
-        <!-- Product Image -->
+      
         <div class="options">
           <a href="./pages/Shop/Wishlist.html" class="icon"
             ><i class="far fa-heart"></i></a
-          ><!-- Add to Wishlist Button -->
+          >
           <a href="./pages/Shop/Cart.html" class="icon"
             ><i class="fa-solid fa-cart-shopping"></i></a
-          ><!-- Add to Cart Button -->
+          >
           <a href="./pages/Shop/Product-Single.html" class="icon"
             ><i class="fa-solid fa-magnifying-glass"></i></a
-          ><!-- Product Detail Page Button -->
+          >
         </div>
       </div>
       <div class="content">
         <div class="rating">
-          <!-- Product Rating -->
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
           <i class="fa-solid fa-star"></i>
@@ -1558,11 +1584,9 @@
           <i class="fa-solid fa-star"></i>
         </div>
         <a href="./pages/Shop/Product-Single.html"><h3>Helmet</h3></a>
-        <!-- Product Title -->
         <div class="price">$40.00 <span>$50.00</span></div>
-        <!-- Product Price -->
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 <!-- ==================== Products Area (End) ==================== -->
@@ -1767,12 +1791,12 @@
       <div class="swiper-slide sponsor-item">
         <a href="#"
           ><img
-            src="./assets/images/Sponsors/Sponsor-1.png"
+            src="./assets/images/Sponsors/freedom.png"
             alt="Sponsor-Logo"
           /></a
         >
       </div>
-      <div class="swiper-slide sponsor-item">
+      <!-- <div class="swiper-slide sponsor-item">
         <a href="#"
           ><img
             src="./assets/images/Sponsors/Sponsor-2.png"
@@ -1843,7 +1867,7 @@
             alt="Sponsor-Logo"
           /></a
         >
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
