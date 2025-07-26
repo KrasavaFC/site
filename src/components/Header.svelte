@@ -22,8 +22,10 @@
       <!-- == Navbar == -->
       <nav class="navbar">
         <a class="nav-btn" href="/">home</a>
+        <a class="nav-btn" href="/academy">Academy</a>
+        <a class="nav-btn" href="/team">Team</a>
 
-        <div class="dropdown-menu">
+        <!-- <div class="dropdown-menu">
           <button class="nav-btn">about</button>
           <div class="dropdown-content">
             <a href="/about">about us</a>
@@ -45,9 +47,9 @@
             <a href="/register">register</a>
             <a href="/reset-password">forgot Password</a>
           </div>
-        </div>
+        </div> -->
 
-        <div class="dropdown-menu">
+        <!-- <div class="dropdown-menu">
           <button class="nav-btn">team</button>
           <div class="dropdown-content">
             <a href="/team">team</a>
@@ -64,7 +66,7 @@
             <a href="/results">Results</a>
             <a href="/result">Result Single</a>
           </div>
-        </div>
+        </div> -->
         <!-- 
         <div class="dropdown-menu">
           <button class="nav-btn">blog</button>
@@ -74,7 +76,7 @@
             <a href="./pages/Blog/Blog-Single.html">blog Single</a>
           </div>
         </div> -->
-
+        <!-- 
         <div class="dropdown-menu">
           <button class="nav-btn">shop</button>
           <div class="dropdown-content">
@@ -85,7 +87,7 @@
             <a href="/shop/cart">cart</a>
             <a href="/shop/checkout">checkout</a>
           </div>
-        </div>
+        </div> -->
 
         <a class="nav-btn" href="/contact">contact</a>
       </nav>
