@@ -1,40 +1,53 @@
 <script lang="ts">
   import Footer from "../Footer.svelte";
   import Header from "../Header.svelte";
+  import { goto } from "$app/navigation";
+
+  let email = "";
+  let password = "";
+  let error: string | null = null;
+
+  async function handleLogin() {
+    error = null;
+    try {
+      const res = await fetch("/api/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (!res.ok) {
+        error = await res.text();
+        return;
+      }
+
+      const data = await res.json();
+      console.log("User:", data.user);
+      goto("/"); 
+    } catch (err) {
+      error = "Something went wrong. Please try again.";
+      console.error(err);
+    }
+  }
 </script>
 
-<!-- ==================== Scroll-Top Area (Start) ==================== -->
-<a href="#" class="scroll-top">
-  <i class="fa-solid fa-arrow-up-long"></i>
-</a>
-<!-- ==================== Scroll-Top Area (End) ==================== -->
-
-<!-- ==================== Header Area (Start) ==================== -->
 <Header />
-<!-- ==================== Header Area (End) ==================== -->
 
-<!-- ==================== Page-Title (Start) ==================== -->
 <div class="page-title">
   <div class="title">
     <h2>login</h2>
   </div>
-
   <div class="link">
-    <a href="../../index.html">Home</a>
+    <a href="/">Home</a>
     <i class="fa-solid fa-angles-right"></i>
     <span class="page">login</span>
   </div>
 </div>
-<!-- ==================== Page-Title (End) ==================== -->
 
-<!-- ==================== Login Area (Start) ==================== -->
 <section class="login">
-  <!-- Login Form -->
-  <form class="account-form">
-    <img src="../../assets/images/Logo/Logo.png" alt="" />
-
+  <form class="account-form" on:submit|preventDefault={handleLogin}>
+    <img src="../../assets/images/Krasava/krsv.png" alt="" />
     <h3>login</h3>
-    <!-- Form Heading -->
 
     <input
       type="email"
@@ -42,46 +55,71 @@
       placeholder="enter your email"
       id="email"
       class="box"
+      bind:value={email}
       required
     />
-    <!-- Email Input -->
     <input
       type="password"
       name="password"
       placeholder="enter your password"
       id="password"
       class="box"
+      bind:value={password}
       required
     />
-    <!-- Password Input -->
 
-    <!-- Remember Me Checkbox and Forgot Password Link -->
     <div class="info">
-      <!-- Remember Me Checkbox -->
       <div class="checkbox-label">
         <input type="checkbox" id="remember-me" />
         <label for="remember-me">remember me</label>
         <div class="checkbox-indicator"></div>
       </div>
-
-      <!-- Forgot Password Link -->
       <div class="forgot">
         <a class="link" href="./Reset-Password.html">forgot password?</a>
       </div>
     </div>
 
-    <!-- Login Button -->
+    {#if error}
+      <p style="color: red;">{error}</p>
+    {/if}
+
     <button type="submit" class="btn" name="login" id="login-btn">login</button>
 
-    <!-- Registration Link -->
-    <p>
-      don't have an account? <a class="link" href="./Register.html">register</a>
-    </p>
-  </form>
-  <!-- Login Form (End) -->
-</section>
-<!-- ==================== Login Area (End) ==================== -->
+    <a href="/api/auth/google" class="google-btn">
+      <span>Continue with Google</span>
+    </a>
 
-<!-- ==================== Footer Area (Start) ==================== -->
+    <p>don't have an account? <a class="link" href="/register">register</a></p>
+  </form>
+</section>
+
 <Footer />
-<!-- ==================== Footer Area (End) ==================== -->
+
+<style>
+  .google-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition:
+      background-color 0.2s,
+      border-color 0.2s;
+  }
+
+  .google-btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .google-btn:hover {
+    background-color: #222;
+    border-color: #888;
+  }
+</style>
