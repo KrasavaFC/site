@@ -1,101 +1,123 @@
 <script lang="ts">
   import Footer from "../Footer.svelte";
   import Header from "../Header.svelte";
+  import { goto } from '$app/navigation';
+
+  let name = '';
+  let email = '';
+  let password = '';
+  let repeatPassword = '';
+  let agreed = false;
+  let error: string | null = null;
+
+  async function handleRegister() {
+    error = null;
+
+    if (!agreed) {
+      error = 'You must agree to the terms.';
+      return;
+    }
+
+    if (password !== repeatPassword) {
+      error = 'Passwords do not match.';
+      return;
+    }
+
+    try {
+      const res = await fetch('/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, password })
+      });
+
+      if (!res.ok) {
+        error = await res.text();
+        return;
+      }
+
+      const data = await res.json();
+      console.log('Registered user:', data.user);
+      goto('/');
+    } catch (err) {
+      console.error(err);
+      error = 'Something went wrong. Please try again.';
+    }
+  }
 </script>
 
-<!-- ==================== Scroll-Top Area (Start) ==================== -->
-<a href="#" class="scroll-top">
-  <i class="fa-solid fa-arrow-up-long"></i>
-</a>
-<!-- ==================== Scroll-Top Area (End) ==================== -->
-
-<!-- ==================== Header Area (Start) ==================== -->
 <Header />
-<!-- ==================== Header Area (End) ==================== -->
 
-<!-- ==================== Page-Title (Start) ==================== -->
 <div class="page-title">
   <div class="title">
     <h2>register</h2>
   </div>
-
   <div class="link">
-    <a href="../../index.html">Home</a>
+    <a href="/">Home</a>
     <i class="fa-solid fa-angles-right"></i>
     <span class="page">register</span>
   </div>
 </div>
-<!-- ==================== Page-Title (End) ==================== -->
 
-<!-- ==================== Register Area (Start) ==================== -->
 <section class="register">
-  <!-- Registration Form (Start) -->
-  <form class="account-form">
+  <form class="account-form" on:submit|preventDefault={handleRegister}>
     <img src="../../assets/images/Logo/Logo.png" alt="" />
-
     <h3>register</h3>
-    <!-- Form Heading -->
 
     <input
       type="text"
       name="name"
       placeholder="enter your name"
-      id="name"
       class="box"
+      bind:value={name}
       required
     />
-    <!-- Name Input -->
+
     <input
       type="email"
       name="email"
       placeholder="enter your email"
-      id="email"
       class="box"
+      bind:value={email}
       required
     />
-    <!-- Email Input -->
+
     <input
       type="password"
       name="password"
       placeholder="enter your password"
-      id="password"
       class="box"
+      bind:value={password}
       required
     />
-    <!-- Password Input -->
+
     <input
       type="password"
       name="repeat-password"
       placeholder="repeat your password"
-      id="repeat-password"
       class="box"
+      bind:value={repeatPassword}
       required
     />
-    <!-- Repeat Password Input -->
 
-    <!-- Terms and Conditions Checkbox -->
     <div class="checkbox-label">
-      <input type="checkbox" id="terms" />
-      <label for="terms"
-        >i agree with the <span>&nbsp;terms & conditions</span></label
-      >
+      <input type="checkbox" id="terms" bind:checked={agreed} />
+      <label for="terms">
+        i agree with the <span>&nbsp;terms & conditions</span>
+      </label>
       <div class="checkbox-indicator"></div>
     </div>
 
-    <!-- Register Button -->
-    <button type="submit" class="btn" name="register" id="register"
-      >register</button
-    >
+    {#if error}
+      <p style="color: red;">{error}</p>
+    {/if}
 
-    <!-- Login Link -->
+    <button type="submit" class="btn" name="register" id="register">register</button>
+
     <p>
-      already have an account? <a class="link" href="./Login.html">login</a>
+      already have an account?
+      <a class="link" href="./Login.html">login</a>
     </p>
   </form>
-  <!-- Registration Form (End) -->
 </section>
-<!-- ==================== Register Area (End) ==================== -->
 
-<!-- ==================== Footer Area (Start) ==================== -->
 <Footer />
-<!-- ==================== Footer Area (End) ==================== -->
