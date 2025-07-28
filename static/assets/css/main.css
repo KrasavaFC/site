@@ -1657,7 +1657,8 @@ input:-webkit-autofill:active {
 }
 
 .mission .box-container{
-    background-image: url("../../assets/images/Background/Mission.jpg");
+    /* CUSTOM */
+    background-image: url("../../assets/images/About/about.JPG"); 
     background-position: center;
     background-size: cover;
     display: -webkit-box;
@@ -5462,8 +5463,8 @@ input[type="range"]::-moz-range-thumb{
 }
 
 .contact .box-container{
-    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../../assets/images/Background/Contact.jpg");
-    background:         linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../../assets/images/Background/Contact.jpg");
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../../assets/images/Krasava/tickets.png");
+    background:         linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../../assets/images/Krasava/tickets.png");
     background-repeat: no-repeat;  
     background-size: cover;
     background-position: center;

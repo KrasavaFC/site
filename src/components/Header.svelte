@@ -22,8 +22,10 @@
       <!-- == Navbar == -->
       <nav class="navbar">
         <a class="nav-btn" href="/">home</a>
+        <a class="nav-btn" href="/about">About</a>
         <a class="nav-btn" href="/academy">Academy</a>
         <a class="nav-btn" href="/team">Team</a>
+        <a class="nav-btn" href="/tickets">Tickets</a>
 
         <!-- <div class="dropdown-menu">
           <button class="nav-btn">about</button>
@@ -32,9 +34,9 @@
             <a href="/testimonials">testimonials</a>
             <a href="/faq">fAQs</a>
           </div>
-        </div>
+        </div> -->
 
-        <div class="dropdown-menu">
+        <!-- <div class="dropdown-menu">
           <button class="nav-btn">Pages</button>
           <div class="dropdown-content">
             <a href="/table">Point Table</a>
@@ -58,16 +60,16 @@
             <a href="/team/players">players</a>
             <a href="/team/player">player single</a>
           </div>
-        </div>
+        </div> -->
 
-        <div class="dropdown-menu">
+        <!-- <div class="dropdown-menu">
           <button class="nav-btn">Result</button>
           <div class="dropdown-content">
             <a href="/results">Results</a>
             <a href="/result">Result Single</a>
           </div>
-        </div> -->
-        <!-- 
+        </div>
+
         <div class="dropdown-menu">
           <button class="nav-btn">blog</button>
           <div class="dropdown-content">
@@ -76,7 +78,7 @@
             <a href="./pages/Blog/Blog-Single.html">blog Single</a>
           </div>
         </div> -->
-        <!-- 
+
         <div class="dropdown-menu">
           <button class="nav-btn">shop</button>
           <div class="dropdown-content">
@@ -87,7 +89,7 @@
             <a href="/shop/cart">cart</a>
             <a href="/shop/checkout">checkout</a>
           </div>
-        </div> -->
+        </div>
 
         <a class="nav-btn" href="/contact">contact</a>
       </nav>

@@ -20,7 +20,7 @@
     <div class="swiper-wrapper">
       <!-- Home Slide-1 -->
       <div class="swiper-slide home-item">
-        <img src="/assets/images/Krasava/hp_banner_.jpg" alt="Home Image" />
+        <img src="/assets/images/Krasava/hp_banner_ .png" alt="Home Image" />
         <!-- Slide Image -->
         <div class="content">
           <div class="text">
@@ -32,41 +32,52 @@
             <!-- Slide Subheading -->
             <h3>Fearless. Independent. United by Football.</h3>
             <!-- Slide Heading -->
-            <a href="/contact" class="btn">Join the journey</a>
+            <a href="/tickets" class="btn">Join the journey</a>
             <!-- Contact Button -->
           </div>
         </div>
       </div>
 
       <!-- Home Slide-2 -->
-      <!-- <div class="swiper-slide home-item">
-        <img src="./assets/images/Home/Home-2.jpg" alt="Home Image" />
+      <div class="swiper-slide home-item">
+        <img src="/assets/images/Krasava/about3.png" alt="Home Image" />
+        <!-- Slide Image -->
         <div class="content">
           <div class="text">
             <h5>
-              <span>Welcome to Royal Rebels</span><i class="fa-solid fa-futbol"
+              <span>WELCOME TO KRASAVA FOOTBALL CLUB</span><i
+                class="fa-solid fa-futbol"
               ></i>
             </h5>
-            <h3>Unleash Your Passion for Football with Us</h3>
-            <a href="./pages/Contact/Contact.html" class="btn">Join Now</a>
+            <!-- Slide Subheading -->
+            <h3>Fearless. Independent. United by Football.</h3>
+            <!-- Slide Heading -->
+            <a href="/tickets" class="btn">Join the journey</a>
+            <!-- Contact Button -->
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- Home Slide-3 -->
-      <!-- <div class="swiper-slide home-item">
-        <img src="./assets/images/Home/Home-3.jpg" alt="Home Image" />
+
+      <div class="swiper-slide home-item">
+        <img src="/assets/images/Krasava/about2.png" alt="Home Image" />
+        <!-- Slide Image -->
         <div class="content">
           <div class="text">
             <h5>
-              <span>Welcome to Royal Rebels</span><i class="fa-solid fa-futbol"
+              <span>WELCOME TO KRASAVA FOOTBALL CLUB</span><i
+                class="fa-solid fa-futbol"
               ></i>
             </h5>
-            <h3>Elevate Your Football Experience with Us!</h3>
-            <a href="./pages/Contact/Contact.html" class="btn">Join Now</a>
+            <!-- Slide Subheading -->
+            <h3>Fearless. Independent. United by Football.</h3>
+            <!-- Slide Heading -->
+            <a href="/tickets" class="btn">Join the journey</a>
+            <!-- Contact Button -->
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
 
     <!-- Home Slider Pagination -->
@@ -140,7 +151,7 @@
         <!-- Feature 4 -->
       </ul>
 
-      <a href="./pages/About/About.html" class="btn">learn more</a>
+      <a href="/about" class="btn">learn more</a>
     </div>
   </div>
 </section>
@@ -563,7 +574,7 @@
         </div>
       </a>
       <div class="action-container">
-        <a href="#"
+        <a href="/tickets"
           ><i class="fas fa-ticket-alt"></i> <span>Buy ticket</span>
         </a>
         <a href="https://soccer365.net/games/2295242/"
@@ -597,7 +608,7 @@
         </div>
       </a>
       <div class="action-container">
-        <a href="#"
+        <a href="/tickets"
           ><i class="fas fa-ticket-alt"></i> <span>Buy ticket</span>
         </a>
         <a href="https://soccer365.ru/games/2295246/"
@@ -611,63 +622,47 @@
 <!-- ==================== Upcoming Matches Area (End) ==================== -->
 
 <!-- ==================== Count Area (Start) ==================== -->
-<div class="counting">
-  <!-- Statistic Box 1: Goals Scored Count -->
+<!-- <div class="counting">
   <div class="box">
     <div class="info">
       <i class="fas fa-futbol"></i>
-      <!-- Football icon -->
       <div class="content">
         <h1 class="count" data-count="800">800+</h1>
-        <!-- Count of goals scored -->
         <h3>Goals Scored</h3>
-        <!-- Statistic description -->
       </div>
     </div>
   </div>
 
-  <!-- Statistic Box 2: Wins Count -->
   <div class="box">
     <div class="info">
       <i class="fas fa-trophy"></i>
-      <!-- Trophy icon -->
       <div class="content">
         <h1 class="count" data-count="400">400+</h1>
-        <!-- Count of wins -->
         <h3>Wins</h3>
-        <!-- Statistic description -->
       </div>
     </div>
   </div>
 
-  <!-- Statistic Box 3: Players Trained Count -->
   <div class="box">
     <div class="info">
       <i class="fas fa-users"></i>
-      <!-- Users icon representing players -->
       <div class="content">
         <h1 class="count" data-count="100">100+</h1>
-        <!-- Count of players trained -->
         <h3>Players Trained</h3>
-        <!-- Statistic description -->
       </div>
     </div>
   </div>
 
-  <!-- Statistic Box 4: Championships Won Count -->
   <div class="box">
     <div class="info">
       <i class="fas fa-medal"></i>
-      <!-- Medal icon -->
       <div class="content">
         <h1 class="count" data-count="10">10+</h1>
-        <!-- Count of championships won -->
         <h3>Championships Won</h3>
-        <!-- Statistic description -->
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- ==================== Count Area (End) ==================== -->
 
 <!-- ==================== Players Slider Area (Start) ==================== -->
@@ -1096,7 +1091,7 @@
 <section class="banner">
   <div class="content">
     <h2>Celebrate Victory with Our Football Club</h2>
-    <a href="#" class="btn">Get Tickets</a>
+    <a href="/tickets" class="btn">Get Tickets</a>
   </div>
 </section>
 <!-- ==================== Banner Area (End) ==================== -->
@@ -1113,7 +1108,7 @@
     <li class="button active" data-filter="*">all</li>
     <li class="button" data-filter=".player">About</li>
     <li class="button" data-filter=".trophy">Academy</li>
-    <!-- <li class="button" data-filter=".community">Community</li> -->
+    <li class="button" data-filter=".community">Community</li>
   </ul>
 
   <!-- Portfolio Items Container -->
@@ -1121,10 +1116,7 @@
     <!-- Portfolio Item 1 - Young Talents -->
     <div class="portfolio-item player">
       <div class="portfolio-content">
-        <img
-          src="./assets/images/Krasava/Photo-400_resized.jpg"
-          alt="Young Talents"
-        />
+        <img src="./assets/images/Krasava/team-champ.jpg" alt="Young Talents" />
         <!-- Portfolio Image -->
         <div class="content">
           <!-- Buttons container -->
@@ -1135,18 +1127,14 @@
               ><i class="fa-solid fa-camera-retro"></i></a
             > -->
             <!-- View image button -->
-            <a href="./pages/Pages/Portfolio-Single.html"
-              ><i class="fa-solid fa-link"></i></a
-            >
+            <a href="/about"><i class="fa-solid fa-link"></i></a>
             <!-- Link to portfolio single page -->
           </div>
           <!-- Text content -->
           <div class="text">
             <!-- <p>Player</p> -->
             <!-- Portfolio Category -->
-            <a href="./pages/Pages/Portfolio-Single.html"
-              ><h3>About</h3></a
-            >
+            <a href="./pages/Pages/Portfolio-Single.html"><h3>About</h3></a>
             <!-- Portfolio Title -->
           </div>
         </div>
@@ -1167,48 +1155,40 @@
               href="./assets/images/Portfolio/Portfolio/academy5.JPG"
               ><i class="fa-solid fa-camera-retro"></i></a
             > -->
-            <a href="/academy"
-              ><i class="fa-solid fa-link"></i></a
-            >
+            <a href="/academy"><i class="fa-solid fa-link"></i></a>
           </div>
           <div class="text">
             <!-- <p>Trophy</p> -->
-            <a href="/academy"
-              ><h3>Academy</h3></a
-            >
+            <a href="/academy"><h3>Academy</h3></a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <div class="portfolio-item community">
+    <div class="portfolio-item community">
       <div class="portfolio-content">
         <img
-          src="./assets/images/Portfolio/Portfolio/Portfolio-3.jpg"
+          src="./assets/images/Portfolio/Portfolio/fan.png"
           alt="Fan Engagement"
         />
         <div class="content">
           <div class="btn-container">
-            <a
+            <!-- <a
               class="view"
-              href="./assets/images/Portfolio/Portfolio/Portfolio-3.jpg"
+              href="/tickets"
               ><i class="fa-solid fa-camera-retro"></i></a
-            >
-            <a href="./pages/Pages/Portfolio-Single.html"
-              ><i class="fa-solid fa-link"></i></a
-            >
+            > -->
+            <a href="/tickets"><i class="fa-solid fa-link"></i></a>
           </div>
           <div class="text">
             <p>Community</p>
-            <a href="./pages/Pages/Portfolio-Single.html"
-              ><h3>Fan Engagement</h3></a
-            >
+            <a href="/tickets"><h3>Fan Engagement</h3></a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="portfolio-item trophy">
+    <!-- <div class="portfolio-item trophy">
       <div class="portfolio-content">
         <img
           src="./assets/images/Portfolio/Portfolio/Portfolio-4.jpg"
@@ -1592,16 +1572,13 @@
 <!-- ==================== Products Area (End) ==================== -->
 
 <!-- ==================== Testimonials Area (Start) ==================== -->
-<section class="testimonial-bg linear-bg">
-  <!-- Section Heading -->
+<!-- <section class="testimonial-bg linear-bg">
   <div class="heading">
     <h2>Fan <span>Testimonials</span></h2>
   </div>
 
-  <!-- Testimonial Slider Container -->
   <div class="swiper-container testimonial-slider">
     <div class="swiper-wrapper">
-      <!-- Testimonial Item 1 -->
       <div class="swiper-slide testi-item">
         <img src="./assets/images/Testimonials/Pic-1.jpg" alt="Author-Pic" />
         <i class="fas fa-quote-left"></i>
@@ -1617,7 +1594,6 @@
         </div>
       </div>
 
-      <!-- Testimonial Item 2 -->
       <div class="swiper-slide testi-item">
         <img src="./assets/images/Testimonials/Pic-2.jpg" alt="Author-Pic" />
         <i class="fas fa-quote-left"></i>
@@ -1633,7 +1609,6 @@
         </div>
       </div>
 
-      <!-- Testimonial Item 3 -->
       <div class="swiper-slide testi-item">
         <img src="./assets/images/Testimonials/Pic-3.jpg" alt="Author-Pic" />
         <i class="fas fa-quote-left"></i>
@@ -1649,7 +1624,6 @@
         </div>
       </div>
 
-      <!-- Testimonial Item 4 -->
       <div class="swiper-slide testi-item">
         <img src="./assets/images/Testimonials/Pic-4.jpg" alt="Author-Pic" />
         <i class="fas fa-quote-left"></i>
@@ -1666,94 +1640,73 @@
       </div>
     </div>
 
-    <!-- Testimonial Pagination -->
     <div class="swiper-pagination swiper-pagination3"></div>
   </div>
-</section>
+</section> -->
 <!-- ==================== Testimonials Area (End) ==================== -->
 
 <!-- ==================== Blogs Area (Start) ==================== -->
-<section class="blog main">
-  <!-- Section Heading -->
+<!-- <section class="blog main">
   <div class="heading">
     <h2>our <span>blogs</span></h2>
   </div>
 
-  <!-- Latest Blogs -->
   <div class="box-container">
-    <!-- Blog-1 -->
     <div class="blog-item">
       <div class="image">
         <img src="./assets/images/Blog/Blogs/Blog-1.jpg" alt="Blog-Image" />
-        <!-- Blog Image -->
         <div class="date"><span>02</span> Dec</div>
-        <!-- Blog Date -->
       </div>
       <div class="content">
         <a class="main-heading" href="./pages/Blog/Blog-Single.html"
           >Complete List of Football Equipment</a
         >
-        <!-- Blog Title -->
         <div class="details">
           <h3><i class="fa-solid fa-circle-user"></i><span>By Admin</span></h3>
-          <!-- Author -->
           <h3>
             <i class="fa-regular fa-folder-open"></i><span>Sport Center</span>
           </h3>
-          <!-- Category -->
         </div>
       </div>
     </div>
 
-    <!-- Blog-2 -->
     <div class="blog-item">
       <div class="image">
         <img src="./assets/images/Blog/Blogs/Blog-2.jpg" alt="Blog-Image" />
-        <!-- Blog Image -->
         <div class="date"><span>25</span> nov</div>
-        <!-- Blog Date -->
       </div>
       <div class="content">
         <a class="main-heading" href="./pages/Blog/Blog-Single.html"
           >A Brief History of Royal Rebels</a
         >
-        <!-- Blog Title -->
         <div class="details">
           <h3><i class="fa-solid fa-circle-user"></i><span>By Admin</span></h3>
-          <!-- Author -->
           <h3>
             <i class="fa-regular fa-folder-open"></i><span>Analysis</span>
           </h3>
-          <!-- Category -->
         </div>
       </div>
     </div>
 
-    <!-- Blog-3 -->
     <div class="blog-item">
       <div class="image">
         <img src="./assets/images/Blog/Blogs/Blog-3.jpg" alt="Blog-Image" />
-        <!-- Blog Image -->
         <div class="date"><span>17</span> Nov</div>
-        <!-- Blog Date -->
       </div>
       <div class="content">
         <a class="main-heading" href="./pages/Blog/Blog-Single.html"
           >We Are a Family, Not Just a Team</a
         >
-        <!-- Blog Title -->
         <div class="details">
           <h3><i class="fa-solid fa-circle-user"></i><span>By Admin</span></h3>
-          <!-- Author -->
           <h3>
             <i class="fa-regular fa-folder-open"></i><span>Interviews</span>
           </h3>
-          <!-- Category -->
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- ==================== Blogs Area (End) ==================== -->
 
 <!-- ==================== Newsletter Area (Start) ==================== -->
@@ -1782,9 +1735,9 @@
 </section>
 <!-- ==================== Newsletter Area (End) ==================== -->
 
-<!-- ==================== Sponsors Area (Start) ==================== -->
+<!-- ========== Sponsors Area (Start) ========== -->
 <section class="sponsors">
-  <!-- Sponsors Slider Container -->
+  <!-- Sponsor Slider Container -->
   <div class="swiper-container sponsor-slider">
     <!-- Sponsors Logo -->
     <div class="swiper-wrapper">
@@ -1796,7 +1749,57 @@
           /></a
         >
       </div>
-      <!-- <div class="swiper-slide sponsor-item">
+      <div class="swiper-slide sponsor-item">
+        <a href="#"
+          ><img
+            src="../../assets/images/Sponsors/bcgamelogo.jpg"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div>
+      <div class="swiper-slide sponsor-item">
+        <a href="#"
+          ><img
+            src="./assets/images/Sponsors/freedom.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div>
+
+      <div class="swiper-slide sponsor-item">
+        <a href="#"
+          ><img
+            src="../../assets/images/Sponsors/bcgamelogo.jpg"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div>
+      <div class="swiper-slide sponsor-item">
+        <a href="#"
+          ><img
+            src="./assets/images/Sponsors/freedom.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ========== Sponsors Area Area (End) ========== -->
+
+<!-- ==================== Sponsors Area (Start) ==================== -->
+<!-- <section class="sponsors">
+  <div class="swiper-container sponsor-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide sponsor-item">
+        <a href="#"
+          ><img
+            src="./assets/images/Sponsors/freedom.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div> -->
+<!-- <div class="swiper-slide sponsor-item">
         <a href="#"
           ><img
             src="./assets/images/Sponsors/Sponsor-2.png"
@@ -1868,9 +1871,9 @@
           /></a
         >
       </div> -->
-    </div>
+<!-- </div>
   </div>
-</section>
+</section> -->
 <!-- ==================== Sponsors Area Area (End) ==================== -->
 
 <!-- ==================== Footer Area (Start) ==================== -->

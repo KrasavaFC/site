@@ -20,7 +20,7 @@
   </div>
 
   <div class="link">
-    <a href="../../index.html">Home</a>
+    <a href="/">Home</a>
     <i class="fa-solid fa-angles-right"></i>
     <span class="page">Academy</span>
   </div>

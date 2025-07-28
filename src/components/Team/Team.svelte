@@ -14,13 +14,13 @@
 <!-- ==================== Header Area (End) ==================== -->
 
 <!-- ==================== Page-Title (Start) ==================== -->
-<div class="page-title">
+<div class="page-title-team">
   <div class="title">
     <h2>Team</h2>
   </div>
 
   <div class="link">
-    <a href="../../index.html">Home</a>
+    <a href="/">Home</a>
     <i class="fa-solid fa-angles-right"></i>
     <span class="page">team</span>
   </div>
