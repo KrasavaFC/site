@@ -27,17 +27,17 @@
       <h2>Contact Info</h2>
       <div class="info connect">
         <p><i class="fas fa-phone"></i><span>+123-456-789</span></p>
-        <p><i class="fas fa-phone"></i><span>+111-222-333</span></p>
+        <!-- <p><i class="fas fa-phone"></i><span>+111-222-333</span></p> -->
         <p>
           <i class="fas fa-envelope"></i><span class="gmail">abc@gmail.com</span
           >
         </p>
-        <p>
+        <!-- <p>
           <i class="fas fa-envelope"></i><span class="gmail">xyz@gmail.com</span
           >
-        </p>
+        </p> -->
         <p>
-          <i class="fas fa-map-marker-alt"></i><span>Karachi, Pakistan</span>
+          <i class="fas fa-map-marker-alt"></i><span>Cyprus, Larnaka</span>
         </p>
       </div>
     </div>
@@ -47,28 +47,33 @@
       <h2>Quick Links</h2>
       <div class="info links">
         <p>
-          <i class="fa-solid fa-futbol"></i><a href="./pages/About/About.html"
+          <i class="fa-solid fa-futbol"></i><a href="/"
+            >Home</a
+          >
+        </p>
+        <p>
+          <i class="fa-solid fa-futbol"></i><a href="/about"
             >About</a
           >
         </p>
         <p>
           <i class="fa-solid fa-futbol"></i><a
-            href="./pages/Pages/Fixtures.html">Fixtures</a
+            href="/academy">Academy</a
           >
         </p>
         <p>
-          <i class="fa-solid fa-futbol"></i><a href="./pages/Team/Team.html"
+          <i class="fa-solid fa-futbol"></i><a href="/team"
             >Team</a
           >
         </p>
         <p>
           <i class="fa-solid fa-futbol"></i><a
-            href="./pages/Result/Results.html">Results</a
+            href="/tickets">Tickets</a
           >
         </p>
         <p>
           <i class="fa-solid fa-futbol"></i><a
-            href="./pages/Blog/Blog-Grid.html">Blogs</a
+            href="/shop">Shop</a
           >
         </p>
         <p>
