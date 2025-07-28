@@ -679,7 +679,7 @@
       <div class="swiper-slide team-item">
         <div class="team-image">
           <img
-            src="../../assets/images/Team/Goalkeepers/IoannisPieriteam.jpeg"
+            src="../../assets/images/Team/Goalkeepers/IoannisPieriteam.jpg"
             alt="Team-Image"
           />
           <!-- Team Member Image -->
@@ -1752,7 +1752,7 @@
       <div class="swiper-slide sponsor-item">
         <a href="#"
           ><img
-            src="../../assets/images/Sponsors/bcgamelogo.jpg"
+            src="./assets/images/Sponsors/freedom.png"
             alt="Sponsor-Logo"
           /></a
         >
@@ -1765,11 +1765,10 @@
           /></a
         >
       </div>
-
       <div class="swiper-slide sponsor-item">
         <a href="#"
           ><img
-            src="../../assets/images/Sponsors/bcgamelogo.jpg"
+            src="./assets/images/Sponsors/freedom.png"
             alt="Sponsor-Logo"
           /></a
         >
