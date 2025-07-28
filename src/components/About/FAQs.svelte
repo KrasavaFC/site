@@ -107,7 +107,7 @@
       </div>
 
       <!-- FAQ Accordion 4: Youth Programs -->
-      <div class="accordion">
+      <div class="accordion active">
         <div class="accordion-heading">
           <i class="fas fa-plus"></i>
           <h3>Youth development programs?</h3>
@@ -133,7 +133,7 @@
       </div> -->
 
       <!-- FAQ Accordion 3: Meet Players -->
-      <div class="accordion">
+      <div class="accordion active">
         <div class="accordion-heading">
           <i class="fas fa-plus"></i>
           <h3>Opportunities to meet players?</h3>
@@ -146,7 +146,7 @@
       </div>
 
       <!-- FAQ Accordion 5: Sponsorship -->
-      <div class="accordion">
+      <div class="accordion active">
         <div class="accordion-heading">
           <i class="fas fa-plus"></i>
           <h3>Explore sponsorship opportunities?</h3>
