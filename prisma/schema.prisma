@@ -183,3 +183,13 @@ model PromoCode {
   adminId String
   admin   AdminUser @relation(fields: [adminId], references: [id])
 }
+
+model KrasavaUsers {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  password  String?
+  googleId  String?  @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
