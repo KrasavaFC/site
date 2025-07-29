@@ -192,6 +192,9 @@ model KrasavaUsers {
   googleId  String?  @unique
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  purchaseHistory PurchaseHistory[]
+  wishlist        Wishlist[]
 }
 
 model Player {
@@ -213,4 +216,52 @@ enum Position {
   DEFENDER
   MIDFIELDER
   FORWARD
+}
+
+model Product {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  price       Float
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+
+  purchases    PurchaseHistory[]
+  wishlisted   Wishlist[]
+  transactions Transactions[]
+}
+
+model PurchaseHistory {
+  id     String       @id @default(uuid())
+  user   KrasavaUsers @relation(fields: [userId], references: [id])
+  userId String
+  item   Product @relation(fields: [itemId], references: [id])
+  itemId String
+  quantity        Int    @default(1)
+  priceAtPurchase Float  @default(0)
+  status          String @default("PAID")
+  createdAt DateTime @default(now())
+
+  transaction Transactions? @relation("PurchaseToTransaction")
+}
+
+model Transactions {
+  id              String          @id @default(uuid())
+  purchase        PurchaseHistory @relation("PurchaseToTransaction", fields: [purchaseId], references: [id])
+  purchaseId      String          @unique
+  product         Product         @relation(fields: [productId], references: [id])
+  productId       String
+  amount          Float
+  currency        String
+  status          String
+  transactionDate DateTime        @default(now())
+}
+
+model Wishlist {
+  id        String       @id @default(uuid())
+  user      KrasavaUsers @relation(fields: [userId], references: [id])
+  userId    String
+  product   Product      @relation(fields: [productId], references: [id])
+  productId String
+  addedAt   DateTime     @default(now())
 }
