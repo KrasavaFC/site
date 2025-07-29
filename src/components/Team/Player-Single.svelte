@@ -1,6 +1,36 @@
 <script lang="ts">
   import Footer from "../Footer.svelte";
   import Header from "../Header.svelte";
+  export let data;
+  const { player, name } = data;
+
+  function calculateAge(dateString: string): number {
+    const birthDate = new Date(dateString);
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const hasBirthdayPassed =
+      today.getMonth() > birthDate.getMonth() ||
+      (today.getMonth() === birthDate.getMonth() &&
+        today.getDate() >= birthDate.getDate());
+
+    if (!hasBirthdayPassed) {
+      age--;
+    }
+
+    return age;
+  }
+
+  function formatBirthDate(dateString: string): string {
+    const date = new Date(dateString);
+    return date.toLocaleDateString("en-GB", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
+  }
+
+  const age = calculateAge(player.birthDate);
+  const formattedDate = formatBirthDate(player.birthDate);
 </script>
 
 <!-- ==================== Scroll-Top Area (Start) ==================== -->
@@ -12,7 +42,6 @@
 <!-- ==================== Header Area (Start) ==================== -->
 <Header />
 <!-- ==================== Header Area (End) ==================== -->
-
 <!-- ==================== Page-Title (Start) ==================== -->
 <div class="page-title">
   <div class="title">
@@ -20,9 +49,7 @@
   </div>
 
   <div class="link">
-    <a href="../../index.html">
-      <i class="fa-solid fa-house-chimney"></i> Home</a
-    >
+    <a href="/"> <i class="fa-solid fa-house-chimney"></i> Home</a>
     <i class="fa-solid fa-angles-right"></i>
     <span class="page">player single</span>
   </div>
@@ -35,26 +62,18 @@
   <div class="team-intro">
     <!-- Player Image -->
     <div class="image">
-      <img
-        src="../../assets/images/Team/Goalkeepers/1.jpg"
-        alt="Player Image"
-      />
+      <img src={player.imageUrl} alt="Player Image" />
     </div>
 
     <!-- Player Information -->
     <div class="information">
-      <h3>John Smith</h3>
+      <h3>{player.firstName} {player.lastName} {player.number}</h3>
       <!-- Player Name -->
-      <h5>Goalkeeper</h5>
+      <h5>{player.position}</h5>
       <!-- Player Position -->
-
       <div class="team-about">
         <div class="text">
-          John Smith is a dedicated goalkeeper with a profound love for the
-          game. He brings extensive experience and a passionate approach to
-          goalkeeping. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit.
+          {player.info}
         </div>
       </div>
 
@@ -62,40 +81,32 @@
       <ul class="team-personal-info">
         <li>
           <h6><i class="fas fa-flag"></i> Nationality:</h6>
-          <span>England</span>
+          <span> {player.nationality} </span>
         </li>
         <!-- Nationality -->
         <li>
           <h6><i class="fa-regular fa-calendar-days"></i> D.O.B:</h6>
-          <span>January 1, 1990</span>
+          <span>{formattedDate}</span>
         </li>
         <!-- Date of Birth -->
+
         <li>
           <h6><i class="fas fa-birthday-cake"></i> Age:</h6>
-          <span>33</span>
+          <span>{age}</span>
         </li>
         <!-- Age -->
         <li>
           <h6><i class="fas fa-arrows-alt-v"></i> Height:</h6>
-          <span>6'2"</span>
+          <span>{player.height}</span>
         </li>
         <!-- Height -->
-        <li>
-          <h6><i class="fa-solid fa-futbol"></i> Current Club:</h6>
-          <span>Royal Rebels</span>
-        </li>
-        <!-- Current Club -->
       </ul>
 
       <!-- Player Social Media Accounts -->
       <div class="icon-container">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <!-- Facebook Link -->
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <!-- LinkedIn Link -->
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <!-- Twitter Link -->
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href={player.instagram} target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
         <!-- Instagram Link -->
       </div>
     </div>
