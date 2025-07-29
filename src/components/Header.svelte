@@ -26,6 +26,7 @@
         <a class="nav-btn" href="/academy">Academy</a>
         <a class="nav-btn" href="/team">Team</a>
         <a class="nav-btn" href="/tickets">Tickets</a>
+        <a class="nav-btn" href="/shop/grid">Shop</a>
 
         <!-- <div class="dropdown-menu">
           <button class="nav-btn">about</button>
@@ -79,7 +80,7 @@
           </div>
         </div> -->
 
-        <div class="dropdown-menu">
+        <!-- <div class="dropdown-menu">
           <button class="nav-btn">shop</button>
           <div class="dropdown-content">
             <a href="/shop/grid">shop grid</a>
@@ -89,17 +90,22 @@
             <a href="/shop/cart">cart</a>
             <a href="/shop/checkout">checkout</a>
           </div>
-        </div>
+        </div> -->
 
         <a class="nav-btn" href="/contact">contact</a>
       </nav>
 
       <!-- == Icon Container == -->
       <div class="icon-container">
-        <div id="search-btn" class="icon fa-solid fa-magnifying-glass"></div>
+        <!-- <div id="search-btn" class="icon fa-solid fa-magnifying-glass"></div> -->
         <!-- Search Icon -->
-        <a href="/shop/cart"><i class="icon fa-solid fa-cart-arrow-down"></i></a
+        <a href="/shop/checkout"
+          ><i class="icon fa-solid fa-cart-arrow-down"></i></a
         >
+        <a href="/profile">
+          <i class="icon fa-solid fa-user"></i>
+        </a>
+
         <div id="menu-btn" class="icon fa-solid fa-bars-staggered"></div>
       </div>
 
