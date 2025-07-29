@@ -193,3 +193,24 @@ model KrasavaUsers {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model Player {
+  id          String   @id @default(uuid())
+  firstName   String
+  lastName    String
+  number      Int
+  position    Position
+  birthDate   DateTime
+  nationality String
+  height      Float
+  info        String?
+  instagram   String?
+  imageUrl    String?
+}
+
+enum Position {
+  GOALKEEPER
+  DEFENDER
+  MIDFIELDER
+  FORWARD
+}
