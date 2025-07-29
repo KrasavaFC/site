@@ -15,10 +15,10 @@
 
       <!-- Social Media Links -->
       <div class="social">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a> -->
+        <a href="https://www.instagram.com/krasavafc/"><i class="fab fa-instagram"></i></a>
+        <!-- <a href="#"><i class="fab fa-linkedin"></i></a> -->
       </div>
     </div>
 
@@ -26,18 +26,18 @@
     <div class="footer-item">
       <h2>Contact Info</h2>
       <div class="info connect">
-        <p><i class="fas fa-phone"></i><span>+123-456-789</span></p>
-        <p><i class="fas fa-phone"></i><span>+111-222-333</span></p>
+        <!-- <p><i class="fas fa-phone"></i><span>+123-456-789</span></p>
+        <p><i class="fas fa-phone"></i><span>+111-222-333</span></p> -->
         <p>
           <i class="fas fa-envelope"></i><span class="gmail">abc@gmail.com</span
           >
         </p>
-        <p>
+        <!-- <p>
           <i class="fas fa-envelope"></i><span class="gmail">xyz@gmail.com</span
           >
-        </p>
+        </p> -->
         <p>
-          <i class="fas fa-map-marker-alt"></i><span>Karachi, Pakistan</span>
+          <i class="fas fa-map-marker-alt"></i><span>Cyprus, Larnaka</span>
         </p>
       </div>
     </div>
@@ -47,46 +47,28 @@
       <h2>Quick Links</h2>
       <div class="info links">
         <p>
-          <i class="fa-solid fa-futbol"></i><a href="./pages/About/About.html"
-            >About</a
-          >
+          <i class="fa-solid fa-futbol"></i><a href="/academy">Academy</a>
         </p>
         <p>
-          <i class="fa-solid fa-futbol"></i><a
-            href="./pages/Pages/Fixtures.html">Fixtures</a
-          >
+          <i class="fa-solid fa-futbol"></i><a href="/team">Team</a>
+        </p>
+
+        <p>
+          <i class="fa-solid fa-futbol"></i><a href="/tickets">Tickets</a>
         </p>
         <p>
-          <i class="fa-solid fa-futbol"></i><a href="./pages/Team/Team.html"
-            >Team</a
-          >
-        </p>
-        <p>
-          <i class="fa-solid fa-futbol"></i><a
-            href="./pages/Result/Results.html">Results</a
-          >
-        </p>
-        <p>
-          <i class="fa-solid fa-futbol"></i><a
-            href="./pages/Blog/Blog-Grid.html">Blogs</a
-          >
-        </p>
-        <p>
-          <i class="fa-solid fa-futbol"></i><a
-            href="./pages/Contact/Contact.html">Contact</a
-          >
+          <i class="fa-solid fa-futbol"></i><a href="/contact">Contact</a>
         </p>
       </div>
     </div>
 
     <!-- == Newsletter Subscription == -->
-    <div class="footer-item">
+    <!-- <div class="footer-item">
       <h2>Newsletter</h2>
       <p>
         Stay connected for the latest updates on special events and exciting
         moments at our football club.
       </p>
-      <!-- Newsletter Description -->
 
       <form class="dark-form">
         <div class="input-field">
@@ -99,12 +81,10 @@
             placeholder="Your email address"
             required
           />
-          <!-- Email Input Field -->
         </div>
         <button type="submit" class="btn">Subscribe</button>
-        <!-- Subscribe Button -->
       </form>
-    </div>
+    </div> -->
   </div>
 
   <!-- == Designer's Name and Copyright == -->
