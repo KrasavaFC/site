@@ -37,7 +37,7 @@
 
       const data = await res.json();
       console.log('Registered user:', data.user);
-      goto('/');
+      goto('/profile');
     } catch (err) {
       console.error(err);
       error = 'Something went wrong. Please try again.';
@@ -115,7 +115,7 @@
 
     <p>
       already have an account?
-      <a class="link" href="./Login.html">login</a>
+      <a class="link" href="/login">login</a>
     </p>
   </form>
 </section>
