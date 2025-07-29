@@ -23,7 +23,7 @@
 
       const data = await res.json();
       console.log("User:", data.user);
-      goto("/"); 
+      goto("/profile"); 
     } catch (err) {
       error = "Something went wrong. Please try again.";
       console.error(err);
@@ -68,7 +68,7 @@
       required
     />
 
-    <div class="info">
+    <!-- <div class="info">
       <div class="checkbox-label">
         <input type="checkbox" id="remember-me" />
         <label for="remember-me">remember me</label>
@@ -77,7 +77,7 @@
       <div class="forgot">
         <a class="link" href="./Reset-Password.html">forgot password?</a>
       </div>
-    </div>
+    </div> -->
 
     {#if error}
       <p style="color: red;">{error}</p>
@@ -85,7 +85,7 @@
 
     <button type="submit" class="btn" name="login" id="login-btn">login</button>
 
-    <a href="/api/auth/google" class="google-btn">
+    <a href="/api/auth/google" class="btn" id="login-btn">
       <span>Continue with Google</span>
     </a>
 
@@ -96,30 +96,5 @@
 <Footer />
 
 <style>
-  .google-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 20px;
-    border: 1px solid #555;
-    border-radius: 8px;
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    transition:
-      background-color 0.2s,
-      border-color 0.2s;
-  }
-
-  .google-btn img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .google-btn:hover {
-    background-color: #222;
-    border-color: #888;
-  }
+ 
 </style>
