@@ -22,7 +22,7 @@
   <div class="link">
     <a href="/">Home</a>
     <i class="fa-solid fa-angles-right"></i>
-    <span class="page">about us</span>
+    <span class="page">Tickets</span>
   </div>
 </div>
 <!-- ==================== Page-Title Area (End) ==================== -->
@@ -157,7 +157,7 @@
 
         <div class="team-about">
           <div class="text">
-            All Home Games. All the Action. At a Student-Friendly Price.
+            Big Games. Big Emotions. Special Access for Our Youngest Fans!
           </div>
         </div>
 

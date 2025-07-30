@@ -28,6 +28,7 @@
       <div class="info connect">
         <!-- <p><i class="fas fa-phone"></i><span>+123-456-789</span></p>
         <p><i class="fas fa-phone"></i><span>+111-222-333</span></p> -->
+
         <p>
           <i class="fas fa-envelope"></i><span class="gmail">abc@gmail.com</span
           >
@@ -51,6 +52,7 @@
         </p>
         <p>
           <i class="fa-solid fa-futbol"></i><a href="/team">Team</a>
+
         </p>
 
         <p>
