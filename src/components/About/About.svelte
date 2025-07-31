@@ -1,8 +1,33 @@
 <script lang="ts">
   import Footer from "../Footer.svelte";
   import Header from "../Header.svelte";
+  import { onMount } from "svelte";
+
+  let products = [];
+
+  let tickets: {
+    season: any | null;
+    kids: any | null;
+    student: any | null;
+  } = {
+    season: null,
+    kids: null,
+    student: null,
+  };
+
+  onMount(async () => {
+    const res = await fetch("/api/products");
+    products = await res.json();
+
+    tickets.season = products.find((p: any) => p.name === "Season Pass");
+    tickets.kids = products.find((p: any) => p.name === "Child Season Ticket");
+    tickets.student = products.find(
+      (p: any) => p.name === "Student Season Pass"
+    );
+  });
 </script>
 
+<Header />
 <!-- ==================== Scroll-Top Area (Start) ==================== -->
 <a href="#" class="scroll-top">
   <i class="fa-solid fa-arrow-up-long"></i>
@@ -84,186 +109,205 @@
   <!-- ========== About Area (End) ========== -->
 
   <!-- ==================== BUY TICKET ==================== -->
-  <section class="team-single">
-    <!-- Player Introduction -->
-    <div class="team-intro">
-      <!-- Player Image -->
-      <div class="image" style="width: 50rem; max-height:30rem">
-        <img src="/assets/images/Krasava/krasavaticket2.png" alt="Ticket" />
-      </div>
-
-      <!-- Player Information -->
-      <div class="information">
-        <h3>Get Your Season Ticket</h3>
-        <!-- Player Name -->
-        <h5>For 2025–2026</h5>
-        <!-- Player Position -->
-
-        <div class="team-about">
-          <div class="text">
-            All Home Games. Special Access. True Fan Experience.
-          </div>
+  {#if tickets.season}
+    <section class="team-single">
+      <!-- Player Introduction -->
+      <div class="team-intro">
+        <!-- Player Image -->
+        <div class="image" style="width: 50rem; max-height:30rem">
+          <img src="/assets/images/Krasava/krasavaticket2.png" alt="Ticket" />
         </div>
 
-        <!-- Player Contact Information -->
-        <ul class="team-personal-info">
-          <li>
-            <!-- <h6>🎟 Access to all home matches</h6> -->
-            <span>🎟 Access to all home matches (Championship A & B)</span>
-          </li>
-          <!-- Nationality -->
-          <li>
-            <!-- <h6>🏆 Entry to all home Cup matches</h6> -->
-            <span>🏆 Entry to all home Cup matches (excluding the final)</span>
-          </li>
-          <!-- Date of Birth -->
-          <li>
-            <span>⚽ Free access to home friendlies</span>
-          </li>
-          <!-- Age -->
-          <li>
-            <span>🎉 Invitations to club events</span>
-          </li>
-          <!-- Height -->
-          <li>
-            <span>🛍 Discounts at the official merch store</span>
-          </li>
-          <!-- Current Club -->
-        </ul>
-        <a href="" class="btn">150€: Buy Season Ticket</a>
+        <!-- Player Information -->
+        <div class="information">
+          <h3>Get Your Season Ticket</h3>
+          <!-- Player Name -->
+          <h5>For 2025–2026</h5>
+          <!-- Player Position -->
+
+          <div class="team-about">
+            <div class="text">
+              All Home Games. Special Access. True Fan Experience.
+            </div>
+          </div>
+
+          <!-- Player Contact Information -->
+          <ul class="team-personal-info">
+            <li>
+              <!-- <h6>🎟 Access to all home matches</h6> -->
+              <span>🎟 Access to all home matches (Championship A & B)</span>
+            </li>
+            <!-- Nationality -->
+            <li>
+              <!-- <h6>🏆 Entry to all home Cup matches</h6> -->
+              <span>🏆 Entry to all home Cup matches (excluding the final)</span
+              >
+            </li>
+            <!-- Date of Birth -->
+            <li>
+              <span>⚽ Free access to home friendlies</span>
+            </li>
+            <!-- Age -->
+            <li>
+              <span>🎉 Invitations to club events</span>
+            </li>
+            <!-- Height -->
+            <li>
+              <span>🛍 Discounts at the official merch store</span>
+            </li>
+            <!-- Current Club -->
+          </ul>
+          <a class="btn" href={`/shop/cart/${tickets.season.id}`}>
+            {tickets.season.price}€: Buy Season Ticket
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  {/if}
+
   <!-- ==================== BUY TICKET (End) ==================== -->
 
   <!-- ==================== BUY Kids Season Ticket ==================== -->
-  <section class="team-single">
-    <!-- Player Introduction -->
-    <div class="team-intro">
-      <!-- Player Image -->
-      <div class="image" style="width: 50rem; max-height:30rem">
-        <img src="/assets/images/Krasava/childticket.png" alt="Ticket" />
-      </div>
-
-      <!-- Player Information -->
-      <div class="information">
-        <h3>Get Kids Season Ticket</h3>
-        <!-- Player Name -->
-        <h5>For 2025–2026</h5>
-        <!-- Player Position -->
-
-        <div class="team-about">
-          <div class="text">
-            Big Games. Big Emotions. Special Access for Our Youngest Fans!
-          </div>
+  {#if tickets.kids}
+    <section class="team-single">
+      <!-- Player Introduction -->
+      <div class="team-intro">
+        <!-- Player Image -->
+        <div class="image" style="width: 50rem; max-height:30rem">
+          <img src="/assets/images/Krasava/childticket.png" alt="Ticket" />
         </div>
 
-        <!-- Player Contact Information -->
-        <ul class="team-personal-info">
-          <li>
-            <span
-              >⚽ Entry to All Home Matches (Championship Phases A & B — seated
-              in family-friendly sectors)</span
-            >
-          </li>
-          <!-- Nationality -->
-          <li>
-            <span>🏆 Entry to all home Cup matches (excluding the final)</span>
-          </li>
-          <!-- Date of Birth -->
-          <li>
-            <span
-              >🎉 Home Friendly Matches (Free attendance with special
-              kid-friendly zones)</span
-            >
-          </li>
-          <!-- Age -->
-          <li>
-            <span
-              >🧸 Club Events for Kids (Meet the players, take part in youth fan
-              days)</span
-            >
-          </li>
-          <!-- Height -->
-          <li>
-            <span
-              >🛍 15% Discount on kids’ merchandise (jerseys, scarves, toys &
-              more!)</span
-            >
-          </li>
-          <!-- Current Club -->
-        </ul>
-        <a href="" class="btn">30€: Buy Kids Ticket</a>
+        <!-- Player Information -->
+        <div class="information">
+          <h3>Get Kids Season Ticket</h3>
+          <!-- Player Name -->
+          <h5>For 2025–2026</h5>
+          <!-- Player Position -->
+
+          <div class="team-about">
+            <div class="text">
+              Big Games. Big Emotions. Special Access for Our Youngest Fans!
+            </div>
+          </div>
+
+          <!-- Player Contact Information -->
+          <ul class="team-personal-info">
+            <li>
+              <span
+                >⚽ Entry to All Home Matches (Championship Phases A & B —
+                seated in family-friendly sectors)</span
+              >
+            </li>
+            <!-- Nationality -->
+            <li>
+              <span>🏆 Entry to all home Cup matches (excluding the final)</span
+              >
+            </li>
+            <!-- Date of Birth -->
+            <li>
+              <span
+                >🎉 Home Friendly Matches (Free attendance with special
+                kid-friendly zones)</span
+              >
+            </li>
+            <!-- Age -->
+            <li>
+              <span
+                >🧸 Club Events for Kids (Meet the players, take part in youth
+                fan days)</span
+              >
+            </li>
+            <!-- Height -->
+            <li>
+              <span
+                >🛍 15% Discount on kids’ merchandise (jerseys, scarves, toys &
+                more!)</span
+              >
+            </li>
+            <!-- Current Club -->
+          </ul>
+          <a class="btn" href={`/shop/cart/${tickets.kids.id}`}>
+            {tickets.kids.price}€: Buy Kids Ticket
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  {/if}
+
   <!-- ==================== BUY Kids Season Ticket (End) ==================== -->
 
   <!-- ==================== BUY STUDENT TICKET ==================== -->
-  <section class="team-single">
-    <!-- Player Introduction -->
-    <div class="team-intro">
-      <!-- Player Image -->
-      <div class="image" style="width: 50rem; max-height:30rem">
-        <img
-          src="/assets/images/Krasava/krasavaticketstudent2.png"
-          alt="Ticket"
-        />
-      </div>
-
-      <!-- Player Information -->
-      <div class="information">
-        <h3>Get Your Student Season Ticket</h3>
-        <!-- Player Name -->
-        <h5>For 2025–2026</h5>
-        <!-- Player Position -->
-
-        <div class="team-about">
-          <div class="text">
-            All Home Games. All the Action. At a Student-Friendly Price.
-          </div>
+  {#if tickets.student}
+    <section class="team-single">
+      <!-- Player Introduction -->
+      <div class="team-intro">
+        <!-- Player Image -->
+        <div class="image" style="width: 50rem; max-height:30rem">
+          <img
+            src="/assets/images/Krasava/krasavaticketstudent2.png"
+            alt="Ticket"
+          />
         </div>
 
-        <!-- Player Contact Information -->
-        <ul class="team-personal-info">
-          <li>
-            <!-- <h6>🎟 Access to all home matches</h6> -->
-            <span
-              >🎟 Access to all home matches (Championship Phases A & B)</span
-            >
-          </li>
-          <!-- Nationality -->
-          <li>
-            <!-- <h6>🏆 Entry to all home Cup matches</h6> -->
-            <span>🏆 Entry to all home Cup matches (excluding the final)</span>
-          </li>
-          <!-- Date of Birth -->
-          <li>
-            <span>⚽ Free Access to Home Friendlies</span>
-          </li>
-          <!-- Age -->
-          <li>
-            <span>🎉 Invitations to club events</span>
-          </li>
-          <!-- Height -->
-          <li>
-            <!-- <h6>🛍 Discounts at the official merch store</h6> -->
-            <span
-              >🛍 Discounts at the official merch store at the Official Store
-            </span>
-          </li>
-          <li>
-            <!-- <h6>🧑‍🎓 Exclusive Student Offer</h6> -->
-            <span
-              >🧑‍🎓 Exclusive Student Offer (Available only with valid student ID)</span
-            >
-          </li>
-          <!-- Current Club -->
-        </ul>
-        <a href="" class="btn">70€: Buy Student Season Ticket</a>
+        <!-- Player Information -->
+        <div class="information">
+          <h3>Get Your Student Season Ticket</h3>
+          <!-- Player Name -->
+          <h5>For 2025–2026</h5>
+          <!-- Player Position -->
+
+          <div class="team-about">
+            <div class="text">
+              All Home Games. All the Action. At a Student-Friendly Price.
+            </div>
+          </div>
+
+          <!-- Player Contact Information -->
+          <ul class="team-personal-info">
+            <li>
+              <!-- <h6>🎟 Access to all home matches</h6> -->
+              <span
+                >🎟 Access to all home matches (Championship Phases A & B)</span
+              >
+            </li>
+            <!-- Nationality -->
+            <li>
+              <!-- <h6>🏆 Entry to all home Cup matches</h6> -->
+              <span>🏆 Entry to all home Cup matches (excluding the final)</span
+              >
+            </li>
+            <!-- Date of Birth -->
+            <li>
+              <span>⚽ Free Access to Home Friendlies</span>
+            </li>
+            <!-- Age -->
+            <li>
+              <span>🎉 Invitations to club events</span>
+            </li>
+            <!-- Height -->
+            <li>
+              <!-- <h6>🛍 Discounts at the official merch store</h6> -->
+              <span
+                >🛍 Discounts at the official merch store at the Official Store
+              </span>
+            </li>
+            <li>
+              <!-- <h6>🧑‍🎓 Exclusive Student Offer</h6> -->
+              <span
+                >🧑‍🎓 Exclusive Student Offer (Available only with valid student
+                ID)</span
+              >
+            </li>
+            <!-- Current Club -->
+          </ul>
+          <a class="btn" href={`/shop/cart/${tickets.student.id}`}>
+            {tickets.student.price}€: Buy Student Season Ticket
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  {/if}
+
   <!-- ==================== BUY STUDENT TICKET (End) ==================== -->
 
   <!-- ==================== Testimonials Area (Start) ==================== -->
@@ -299,194 +343,12 @@
             <h4>Yulia</h4>
           </div>
         </div>
-        <!-- 
-        <div class="swiper-slide testi-item">
-          <img src="./assets/images/Testimonials/Pic-3.jpg" alt="Author-Pic" />
-          <i class="fas fa-quote-left"></i>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis in
-            ea expedita libero error aut itaque quia praesentium? Consectetur
-            nam, maxime atque sit eius corporis voluptate? Exercitationem
-            dolorem consequatur voluptatibus?
-          </p>
-          <div class="text">
-            <h6>Season Ticket Holder</h6>
-            <h4>Vladimir</h4>
-          </div>
-        </div>
-
-        <div class="swiper-slide testi-item">
-          <img src="./assets/images/Testimonials/Pic-4.jpg" alt="Author-Pic" />
-          <i class="fas fa-quote-left"></i>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis in
-            ea expedita libero error aut itaque quia praesentium? Consectetur
-            nam, maxime atque sit eius corporis voluptate? Exercitationem
-            dolorem consequatur voluptatibus?
-          </p>
-          <div class="text">
-            <h6>Club Member</h6>
-            <h4>Emma Wilson</h4>
-          </div>
-        </div>
-      </div> -->
 
         <div class="swiper-pagination swiper-pagination3"></div>
       </div>
     </div>
   </section>
-  <!-- ==================== Testimonials Area (End) ==================== -->
 
-  <!-- ========== Testimonials Area (Start) ========== -->
-  <!-- <section class="testimonial">
-    <div class="heading">
-      <h2>Fan <span>Testimonials</span></h2>
-    </div>
-
-    <div class="swiper-container testimonial-slider">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide testi-item">
-          <img
-            src="./assets/images/Testimonials/liya.jpg"
-            alt="Author-Pic"
-          />
-          <i class="fas fa-quote-left"></i>
-          <p>
-            Something incredible is happening here — pure emotion, passionate fans, and unstoppable energy. This is where history is being made.
-          </p>
-          <div class="text">
-            <h6>Student Season Ticket Holder</h6>
-            <h4>Liya</h4>
-          </div>
-        </div>
-
-        <div class="swiper-slide testi-item">
-          <img
-            src="../../assets/images/Testimonials/Pic-2.jpg"
-            alt="Author-Pic"
-          />
-          <i class="fas fa-quote-left"></i>
-          <p>
-            I moved to Cyprus — and Krasava welcomed me like family. The community here is strong, warm, and full of new friendships.
-          </p>
-          <div class="text">
-            <h6>Season Ticket Holder</h6>
-            <h4>Yulia</h4>
-          </div>
-        </div>
-
-        <div class="swiper-slide testi-item">
-          <img
-            src="../../assets/images/Testimonials/Pic-3.jpg"
-            alt="Author-Pic"
-          />
-          <i class="fas fa-quote-left"></i>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis in
-            ea expedita libero error aut itaque quia praesentium? Consectetur
-            nam, maxime atque sit eius corporis voluptate? Exercitationem
-            dolorem consequatur voluptatibus?
-          </p>
-          <div class="text">
-            <h6>Season Ticket Holder</h6>
-            <h4>Jack Thompson</h4>
-          </div>
-        </div>
-
-        <div class="swiper-slide testi-item">
-          <img
-            src="../../assets/images/Testimonials/Pic-4.jpg"
-            alt="Author-Pic"
-          />
-          <i class="fas fa-quote-left"></i>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis in
-            ea expedita libero error aut itaque quia praesentium? Consectetur
-            nam, maxime atque sit eius corporis voluptate? Exercitationem
-            dolorem consequatur voluptatibus?
-          </p>
-          <div class="text">
-            <h6>Club Member</h6>
-            <h4>Emma Wilson</h4>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-pagination swiper-pagination3"></div>
-    </div>
-  </section> -->
-  <!-- ========== Testimonials Area (End) ========== -->
-
-  <!-- ========== Awards Area (Start) ========== -->
-  <!-- <section class="awards linear-bg">
-    <div class="heading">
-      <h2>our <span>awards</span></h2>
-    </div>
-
-    <div class="swiper-container award-slider">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-1.png" alt="Award Image" />
-          <h4>Champion League <br /> 2000</h4>
-        </div>
-
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-2.png" alt="Award Image" />
-          <h4>National League <br /> 2004</h4>
-        </div>
-
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-3.png" alt="Award Image" />
-          <h4>Premier League <br /> 2008</h4>
-        </div>
-
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-4.png" alt="Award Image" />
-          <h4>National Cup <br /> 2012</h4>
-        </div>
-
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-5.png" alt="Award Image" />
-          <h4>Champion League <br /> 2016</h4>
-        </div>
-
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-6.png" alt="Award Image" />
-          <h4>Premier League <br /> 2020</h4>
-        </div>
-
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-1.png" alt="Award Image" />
-          <h4>Champion League <br /> 2000</h4>
-        </div>
-
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-2.png" alt="Award Image" />
-          <h4>National League <br /> 2004</h4>
-        </div>
-
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-3.png" alt="Award Image" />
-          <h4>Premier League <br /> 2008</h4>
-        </div>
-
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-4.png" alt="Award Image" />
-          <h4>National Cup <br /> 2012</h4>
-        </div>
-
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-5.png" alt="Award Image" />
-          <h4>Champion League <br /> 2016</h4>
-        </div>
-
-        <div class="swiper-slide award-item">
-          <img src="../../assets/images/Awards/Award-6.png" alt="Award Image" />
-          <h4>Premier League <br /> 2020</h4>
-        </div>
-      </div>
-    </div>
-  </section> -->
   <!-- ========== Awards Area (End) ========== -->
 </section>
 <!-- ==================== About-Us Area (End) ==================== -->
