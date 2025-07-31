@@ -36,7 +36,7 @@
       <i class="fa-solid fa-map-location-dot"></i>
       <div class="content">
         <h3>address</h3>
-        <p>karachi, pakistan</p>
+        <p>Cyprus, Larnaka</p>
       </div>
     </div>
 
@@ -46,7 +46,6 @@
       <div class="content">
         <h3>call us</h3>
         <p>+123-456-789</p>
-        <p>+111-222-333</p>
       </div>
     </div>
 
@@ -56,7 +55,6 @@
       <div class="content">
         <h3>mail us</h3>
         <p class="gmail">abc@gmail.com</p>
-        <p class="gmail">xyz@gmail.com</p>
       </div>
     </div>
   </div>

@@ -42,7 +42,7 @@
     <!-- Button for Defenders -->
     <li><a class="button" href="#midfielders">Midfielders</a></li>
     <!-- Button for Midfielders -->
-    <!--<li><a class="button" href="#forwards">Forwards</a></li>-->
+    <li><a class="button" href="#forwards">Forwards</a></li>
     <!-- Button for Forwards -->
     <!--<li><a class="button" href="#coaches">Coaches</a></li>-->
     <!-- Button for Coaches -->

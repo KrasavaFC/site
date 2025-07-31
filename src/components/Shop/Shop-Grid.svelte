@@ -10,7 +10,7 @@
     oldPrice?: number;
     imageUrl?: string;
   };
-
+  let sortType: string = "default";
   let products: Product[] = [];
   let loading = true;
   let cartCount: number = 0;
@@ -57,6 +57,20 @@
       console.error("Network or server error:", err);
     }
   }
+  $: sortedProducts = [...products].sort((a, b) => {
+    switch (sortType) {
+      case "name, A to Z":
+        return a.name.localeCompare(b.name);
+      case "name, Z to A":
+        return b.name.localeCompare(a.name);
+      case "price, low to high":
+        return a.price - b.price;
+      case "price, high to low":
+        return b.price - a.price;
+      default:
+        return 0;
+    }
+  });
 </script>
 
 <!-- ==================== Scroll-Top Area (Start) ==================== -->
@@ -70,13 +84,13 @@
 <!-- ==================== Header Area (End) ==================== -->
 
 <!-- ==================== Page-Title (Start) ==================== -->
-<div class="page-title">
+<div class="page-title-shop">
   <div class="title">
     <h2>Shop Grid</h2>
   </div>
 
   <div class="link">
-    <a href="../../index.html">Home</a>
+    <a href="/">Home</a>
     <i class="fa-solid fa-angles-right"></i>
     <span class="page">Shop Grid</span>
   </div>
@@ -214,7 +228,7 @@
 
     <div class="shop-container">
       <div class="intro">
-        <div class="showing">showing {cartCount} of {cartCount} products</div>
+        <div class="showing">showing 7 of 7 products</div>
 
         <!-- <div class="styles">
         <a href="../../pages/Shop/Shop-Grid.html" class="fas fa-th"></a>
@@ -224,10 +238,10 @@
         <div class="sorting-type">
           <label for="sort">sort by:</label>
 
-          <select name="sort" id="sort">
+          <select name="sort" id="sort" bind:value={sortType}>
             <option value="default">default</option>
             <option value="name, A to Z">name, A to Z</option>
-            <option value="mname, Z to A">name, Z to A</option>
+            <option value="name, Z to A">name, Z to A</option>
             <option value="price, low to high">price, low to high</option>
             <option value="price, high to low">price, high to low</option>
           </select>
@@ -240,7 +254,7 @@
         {:else if products.length === 0}
           <p>No products available.</p>
         {:else}
-          {#each products as product}
+          {#each sortedProducts as product}
             <div class="product-item">
               <div class="image">
                 <img

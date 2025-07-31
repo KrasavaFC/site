@@ -1,3 +1,37 @@
+<script lang="ts">
+  import { onMount, onDestroy } from 'svelte';
+  import { browser } from '$app/environment';
+
+  let cartCount = 0;
+  let intervalId: NodeJS.Timeout;
+
+  async function fetchCartCount() {
+    try {
+      const res = await fetch('/api/user/cart');
+      if (res.ok) {
+        const data = await res.json();
+        cartCount = data.cart.length;
+      } else {
+        console.warn('Cart fetch failed:', res.status);
+      }
+    } catch (err) {
+      console.error('Cart fetch error:', err);
+    }
+  }
+
+  onMount(() => {
+    if (!browser) return;
+
+    fetchCartCount();
+
+    intervalId = setInterval(fetchCartCount, 1000);
+  });
+
+  onDestroy(() => {
+    clearInterval(intervalId);
+  });
+</script>
+
 <header class="header">
   <!-- ===== Header-1 Area (Start) ===== -->
   <div class="header-1">
@@ -99,9 +133,13 @@
       <div class="icon-container">
         <!-- <div id="search-btn" class="icon fa-solid fa-magnifying-glass"></div> -->
         <!-- Search Icon -->
-        <a href="/shop/checkout"
-          ><i class="icon fa-solid fa-cart-arrow-down"></i></a
-        >
+        <a href="/shop/checkout" class="cart-icon-wrapper">
+          <i class="icon fa-solid fa-cart-arrow-down"></i>
+          {#if cartCount > 0}
+            <span class="cart-badge">{cartCount}</span>
+          {/if}
+        </a>
+
         <a href="/profile">
           <i class="icon fa-solid fa-user"></i>
         </a>
@@ -225,3 +263,23 @@
   </div>
   <!-- ===== Mobile Menu Area (End) ===== -->
 </header>
+
+<style>
+  .cart-icon-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+
+  .cart-badge {
+    position: absolute;
+    bottom: -4px;
+    right: -6px;
+    background-color: yellow;
+    color: black;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 5px;
+    line-height: 1;
+  }
+</style>

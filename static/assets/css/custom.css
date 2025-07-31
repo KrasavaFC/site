@@ -1,8 +1,8 @@
 /* PAGE TEAM TITLE */
-.page-title-team{
+.page-title-team {
     background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/team-champ.jpg");
-    background:         linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/team-champ.jpg");
-    background-repeat: no-repeat;  
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/team-champ.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: -webkit-box;
@@ -19,19 +19,20 @@
     padding-top: 8rem;
     min-height: 40rem;
 }
-.page-title-team .title{
+
+.page-title-team .title {
     border-left: 0.4rem solid var(--main-color);
     padding-left: 1rem;
 }
 
-.page-title-team .title h2{
+.page-title-team .title h2 {
     color: var(--white);
     font-size: 5rem;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-.page-title-team .link{
+.page-title-team .link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -44,32 +45,34 @@
     gap: 1.5rem;
     font-size: 1.8rem;
 }
-.page-title-team .link a{
-    font-weight: 600; 
+
+.page-title-team .link a {
+    font-weight: 600;
     color: var(--white);
 }
 
-.page-title-team .link a:hover{
+.page-title-team .link a:hover {
     color: var(--main-color);
 }
 
-.page-title-team .link i{                               
+.page-title-team .link i {
     color: var(--white);
 }
 
-.page-title-team .link span{
+.page-title-team .link span {
     font-weight: 500;
     color: var(--white);
 }
+
 /* PAGE TEAM TITLE */
 
 
 
 /* PAGE ABOUT TITLE */
-.page-title-about{
+.page-title-about {
     background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/aboutus_banner.png");
-    background:         linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/aboutus_banner.png");
-    background-repeat: no-repeat;  
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/aboutus_banner.png");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: -webkit-box;
@@ -86,19 +89,20 @@
     padding-top: 8rem;
     min-height: 40rem;
 }
-.page-title-about .title{
+
+.page-title-about .title {
     border-left: 0.4rem solid var(--main-color);
     padding-left: 1rem;
 }
 
-.page-title-about .title h2{
+.page-title-about .title h2 {
     color: var(--white);
     font-size: 5rem;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-.page-title-about .link{
+.page-title-about .link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -111,31 +115,33 @@
     gap: 1.5rem;
     font-size: 1.8rem;
 }
-.page-title-about .link a{
-    font-weight: 600; 
+
+.page-title-about .link a {
+    font-weight: 600;
     color: var(--white);
 }
 
-.page-title-about .link a:hover{
+.page-title-about .link a:hover {
     color: var(--main-color);
 }
 
-.page-title-about .link i{                               
+.page-title-about .link i {
     color: var(--white);
 }
 
-.page-title-about .link span{
+.page-title-about .link span {
     font-weight: 500;
     color: var(--white);
 }
+
 /* PAGE ABOUT TITLE */
 
 
 /* PAGE TICKETS TITLE */
-.page-title-tickets{
+.page-title-tickets {
     background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/fan_banner.JPG");
-    background:         linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),  url("../../assets/images/Krasava/fan_banner.JPG");
-    background-repeat: no-repeat;  
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/fan_banner.JPG");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: -webkit-box;
@@ -152,19 +158,20 @@
     padding-top: 8rem;
     min-height: 40rem;
 }
-.page-title-tickets .title{
+
+.page-title-tickets .title {
     border-left: 0.4rem solid var(--main-color);
     padding-left: 1rem;
 }
 
-.page-title-tickets .title h2{
+.page-title-tickets .title h2 {
     color: var(--white);
     font-size: 5rem;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-.page-title-tickets .link{
+.page-title-tickets .link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -177,21 +184,93 @@
     gap: 1.5rem;
     font-size: 1.8rem;
 }
-.page-title-tickets .link a{
-    font-weight: 600; 
+
+.page-title-tickets .link a {
+    font-weight: 600;
     color: var(--white);
 }
 
-.page-title-tickets .link a:hover{
+.page-title-tickets .link a:hover {
     color: var(--main-color);
 }
 
-.page-title-tickets .link i{                               
+.page-title-tickets .link i {
     color: var(--white);
 }
 
-.page-title-tickets .link span{
+.page-title-tickets .link span {
     font-weight: 500;
     color: var(--white);
 }
+
 /* PAGE TICKETS TITLE */
+
+
+
+/* PAGE SHOP TITLE */
+.page-title-shop {
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/banner_merch.jpg");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/banner_merch.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0rem 5%;
+    padding-top: 8rem;
+    min-height: 40rem;
+}
+
+.page-title-shop .title {
+    border-left: 0.4rem solid var(--main-color);
+    padding-left: 1rem;
+}
+
+.page-title-shop .title h2 {
+    color: var(--white);
+    font-size: 5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.page-title-shop .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.page-title-shop .link a {
+    font-weight: 600;
+    color: var(--white);
+}
+
+.page-title-shop .link a:hover {
+    color: var(--main-color);
+}
+
+.page-title-shop .link i {
+    color: var(--white);
+}
+
+.page-title-shop .link span {
+    font-weight: 500;
+    color: var(--white);
+}
+
+/* PAGE SHOP TITLE */
