@@ -2,11 +2,13 @@
   import Header from "../Header.svelte";
   import Footer from "../Footer.svelte";
   import { onMount } from "svelte";
+  import { browser } from "$app/environment";
 
   type CartItem = {
     id: string;
     productId: string;
     addedAt: string;
+    quantity: number;
     product: {
       id: string;
       name: string;
@@ -17,6 +19,37 @@
 
   let cart: CartItem[] = [];
   let loading = true;
+
+  $: total = cart.reduce(
+    (sum, item) => sum + item.product.price * item.quantity,
+    0
+  );
+
+  async function updateQuantity(item: CartItem, newQuantity: number) {
+    if (newQuantity < 1) return;
+
+    try {
+      const res = await fetch("/api/user/wishlist", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          productId: item.productId,
+          quantity: newQuantity,
+        }),
+      });
+
+      if (res.ok) {
+        cart = cart.map((i) =>
+          i.productId === item.productId ? { ...i, quantity: newQuantity } : i
+        );
+      } else {
+        const text = await res.text();
+        console.error("Failed to update quantity:", text);
+      }
+    } catch (err) {
+      console.error("Update quantity error:", err);
+    }
+  }
 
   async function loadCart() {
     loading = true;
@@ -58,10 +91,56 @@
 
   onMount(() => {
     loadCart();
-  });
 
-  $: total = cart.reduce((sum, item) => sum + item.product.price, 0);
- 
+    if (!browser) return;
+
+    const waitForPaypal = setInterval(() => {
+      if (window.paypal) {
+        clearInterval(waitForPaypal);
+
+        window.paypal
+          .Buttons({
+            createOrder(data: any, actions: any) {
+              return actions.order.create({
+                purchase_units: [
+                  {
+                    amount: {
+                      value: total.toFixed(2),
+                    },
+                  },
+                ],
+              });
+            },
+            async onApprove(data: any, actions: any) {
+              const details = await actions.order.capture();
+
+              const res = await fetch("/api/paypal", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  orderId: data.orderID,
+                  payerId: data.payerID,
+                  details,
+                  cart,
+                }),
+              });
+
+              if (res.ok) {
+                alert("✅ Оплата успешна");
+                await loadCart();
+              } else {
+                const err = await res.text();
+                alert("❌ Ошибка при сохранении заказа: " + err);
+              }
+            },
+            onError(err: any) {
+              console.error("PayPal error:", err);
+            },
+          })
+          .render("#paypal-button-container");
+      }
+    }, 300);
+  });
 </script>
 
 <a href="#" class="scroll-top">
@@ -108,21 +187,29 @@
               <div class="box price">${item.product.price.toFixed(2)}</div>
               <div class="box quantitly">
                 <div class="quantity buttons_added">
-                  <input type="button" value="-" class="minus" />
+                  <input
+                    type="button"
+                    value="-"
+                    class="minus"
+                    on:click={() => updateQuantity(item, item.quantity - 1)}
+                  />
                   <input
                     type="number"
-                    step="1"
                     min="1"
                     max="100"
-                    name="quantity"
-                    value="1"
-                    title="Qty"
+                    bind:value={item.quantity}
                     class="input-text qty text"
-                    readonly
+                    on:change={() => updateQuantity(item, item.quantity)}
                   />
-                  <input type="button" value="+" class="plus" />
+                  <input
+                    type="button"
+                    value="+"
+                    class="plus"
+                    on:click={() => updateQuantity(item, item.quantity + 1)}
+                  />
                 </div>
               </div>
+
               <div class="box total">${item.product.price.toFixed(2)}</div>
               <div class="box action">
                 <i
@@ -139,7 +226,6 @@
     </div>
   </div>
 
-
   <div class="cart-summary">
     <div class="summary-list">
       <div class="summary-item">
@@ -147,8 +233,9 @@
         <div class="value summary-box">${total}</div>
       </div>
     </div>
+    <div id="paypal-button-container"></div>
 
-    <a href="./Checkout.html" class="btn">proceed to checkout</a>
+    <!-- <a href="#" class="btn">proceed to checkout</a> -->
   </div>
 </section>
 

@@ -84,9 +84,7 @@
     <span class="page">Cart</span>
   </div>
 </div>
-<!-- ==================== Page-Title (End) ==================== -->
 
-<!-- ==================== Wishlist Area (Start) ==================== -->
 <section class="wishlist">
   <div class="wishlist-container">
     <div class="container">
