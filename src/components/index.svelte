@@ -555,7 +555,7 @@
   <div class="box-container">
     <!-- Match 1 -->
     <div class="match-item">
-      <a href="./pages/Pages/Fixture-Single.html">
+      <a href="/">
         <div class="match-detail">
           <div class="league">Cypriot First Division, 1-round</div>
           <div class="time">23 Aug 2025 - 18:00 p.m.</div>
@@ -586,7 +586,7 @@
 
     <!-- Match 2 -->
     <div class="match-item">
-      <a href="./pages/Pages/Fixture-Single.html">
+      <a href="/">
         <div class="match-detail">
           <div class="league">Cypriot First Division, 2-round</div>
           <div class="time">30 Aug 2025 - 18:00 p.m.</div>
@@ -684,12 +684,10 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
+            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
             <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
+            Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -716,12 +714,9 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
+            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
+            <a href="#"><i class="fab fa-twitter"></i></a> -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -744,12 +739,6 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -774,12 +763,6 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -804,12 +787,6 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -834,12 +811,6 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -864,12 +835,6 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -892,12 +857,6 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -920,12 +879,6 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -949,12 +902,6 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -979,12 +926,6 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -1007,12 +948,6 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -1035,12 +970,6 @@
           />
           <!-- Team Member Image -->
           <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
             <a href="#"><i class="fab fa-instagram"></i></a>
             <!-- Instagram Icon -->
           </div>
@@ -1360,126 +1289,16 @@
 <!-- ==================== Awards Area (End) ==================== -->
 
 <!-- ==================== Products Area (Start) ==================== -->
-<section class="home-shop">
+<!-- <section class="home-shop">
   <div class="heading">
     <h2>Our <span>Market</span></h2>
   </div>
 
   <div class="box-container">
-    <!-- Product-1 -->
     <div class="product-item">
       <div class="image">
         <img
           src="./assets/images/Shop/Products/tshirt.png"
-          alt="Product-Image"
-        />
-        <!-- Product Image -->
-        <div class="options">
-          <a href="./pages/Shop/Wishlist.html" class="icon"
-            ><i class="far fa-heart"></i></a
-          ><!-- Add to Wishlist Button -->
-          <a href="./pages/Shop/Cart.html" class="icon"
-            ><i class="fa-solid fa-cart-shopping"></i></a
-          ><!-- Add to Cart Button -->
-          <a href="./pages/Shop/Product-Single.html" class="icon"
-            ><i class="fa-solid fa-magnifying-glass"></i></a
-          ><!-- Product Detail Page Button -->
-        </div>
-      </div>
-      <div class="content">
-        <!--<div class="rating">
-          Product Rating
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>-->
-        <a href="./pages/Shop/Product-Single.html"
-          ><h3>Away T-Shirt 2024/25</h3></a
-        >
-        <!-- Product Title -->
-        <div class="price">$40.00 <!-- <span>€45.00</span>--></div>
-        <!-- Product Price -->
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="image">
-        <img
-          src="./assets/images/Shop/Products/tshirt.png"
-          alt="Product-Image"
-        />
-        <!-- Product Image -->
-        <div class="options">
-          <a href="./pages/Shop/Wishlist.html" class="icon"
-            ><i class="far fa-heart"></i></a
-          ><!-- Add to Wishlist Button -->
-          <a href="./pages/Shop/Cart.html" class="icon"
-            ><i class="fa-solid fa-cart-shopping"></i></a
-          ><!-- Add to Cart Button -->
-          <a href="./pages/Shop/Product-Single.html" class="icon"
-            ><i class="fa-solid fa-magnifying-glass"></i></a
-          ><!-- Product Detail Page Button -->
-        </div>
-      </div>
-      <div class="content">
-        <!--<div class="rating">
-          Product Rating
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>-->
-        <a href="./pages/Shop/Product-Single.html"
-          ><h3>Away T-Shirt 2024/25</h3></a
-        >
-        <!-- Product Title -->
-        <div class="price">$40.00 <!-- <span>€45.00</span>--></div>
-        <!-- Product Price -->
-      </div>
-    </div>
-    <div class="product-item">
-      <div class="image">
-        <img
-          src="./assets/images/Shop/Products/tshirt.png"
-          alt="Product-Image"
-        />
-        <!-- Product Image -->
-        <div class="options">
-          <a href="./pages/Shop/Wishlist.html" class="icon"
-            ><i class="far fa-heart"></i></a
-          ><!-- Add to Wishlist Button -->
-          <a href="./pages/Shop/Cart.html" class="icon"
-            ><i class="fa-solid fa-cart-shopping"></i></a
-          ><!-- Add to Cart Button -->
-          <a href="./pages/Shop/Product-Single.html" class="icon"
-            ><i class="fa-solid fa-magnifying-glass"></i></a
-          ><!-- Product Detail Page Button -->
-        </div>
-      </div>
-      <div class="content">
-        <!--<div class="rating">
-          Product Rating
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>-->
-        <a href="./pages/Shop/Product-Single.html"
-          ><h3>Away T-Shirt 2024/25</h3></a
-        >
-        <!-- Product Title -->
-        <div class="price">$40.00 <!-- <span>€45.00</span>--></div>
-        <!-- Product Price -->
-      </div>
-    </div>
-    <!-- Product-2 -->
-    <!-- <div class="product-item">
-      <div class="image">
-        <img
-          src="./assets/images/Shop/Products/Product-2.jpg"
           alt="Product-Image"
         />
         <div class="options">
@@ -1495,80 +1314,91 @@
         </div>
       </div>
       <div class="content">
-        <div class="rating">
-          Product Rating
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <a href="./pages/Shop/Product-Single.html"><h3>Monthly Academy Membership</h3></a>
-        <div class="price">€190,00</div>
+        <a href="./pages/Shop/Product-Single.html"
+          ><h3>Away T-Shirt 2024/25</h3></a
+        >
+        
+        <div class="price">$40.00</div>
       </div>
-    </div> -->
+    </div>
+    <div class="product-item">
+      <div class="image">
+        <img
+          src="./assets/images/Shop/Products/tshirt.png"
+          alt="Product-Image"
+        />
+        <div class="options">
+          <a href="./pages/Shop/Wishlist.html" class="icon"
+            ><i class="far fa-heart"></i></a
+          >
+          <a href="./pages/Shop/Cart.html" class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i></a
+          >
+          <a href="./pages/Shop/Product-Single.html" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i></a
+          >
+        </div>
+      </div>
+      <div class="content">
 
-    <!-- Product-3 -->
+        <a href="./pages/Shop/Product-Single.html"
+          ><h3>Away T-Shirt 2024/25</h3></a
+        >
+        <div class="price">$40.00</div>
+      </div>
+    </div>
     <div class="product-item">
       <div class="image">
         <img
           src="./assets/images/Shop/Products/tshirt.png"
           alt="Product-Image"
         />
-        <!-- Product Image -->
         <div class="options">
           <a href="./pages/Shop/Wishlist.html" class="icon"
             ><i class="far fa-heart"></i></a
-          ><!-- Add to Wishlist Button -->
+          >
           <a href="./pages/Shop/Cart.html" class="icon"
             ><i class="fa-solid fa-cart-shopping"></i></a
-          ><!-- Add to Cart Button -->
+          >
           <a href="./pages/Shop/Product-Single.html" class="icon"
             ><i class="fa-solid fa-magnifying-glass"></i></a
-          ><!-- Product Detail Page Button -->
+          >
+        </div>
+      </div>
+      <div class="content">
+
+        <a href="./pages/Shop/Product-Single.html"
+          ><h3>Away T-Shirt 2024/25</h3></a
+        >
+        <div class="price">$40.00 </div>
+      </div>
+    </div>
+   
+    <div class="product-item">
+      <div class="image">
+        <img
+          src="./assets/images/Shop/Products/tshirt.png"
+          alt="Product-Image"
+        />
+        <div class="options">
+          <a href="./pages/Shop/Wishlist.html" class="icon"
+            ><i class="far fa-heart"></i></a
+          >
+          <a href="./pages/Shop/Cart.html" class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i></a
+          >
+          <a href="./pages/Shop/Product-Single.html" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i></a
+          >
         </div>
       </div>
       <div class="content">
         <a href="./pages/Shop/Product-Single.html"><h3>Kids Uniform</h3></a>
-        <!-- Product Title -->
         <div class="price">€40.00 <span>€50.00</span></div>
-        <!-- Product Price -->
       </div>
     </div>
-    <!-- 
-    <div class="product-item">
-      <div class="image">
-        <img
-          src="./assets/images/Shop/Products/Product-8.jpg"
-          alt="Product-Image"
-        />
-      
-        <div class="options">
-          <a href="./pages/Shop/Wishlist.html" class="icon"
-            ><i class="far fa-heart"></i></a
-          >
-          <a href="./pages/Shop/Cart.html" class="icon"
-            ><i class="fa-solid fa-cart-shopping"></i></a
-          >
-          <a href="./pages/Shop/Product-Single.html" class="icon"
-            ><i class="fa-solid fa-magnifying-glass"></i></a
-          >
-        </div>
-      </div>
-      <div class="content">
-        <div class="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <a href="./pages/Shop/Product-Single.html"><h3>Helmet</h3></a>
-        <div class="price">$40.00 <span>$50.00</span></div>
-      </div>
-    </div> -->
   </div>
-</section>
+</section> -->
 <!-- ==================== Products Area (End) ==================== -->
 
 <!-- ==================== Testimonials Area (Start) ==================== -->
@@ -1710,15 +1540,13 @@
 <!-- ==================== Blogs Area (End) ==================== -->
 
 <!-- ==================== Newsletter Area (Start) ==================== -->
-<section class="newsletter-subscribe">
+<!-- <section class="newsletter-subscribe">
   <div class="content">
     <h2>Subscribe To Our Newsletter</h2>
-    <!-- Newsletter Heading -->
     <p>
       Stay updated with the latest football news, match highlights, and
       exclusive offers from our football community.
     </p>
-    <!-- Newsletter Description -->
     <form class="newsletter-form">
       <input
         type="email"
@@ -1727,12 +1555,10 @@
         placeholder="Your email address"
         required
       />
-      <!-- Email Input Field -->
       <button type="submit" class="btn">Subscribe</button>
-      <!-- Join Now Button -->
     </form>
   </div>
-</section>
+</section> -->
 <!-- ==================== Newsletter Area (End) ==================== -->
 
 <!-- ========== Sponsors Area (Start) ========== -->
