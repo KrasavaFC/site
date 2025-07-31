@@ -1309,9 +1309,9 @@ input:-webkit-autofill:active {
 /*----- 2- Home Results -----*/
 .home-result-table{
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("../../assets/images/Background/Result.jpg");
+    url("../../assets/images/Krasava/playbanner.jpg");
     background:         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("../../assets/images/Background/Result.jpg");
+    url("../../assets/images/Krasava/playbanner.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -1379,9 +1379,9 @@ input:-webkit-autofill:active {
         -ms-flex: 1 1 42rem;
             flex: 1 1 42rem;
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-    url("../../assets/images/Background/Fixture.jpg");
+    url("../../assets/images/Krasava/training.jpg");
     background:         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-    url("../../assets/images/Background/Fixture.jpg");
+    url("../../assets/images/Krasava/training.jpg");
     background-position: center;
     background-size: cover;
     margin-bottom: 0rem;
@@ -1490,7 +1490,7 @@ input:-webkit-autofill:active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: url("../../assets/images/Background/Banner.jpg");
+    background: url("../../assets/images/Krasava/footballball.jpeg");
     background-position: left;
     background-size: cover;
 }

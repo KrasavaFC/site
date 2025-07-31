@@ -22,7 +22,7 @@
   <div class="link">
     <a href="/">Home</a>
     <i class="fa-solid fa-angles-right"></i>
-    <span class="page">about us</span>
+    <span class="page">Tickets</span>
   </div>
 </div>
 <!-- ==================== Page-Title Area (End) ==================== -->
@@ -89,7 +89,7 @@
     <div class="team-intro">
       <!-- Player Image -->
       <div class="image" style="width: 50rem; max-height:30rem">
-        <img src="/assets/images/Krasava/krasavaticket.png" alt="Ticket" />
+        <img src="/assets/images/Krasava/krasavaticket2.png" alt="Ticket" />
       </div>
 
       <!-- Player Information -->
@@ -108,25 +108,25 @@
         <!-- Player Contact Information -->
         <ul class="team-personal-info">
           <li>
-            <h6>🎟 Access to all home matches</h6>
-            <span>(Championship A & B)</span>
+            <!-- <h6>🎟 Access to all home matches</h6> -->
+            <span>🎟 Access to all home matches (Championship A & B)</span>
           </li>
           <!-- Nationality -->
           <li>
-            <h6>🏆 Entry to all home Cup matches</h6>
-            <span>(excluding the final)</span>
+            <!-- <h6>🏆 Entry to all home Cup matches</h6> -->
+            <span>🏆 Entry to all home Cup matches (excluding the final)</span>
           </li>
           <!-- Date of Birth -->
           <li>
-            <h6>⚽ Free access to home friendlies</h6>
+            <span>⚽ Free access to home friendlies</span>
           </li>
           <!-- Age -->
           <li>
-            <h6>🎉 Invitations to club events</h6>
+            <span>🎉 Invitations to club events</span>
           </li>
           <!-- Height -->
           <li>
-            <h6>🛍 Discounts at the official merch store</h6>
+            <span>🛍 Discounts at the official merch store</span>
           </li>
           <!-- Current Club -->
         </ul>
@@ -142,10 +142,7 @@
     <div class="team-intro">
       <!-- Player Image -->
       <div class="image" style="width: 50rem; max-height:30rem">
-        <img
-          src="/assets/images/Krasava/childticket.png"
-          alt="Ticket"
-        />
+        <img src="/assets/images/Krasava/childticket.png" alt="Ticket" />
       </div>
 
       <!-- Player Information -->
@@ -157,41 +154,46 @@
 
         <div class="team-about">
           <div class="text">
-            All Home Games. All the Action. At a Student-Friendly Price.
+            Big Games. Big Emotions. Special Access for Our Youngest Fans!
           </div>
         </div>
 
         <!-- Player Contact Information -->
         <ul class="team-personal-info">
           <li>
-            <h6>⚽ Entry to All Home Matches</h6>
             <span
-              >(Championship Phases A & B — seated in family-friendly sectors)</span
+              >⚽ Entry to All Home Matches (Championship Phases A & B — seated
+              in family-friendly sectors)</span
             >
           </li>
           <!-- Nationality -->
           <li>
-            <h6>🏆 Entry to all home Cup matches</h6>
-            <span>(excluding the final)</span>
+            <span>🏆 Entry to all home Cup matches (excluding the final)</span>
           </li>
           <!-- Date of Birth -->
           <li>
-            <h6>🎉 Home Friendly Matches</h6>
-            <span>Free attendance with special kid-friendly zones</span>
+            <span
+              >🎉 Home Friendly Matches (Free attendance with special
+              kid-friendly zones)</span
+            >
           </li>
           <!-- Age -->
           <li>
-            <h6>🧸 Club Events for Kids</h6>
-            <span>Meet the players, take part in youth fan days</span>
+            <span
+              >🧸 Club Events for Kids (Meet the players, take part in youth fan
+              days)</span
+            >
           </li>
           <!-- Height -->
           <li>
-            <h6>🛍 15% Discount on kids’ merchandise</h6>
-            <span>(jerseys, scarves, toys & more!)</span>
+            <span
+              >🛍 15% Discount on kids’ merchandise (jerseys, scarves, toys &
+              more!)</span
+            >
           </li>
           <!-- Current Club -->
         </ul>
-        <a href="" class="btn">50€: Buy Kids Ticket</a>
+        <a href="" class="btn">30€: Buy Kids Ticket</a>
       </div>
     </div>
   </section>
@@ -204,7 +206,7 @@
       <!-- Player Image -->
       <div class="image" style="width: 50rem; max-height:30rem">
         <img
-          src="/assets/images/Krasava/krasavaticketstudent.png"
+          src="/assets/images/Krasava/krasavaticketstudent2.png"
           alt="Ticket"
         />
       </div>
@@ -225,30 +227,36 @@
         <!-- Player Contact Information -->
         <ul class="team-personal-info">
           <li>
-            <h6>🎟 Access to all home matches</h6>
-            <span>(Championship Phases A & B) </span>
+            <!-- <h6>🎟 Access to all home matches</h6> -->
+            <span
+              >🎟 Access to all home matches (Championship Phases A & B)</span
+            >
           </li>
           <!-- Nationality -->
           <li>
-            <h6>🏆 Entry to all home Cup matches</h6>
-            <span>(excluding the final)</span>
+            <!-- <h6>🏆 Entry to all home Cup matches</h6> -->
+            <span>🏆 Entry to all home Cup matches (excluding the final)</span>
           </li>
           <!-- Date of Birth -->
           <li>
-            <h6>⚽ Free Access to Home Friendlies</h6>
+            <span>⚽ Free Access to Home Friendlies</span>
           </li>
           <!-- Age -->
           <li>
-            <h6>🎉 Invitations to club events</h6>
+            <span>🎉 Invitations to club events</span>
           </li>
           <!-- Height -->
           <li>
-            <h6>🛍 Discounts at the official merch store</h6>
-            <span>at the Official Store </span>
+            <!-- <h6>🛍 Discounts at the official merch store</h6> -->
+            <span
+              >🛍 Discounts at the official merch store at the Official Store
+            </span>
           </li>
           <li>
-            <h6>🧑‍🎓 Exclusive Student Offer</h6>
-            <span>Available only with valid student ID </span>
+            <!-- <h6>🧑‍🎓 Exclusive Student Offer</h6> -->
+            <span
+              >🧑‍🎓 Exclusive Student Offer (Available only with valid student ID)</span
+            >
           </li>
           <!-- Current Club -->
         </ul>
