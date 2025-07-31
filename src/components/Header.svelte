@@ -37,10 +37,10 @@
   <div class="header-1">
     <!-- == Social == -->
     <ul class="social-contacts">
-      <li><a href="#" class="fab fa-facebook-f"></a></li>
-      <li><a href="#" class="fab fa-twitter"></a></li>
-      <li><a href="#" class="fab fa-instagram"></a></li>
-      <li><a href="#" class="fab fa-linkedin"></a></li>
+      <!-- <li><a href="#" class="fab fa-facebook-f"></a></li>
+      <li><a href="#" class="fab fa-twitter"></a></li> -->
+      <li><a href="https://www.instagram.com/krasavafc/" class="fab fa-instagram"></a></li>
+      <!-- <li><a href="#" class="fab fa-linkedin"></a></li> -->
     </ul>
   </div>
   <!-- ===== Header-1 Area (End) ===== -->
