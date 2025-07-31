@@ -27,41 +27,104 @@
 </div>
 <!-- ==================== Page-Title (End) ==================== -->
 
-<!-- ==================== Portfolio Single (Start) ==================== -->
-<section class="portfolio-single page-single">
-  <!-- ========== Portfolio Info Area (Start) ========== -->
-  <div class="portfolio-info page-info">
-    <!-- Portfolio Image -->
+<!-- ==================== About Area (Start) ==================== -->
+<section class="about">
+  <!-- About Information -->
+  <div class="box-container">
+    <!-- About Image -->
     <div class="image">
-      <img
-        src="../../assets/images/Portfolio/Portfolio/academy2.JPG"
-        alt="Young Talents Football Club"
-      />
+      <div class="sub-image one">
+        <img
+          src="../../assets/images/Portfolio/Portfolio/academy.JPG"
+          alt="About-Image1"
+        />
+      </div>
+      <div class="sub-image two">
+        <img
+          src="../../assets/images/Portfolio/Portfolio/academy3.JPG"
+          alt="About-Image2"
+        />
+        <img
+          src="../../assets/images/Portfolio/Portfolio/academy4.png"
+          alt="About-Image3"
+        />
+      </div>
     </div>
 
-    <!-- Portfolio Content -->
+    <!-- About Content -->
     <div class="content">
-      <!-- Main Heading -->
-      <h3 class="main-heading">Our Mission</h3>
+      <div class="heading">
+        <h2>
+          Our <span>Mission</span>
+        </h2>
+        <!-- Main Heading -->
+      </div>
 
-      <!-- Portfolio Important Note -->
-
-      <p class="important">Territory of freedom</p>
-
-      <!-- Portfolio Description -->
       <p>
         Our academy has as its primary goal to inspire children to love football
         and sports. Under the guidance of qualified coaches from different
         countries, we create an atmosphere where every child, starting from 3-4
-        years old, can enjoy the game and not worry about winning or losing. We
-        strive to ensure that our young athletes develop not only physically,
+        years old, can enjoy the game and not worry about winning or losing.
+      </p>
+      <p>
+        We strive to ensure that our young athletes develop not only physically,
         but also as individuals, ready to interact in society. At our academy,
         the emphasis is on the comprehensive development of each child,
         providing a unique opportunity to grow and fulfill their dreams in the
         most favorable environment.
       </p>
+      <!-- Description -->
 
-      <!-- Portfolio Gallery -->
+      <!-- Key Features -->
+      <ul class="features">
+        <li>
+          <i class="fas fa-futbol"></i><span
+            >3-5 years old: Emphasis on developmental activities for
+            coordination</span
+          >
+        </li>
+        <!-- Feature 1 -->
+        <li>
+          <i class="fas fa-futbol"></i><span
+            >6-8 years old: We do not use evaluative statements - every child is
+            a “champion” for us, we do not play for scores during training.</span
+          >
+        </li>
+        <!-- Feature 2 -->
+        <li>
+          <i class="fas fa-futbol"></i><span
+            >9-12 years old: We cultivate team spirit and teach how to act
+            strategically, using logic.
+          </span>
+        </li>
+      </ul>
+
+      <a href="#plans" class="btn">View All Plans</a>
+    </div>
+  </div>
+</section>
+<!-- ==================== About Area (End) ==================== -->
+
+<!-- ==================== Portfolio Single (Start) ==================== -->
+<!-- <section class="portfolio-single page-single">
+  <div class="portfolio-info page-info">
+    <div class="image">
+      <img
+        src="../../assets/images/Portfolio/Portfolio/academy.JPG"
+        alt="Young Talents Football Club"
+      />
+    </div>
+
+    <div class="content">
+      <h3 class="main-heading">Our Mission</h3>
+      <p class="important">Territory of freedom</p>
+      <p>
+        Our academy has as its primary goal to inspire children to love football
+        and sports. Under the guidance of qualified coaches from different
+        countries, we create an atmosphere where every child, starting from 3-4
+        years old, can enjoy the game and not worry about winning or losing.
+      </p>
+
       <div class="portfolio-gallery page-gallery">
         <a href="">
           <img
@@ -71,7 +134,7 @@
         </a>
         <a href="">
           <img
-            src="../../assets/images/Portfolio/Portfolio/academy.JPG"
+            src="../../assets/images/Portfolio/Portfolio/academy12.png"
             alt="Young Talents FC Image 2"
           />
         </a>
@@ -81,6 +144,16 @@
             alt="Young Talents FC Image 2"
           />
         </a>
+      </div>
+      <p>
+        We strive to ensure that our young athletes develop not only physically,
+        but also as individuals, ready to interact in society. At our academy,
+        the emphasis is on the comprehensive development of each child,
+        providing a unique opportunity to grow and fulfill their dreams in the
+        most favorable environment.
+      </p>
+
+      <div class="portfolio-gallery page-gallery">
         <a href="">
           <img
             src="../../assets/images/Portfolio/Portfolio/academy5.JPG"
@@ -101,7 +174,6 @@
         </a>
       </div>
 
-      <!-- Club Challenges -->
       <div class="sub-section">
         <h3 class="sub-heading">Features of training</h3>
         <ul>
@@ -121,7 +193,6 @@
         </ul>
       </div>
 
-      <!-- Club Solutions -->
       <div class="sub-section">
         <h3 class="sub-heading">Our home</h3>
         <p>
@@ -132,10 +203,8 @@
         </p>
       </div>
 
-      <!-- Club Achievements -->
       <div class="sub-section">
         <h3 class="sub-heading">Diversity</h3>
-        <!--<p>By supporting Young Talents FC, you contribute to:</p>-->
         <ul>
           <li><i class="fa-solid fa-circle-notch"></i>Swimming Pool</li>
           <ul>
@@ -180,24 +249,21 @@
         </ul>
       </div>
     </div>
-  </div>
-  <!-- ========== Portfolio Info Area (End) ========== -->
+  </div> -->
+<!-- ========== Portfolio Info Area (End) ========== -->
 
-  <!-- ========== Portfolio Details Area (Start) ========== -->
-  <div class="portfolio-sidebar page-sidebar">
+<!-- ========== Portfolio Details Area (Start) ========== -->
+<!-- <div class="portfolio-sidebar page-sidebar">
     <h3 class="sub-heading">Description</h3>
 
     <div class="container">
-      <!-- Date-->
       <div class="detail-item">
         <i class="fa-regular fa-calendar-days"></i>
         <div class="detail-content">
-          <h3>2 training sessions per week</h3>
-          <!--<p>1st June, 2010</p>-->
+          <h3>1-3 training sessions per week</h3>
         </div>
       </div>
 
-      <!-- League -->
       <div class="detail-item">
         <i class="fa-solid fa-futbol"></i>
         <div class="detail-content">
@@ -205,17 +271,6 @@
           <p>(Saturday)</p>
         </div>
       </div>
-
-      <!-- Coach
-        <div class="detail-item">
-          <i class="fa-solid fa-user"></i>
-          <div class="detail-content">
-            <h3>Head Coach</h3>
-            <p>John Footballson</p>
-          </div>
-        </div>-->
-
-      <!-- Category -->
       <div class="detail-item">
         <i class="fa-solid fa-list-ul"></i>
         <div class="detail-content">
@@ -224,7 +279,6 @@
         </div>
       </div>
 
-      <!-- Training Duration -->
       <div class="detail-item">
         <i class="fa-regular fa-clock"></i>
         <div class="detail-content">
@@ -233,38 +287,345 @@
         </div>
       </div>
 
-      <!-- Home Ground -->
       <div class="detail-item">
         <i class="fa-regular fa-map"></i>
         <div class="detail-content">
           <h3>Family activity</h3>
-          <p>(approximately once every 2 months, or once per month upon request)</p>
+          <p>
+            (approximately once every 2 months, or once per month upon request)
+          </p>
         </div>
       </div>
-
-      <!-- Website 
-      <div class="detail-item">
-        <i class="fa-solid fa-globe"></i>
-        <div class="detail-content">
-          <h3>Official Website:</h3>
-          <p class="website">www.youngtalentsfc.com</p>
-        </div>
-      </div>-->
-
-      <!-- Budget -->
       <div class="detail-item">
         <i class="fa-solid fa-dollar-sign"></i>
         <div class="detail-content">
           <h3>Budget</h3>
-          <p>150€</p>
+          <p>50€-100€</p>
         </div>
       </div>
     </div>
 
-    <a href="" class="btn">Monthly Academy Membership</a>
+    <a href="" class="btn">See All Plans</a>
+  </div> 
+</section> -->
+
+<!-- ========== Portfolio Details Area (End) ========== -->
+
+<!-- ==================== 50€ BUY TICKET ==================== -->
+<section class="team-single" id="plans">
+  <!-- <div class="home-results">
+      <div class="heading">
+        <h2> <span>Pricing</span></h2>
+      </div> -->
+  <!-- Player Introduction -->
+  <div class="team-intro">
+    <!-- Player Image -->
+    <div class="image" style="width: 50rem; max-height:30rem">
+      <img
+        src="../../assets/images/Portfolio/Portfolio/academy6.JPG"
+        alt="Ticket"
+      />
+    </div>
+
+    <!--  Information -->
+    <div class="information">
+      <h3>Get Monthly Academy Membership</h3>
+      <h5>⚽ 1 training sessions per week</h5>
+
+      <!-- <div class="team-about">
+          <div class="text">
+            All Home Games. Special Access. True Fan Experience.
+          </div>
+        </div> -->
+
+      <!-- More Information -->
+      <ul class="team-personal-info">
+        <li>
+          <span>Game day (Saturday)</span>
+        </li>
+        <li>
+          <span>Swimming pool training (2 times per month)</span>
+        </li>
+        <li>
+          <span>Stretching (1 time per week)</span>
+        </li>
+        <li>
+          <span
+            >Family activity (approximately once every 2 months, or once per
+            month upon request)</span
+          >
+        </li>
+      </ul>
+      <a href="" class="btn">50€: Buy Monthly Academy Membership</a>
+    </div>
   </div>
-  <!-- ========== Portfolio Details Area (End) ========== -->
 </section>
+<!-- ==================== 50€ BUY TICKET (End) ==================== -->
+
+<!-- ==================== 70€ BUY TICKET ==================== -->
+<section class="team-single">
+  <!-- Player Introduction -->
+  <div class="team-intro">
+    <!-- Player Image -->
+    <div class="image" style="width: 50rem; max-height:30rem">
+      <img
+        src="../../assets/images/Portfolio/Portfolio/academy7.png"
+        alt="Ticket"
+      />
+    </div>
+
+    <!--  Information -->
+    <div class="information">
+      <h3>Get Monthly Academy Membership</h3>
+      <h5>⚽ 2 training sessions per week</h5>
+
+      <!-- More Information -->
+      <ul class="team-personal-info">
+        <li>
+          <span>Game day (Saturday)</span>
+        </li>
+        <li>
+          <span>Swimming pool training (2 times per month)</span>
+        </li>
+        <li>
+          <span>Stretching (1 time per week)</span>
+        </li>
+        <li>
+          <span
+            >Family activity (approximately once every 2 months, or once per
+            month upon request)</span
+          >
+        </li>
+      </ul>
+      <a href="" class="btn">70€: Buy Monthly Academy Membership</a>
+    </div>
+  </div>
+</section>
+<!-- ==================== 70€ BUY TICKET (End) ==================== -->
+
+<!-- ==================== 100€ BUY TICKET ==================== -->
+<section class="team-single">
+  <!-- Player Introduction -->
+  <div class="team-intro">
+    <!-- Player Image -->
+    <div class="image" style="width: 50rem; max-height:30rem">
+      <img
+        src="../../assets/images/Portfolio/Portfolio/academy1.JPG"
+        alt="Ticket"
+      />
+    </div>
+
+    <!--  Information -->
+    <div class="information">
+      <h3>Get Monthly Academy Membership</h3>
+      <h5>⚽ 3 training sessions per week</h5>
+
+      <!-- <div class="team-about">
+          <div class="text">
+            All Home Games. Special Access. True Fan Experience.
+          </div>
+        </div> -->
+
+      <!-- More Information -->
+      <ul class="team-personal-info">
+        <li>
+          <span>Game day (Saturday)</span>
+        </li>
+        <li>
+          <span>Swimming pool training (2 times per month)</span>
+        </li>
+        <li>
+          <span>Stretching (1 time per week)</span>
+        </li>
+        <li>
+          <span
+            >Family activity (approximately once every 2 months, or once per
+            month upon request)</span
+          >
+        </li>
+      </ul>
+      <a href="" class="btn">100€: Buy Monthly Academy Membership</a>
+    </div>
+  </div>
+</section>
+<!-- ==================== 100€ BUY TICKET (End) ==================== -->
+
+<!-- ==================== Products Area (Start) ==================== -->
+<!-- <section class="home-shop">
+  <div class="heading">
+    <h2>Kids <span>Market</span></h2>
+  </div>
+
+  <div class="box-container">
+    <div class="product-item">
+      <div class="image" style="width: 50rem; max-height:100rem">
+        <img
+          src="./assets/images/Shop/Products/tshirt.png" 
+          alt="Product-Image"
+        />
+        <div class="options">
+          <a href="./pages/Shop/Wishlist.html" class="icon"
+            ><i class="far fa-heart"></i></a
+          >
+          <a href="./pages/Shop/Cart.html" class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i></a
+          >
+          <a href="./pages/Shop/Product-Single.html" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i></a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <a href="./pages/Shop/Product-Single.html"
+          ><h3>T-Shirt 2025/26</h3></a
+        >
+        
+        <div class="price">€45.00</div>
+      </div>
+    </div> -->
+<!-- <div class="product-item">
+      <div class="image">
+        <img
+          src="./assets/images/Shop/Products/tshirt.png"
+          alt="Product-Image"
+        />
+        <div class="options">
+          <a href="./pages/Shop/Wishlist.html" class="icon"
+            ><i class="far fa-heart"></i></a
+          >
+          <a href="./pages/Shop/Cart.html" class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i></a
+          >
+          <a href="./pages/Shop/Product-Single.html" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i></a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <a href="./pages/Shop/Product-Single.html"
+          ><h3>Away T-Shirt 2024/25</h3></a
+        >
+        <div class="price">$40.00</div>
+      </div>
+    </div> -->
+<!-- <div class="product-item">
+      <div class="image">
+        <img
+          src="./assets/images/Shop/Products/tshirt.png"
+          alt="Product-Image"
+        />
+        <div class="options">
+          <a href="./pages/Shop/Wishlist.html" class="icon"
+            ><i class="far fa-heart"></i></a
+          >
+          <a href="./pages/Shop/Cart.html" class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i></a
+          >
+          <a href="./pages/Shop/Product-Single.html" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i></a
+          >
+        </div>
+      </div>
+      <div class="content">
+
+        <a href="./pages/Shop/Product-Single.html"
+          ><h3>Away T-Shirt 2024/25</h3></a
+        >
+        <div class="price">$40.00</div>
+      </div>
+    </div> -->
+<!-- Product-2 -->
+<!-- <div class="product-item">
+      <div class="image">
+        <img
+          src="./assets/images/Shop/Products/Product-2.jpg"
+          alt="Product-Image"
+        />
+        <div class="options">
+          <a href="./pages/Shop/Wishlist.html" class="icon"
+            ><i class="far fa-heart"></i></a
+          >
+          <a href="./pages/Shop/Cart.html" class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i></a
+          >
+          <a href="./pages/Shop/Product-Single.html" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i></a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <div class="rating">
+          Product Rating
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a href="./pages/Shop/Product-Single.html"><h3>Monthly Academy Membership</h3></a>
+        <div class="price">€190,00</div>
+      </div>
+    </div> -->
+
+<!-- Product-3 -->
+<!-- <div class="product-item">
+      <div class="image">
+        <img
+          src="./assets/images/Shop/Products/tshirt.png"
+          alt="Product-Image"
+        />
+        <div class="options">
+          <a href="./pages/Shop/Wishlist.html" class="icon"
+            ><i class="far fa-heart"></i></a
+          >
+          <a href="./pages/Shop/Cart.html" class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i></a
+          >
+          <a href="./pages/Shop/Product-Single.html" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i></a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <a href="./pages/Shop/Product-Single.html"><h3>Kids Uniform</h3></a>
+        <div class="price">€40.00 <span>€50.00</span></div>
+      </div>
+    </div> -->
+
+<!-- <div class="product-item">
+      <div class="image">
+        <img
+          src="./assets/images/Shop/Products/Product-8.jpg"
+          alt="Product-Image"
+        />
+      
+        <div class="options">
+          <a href="./pages/Shop/Wishlist.html" class="icon"
+            ><i class="far fa-heart"></i></a
+          >
+          <a href="./pages/Shop/Cart.html" class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i></a
+          >
+          <a href="./pages/Shop/Product-Single.html" class="icon"
+            ><i class="fa-solid fa-magnifying-glass"></i></a
+          >
+        </div>
+      </div>
+      <div class="content">
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a href="./pages/Shop/Product-Single.html"><h3>Helmet</h3></a>
+        <div class="price">$40.00 <span>$50.00</span></div>
+      </div>
+    </div>
+  </div>
+</section>-->
+<!-- ==================== Products Area (End) ==================== -->
 <!-- ==================== Portfolio Single (End) ==================== -->
 
 <!-- ==================== Footer Area (Start) ==================== -->
