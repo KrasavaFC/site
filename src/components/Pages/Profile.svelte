@@ -92,9 +92,9 @@
   <!-- Player Introduction -->
   <div class="team-intro">
     <!-- Player Image -->
-    <div class="image">
+    <!-- <div class="image">
       <img src="../../assets/images/Krasava/fan.png" alt="Player Image" />
-    </div>
+    </div> -->
 
     <!-- Player Information -->
     <!-- Player Information -->
@@ -147,7 +147,7 @@
           <!-- Career Title -->
           <div class="career-title">
             <h3>Date</h3>
-            <h3 class="name">Product</h3>
+            <h3>Product</h3>
             <h3>Qty</h3>
             <h3>Price</h3>
             <h3>Status</h3>
@@ -160,16 +160,14 @@
                 <div class="box season">
                   {new Date(p.purchasedAt).toLocaleDateString()}
                 </div>
-                <div class="box name">
+                <div class="box">
                   {p.productName}
                 </div>
                 <div class="box">{p.quantity}</div>
-                <div class="box">${p.priceAtPurchase}</div>
+                <div class="box">€ {p.priceAtPurchase}</div>
                 <div class="box">{p.status}</div>
-                <div class="box card">
-                  {p.amountPaid && p.currency
-                    ? `${p.amountPaid} ${p.currency}`
-                    : `$${p.priceAtPurchase * p.quantity}`}
+                <div class="box">
+                  € {p.priceAtPurchase * p.quantity}
                 </div>
               </div>
             {/each}
