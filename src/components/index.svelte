@@ -177,7 +177,7 @@
           <div class="match-intro">
             <div class="team-logo">
               <img src="./assets/images/Club-Teams/FCKrasava.png" alt="logo" />
-              <h3>Krasava ENY Ypsonas</h3>
+              <h3>FC Freedom24 Krasava ENY</h3>
             </div>
             <div class="result"><span>1</span><span>-</span><span>0</span></div>
             <div class="team-logo">
@@ -206,8 +206,8 @@
             </div>
             <div class="result"><span>0</span><span>-</span><span>1</span></div>
             <div class="team-logo">
-              <img src="./assets/images/Club-Teams/FCKrasava.png" alt="logo" />
-              <h3>Krasava ENY Ypsonas</h3>
+              <img src="./assets/images/Club-Teams/FCKrasava1.png" alt="logo" />
+              <h3>FC Freedom24 Krasava ENY</h3>
             </div>
           </div>
         </a>
@@ -223,8 +223,8 @@
           </div>
           <div class="match-intro">
             <div class="team-logo">
-              <img src="./assets/images/Club-Teams/FCKrasava.png" alt="logo" />
-              <h3>Krasava ENY Ypsonas</h3>
+              <img src="./assets/images/Club-Teams/FCKrasava1.png" alt="logo" />
+              <h3>FC Freedom24 Krasava ENY</h3>
             </div>
             <div class="result"><span>3</span><span>-</span><span>0</span></div>
             <div class="team-logo">
@@ -444,10 +444,10 @@
             <div class="box">10</div>
             <div class="box name">
               <img
-                src="./assets/images/Club-Teams/FCKrasava.png"
+                src="./assets/images/Club-Teams/FCKrasava1.png"
                 alt="team-logo"
               />
-              <span>FC Krasava ENY</span>
+              <span>FC Freedom24 Krasava ENY</span>
             </div>
             <div class="box">0</div>
             <div class="box">0</div>
@@ -563,8 +563,8 @@
         </div>
         <div class="match-intro">
           <div class="team-logo">
-            <img src="./assets/images/Club-Teams/FCKrasava.png" alt="logo" />
-            <h3>Krasava ENY Ypsonas</h3>
+            <img src="./assets/images/Club-Teams/FCKrasava1.png" alt="logo" />
+            <h3>FC Freedom24 Krasava ENY</h3>
           </div>
           <div class="result"><span>VS</span></div>
           <div class="team-logo">
@@ -602,8 +602,8 @@
           </div>
           <div class="result"><span>VS</span></div>
           <div class="team-logo">
-            <img src="./assets/images/Club-Teams/FCKrasava.png" alt="logo" />
-            <h3>Krasava ENY Ypsonas</h3>
+            <img src="./assets/images/Club-Teams/FCKrasava1.png" alt="logo" />
+            <h3>FC Freedom24 Krasava ENY</h3>
           </div>
         </div>
       </a>
