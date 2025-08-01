@@ -281,7 +281,7 @@
                 </div> -->
               </div>
               <div class="content">
-                <a href={`/shop/product/${product.id}`}
+                <a href={`/shop/cart/${product.id}`}
                   ><h3>{product.name}</h3></a
                 >
                 <div class="price">
