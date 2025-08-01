@@ -160,13 +160,13 @@
                 <div class="box season">
                   {new Date(p.purchasedAt).toLocaleDateString()}
                 </div>
-                <div class="box">
+                <div class="box season">
                   {p.productName}
                 </div>
-                <div class="box">{p.quantity}</div>
-                <div class="box">€ {p.priceAtPurchase}</div>
-                <div class="box">{p.status}</div>
-                <div class="box">
+                <div class="box season">{p.quantity}</div>
+                <div class="box season">€ {p.priceAtPurchase}</div>
+                <div class="box season">{p.status}</div>
+                <div class="box season">
                   € {p.priceAtPurchase * p.quantity}
                 </div>
               </div>
