@@ -356,7 +356,7 @@
           >
         </li>
       </ul>
-      <a href="" class="btn">50€: Buy Monthly Academy Membership</a>
+      <a href="" class="btn">€50: Buy Monthly Academy Membership</a>
     </div>
   </div>
 </section>
@@ -397,7 +397,7 @@
           >
         </li>
       </ul>
-      <a href="" class="btn">70€: Buy Monthly Academy Membership</a>
+      <a href="" class="btn">€70: Buy Monthly Academy Membership</a>
     </div>
   </div>
 </section>
@@ -444,7 +444,7 @@
           >
         </li>
       </ul>
-      <a href="" class="btn">100€: Buy Monthly Academy Membership</a>
+      <a href="" class="btn">€100: Buy Monthly Academy Membership</a>
     </div>
   </div>
 </section>

@@ -210,7 +210,7 @@
                 </div>
               </div>
 
-              <div class="box total">${item.product.price.toFixed(2)}</div>
+              <div class="box total">€{item.product.price.toFixed(2)}</div>
               <div class="box action">
                 <i
                   class="icon fa-solid fa-trash-arrow-up"
@@ -230,7 +230,7 @@
     <div class="summary-list">
       <div class="summary-item">
         <div class="name summary-box">total</div>
-        <div class="value summary-box">${total}</div>
+        <div class="value summary-box">€{total}</div>
       </div>
     </div>
     <div id="paypal-button-container"></div>

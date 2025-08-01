@@ -158,7 +158,7 @@
             <!-- Current Club -->
           </ul>
           <a class="btn" href={`/shop/cart/${tickets.season.id}`}>
-            {tickets.season.price}€: Buy Season Ticket
+            €{tickets.season.price}: Buy Season Ticket
           </a>
         </div>
       </div>
@@ -227,7 +227,7 @@
             <!-- Current Club -->
           </ul>
           <a class="btn" href={`/shop/cart/${tickets.kids.id}`}>
-            {tickets.kids.price}€: Buy Kids Ticket
+            €{tickets.kids.price}: Buy Kids Ticket
           </a>
         </div>
       </div>
@@ -301,7 +301,7 @@
             <!-- Current Club -->
           </ul>
           <a class="btn" href={`/shop/cart/${tickets.student.id}`}>
-            {tickets.student.price}€: Buy Student Season Ticket
+            €{tickets.student.price}: Buy Student Season Ticket
           </a>
         </div>
       </div>
