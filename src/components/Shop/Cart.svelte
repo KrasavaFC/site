@@ -121,6 +121,7 @@
                 body: JSON.stringify({
                   orderId: data.orderID,
                   payerId: data.payerID,
+                  quantity: data.quantity,
                   details,
                   cart,
                 }),
