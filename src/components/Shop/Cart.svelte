@@ -16,7 +16,8 @@
       imageUrl: string;
     };
   };
-
+  let showModal = false;
+  let modalMessage = "";
   let cart: CartItem[] = [];
   let loading = true;
 
@@ -126,11 +127,13 @@
               });
 
               if (res.ok) {
-                alert("✅ Оплата успешна");
+                modalMessage = "✅ Оплата прошла успешно!";
+                showModal = true;
                 await loadCart();
               } else {
                 const err = await res.text();
-                alert("❌ Ошибка при сохранении заказа: " + err);
+                modalMessage = "❌ Ошибка при сохранении заказа: " + err;
+                showModal = true;
               }
             },
             onError(err: any) {
@@ -162,81 +165,140 @@
 </div>
 
 <section class="cart">
-  <div class="shopping-cart">
-    <div class="container">
-      <div class="shoplist-title">
-        <h3 class="product-heading">product</h3>
-        <h3>price</h3>
-        <h3>quantity</h3>
-        <h3>total</h3>
-        <h3>action</h3>
-      </div>
+  {#if cart.length > 0}
+    <div class="shopping-cart">
+      <div class="container">
+        <div class="shoplist-title">
+          <h3 class="product-heading">product</h3>
+          <h3>price</h3>
+          <h3>quantity</h3>
+          <h3>total</h3>
+          <h3>action</h3>
+        </div>
 
-      <div class="box-container">
-        {#if loading}
-          <p>Loading cart...</p>
-        {:else if cart.length === 0}
-          <p>Your cart is empty.</p>
-        {:else}
-          {#each cart as item}
-            <div class="cart-item">
-              <div class="box product">
-                <img src={item.product.imageUrl} alt="Product-Image" />
-                <div class="name">{item.product.name}</div>
-              </div>
-              <div class="box price">${item.product.price.toFixed(2)}</div>
-              <div class="box quantitly">
-                <div class="quantity buttons_added">
-                  <input
-                    type="button"
-                    value="-"
-                    class="minus"
-                    on:click={() => updateQuantity(item, item.quantity - 1)}
-                  />
-                  <input
-                    type="number"
-                    min="1"
-                    max="100"
-                    bind:value={item.quantity}
-                    class="input-text qty text"
-                    on:change={() => updateQuantity(item, item.quantity)}
-                  />
-                  <input
-                    type="button"
-                    value="+"
-                    class="plus"
-                    on:click={() => updateQuantity(item, item.quantity + 1)}
-                  />
+        <div class="box-container">
+          {#if loading}
+            <p>Loading cart...</p>
+          {:else if cart.length === 0}
+            <p>Your cart is empty.</p>
+          {:else}
+            {#each cart as item}
+              <div class="cart-item">
+                <div class="box product">
+                  <img src={item.product.imageUrl} alt="Product-Image" />
+                  <div class="name">{item.product.name}</div>
+                </div>
+                <div class="box price">${item.product.price.toFixed(2)}</div>
+                <div class="box quantitly">
+                  <div class="quantity buttons_added">
+                    <input
+                      type="button"
+                      value="-"
+                      class="minus"
+                      on:click={() => updateQuantity(item, item.quantity - 1)}
+                    />
+                    <input
+                      type="number"
+                      min="1"
+                      max="100"
+                      bind:value={item.quantity}
+                      class="input-text qty text"
+                      on:change={() => updateQuantity(item, item.quantity)}
+                    />
+                    <input
+                      type="button"
+                      value="+"
+                      class="plus"
+                      on:click={() => updateQuantity(item, item.quantity + 1)}
+                    />
+                  </div>
+                </div>
+
+                <div class="box total">€{item.product.price.toFixed(2)}</div>
+                <div class="box action">
+                  <i
+                    class="icon fa-solid fa-trash-arrow-up"
+                    title="Remove"
+                    on:click={() => removeFromCart(item.productId)}
+                    style="cursor: pointer;"
+                  ></i>
                 </div>
               </div>
-
-              <div class="box total">€{item.product.price.toFixed(2)}</div>
-              <div class="box action">
-                <i
-                  class="icon fa-solid fa-trash-arrow-up"
-                  title="Remove"
-                  on:click={() => removeFromCart(item.productId)}
-                  style="cursor: pointer;"
-                ></i>
-              </div>
-            </div>
-          {/each}
-        {/if}
+            {/each}
+          {/if}
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="cart-summary">
-    <div class="summary-list">
-      <div class="summary-item">
-        <div class="name summary-box">total</div>
-        <div class="value summary-box">€{total}</div>
+    <div class="cart-summary">
+      <div class="summary-list">
+        <div class="summary-item">
+          <div class="name summary-box">total</div>
+          <div class="value summary-box">€{total}</div>
+        </div>
       </div>
+      <div id="paypal-button-container"></div>
     </div>
-    <div id="paypal-button-container"></div>
-
-    <!-- <a href="#" class="btn">proceed to checkout</a> -->
-  </div>
+  {:else if !loading}
+    <div class="empty-cart">
+      <h1>
+        🛒 Your cart is empty. Head over to the shop to find something you like.
+      </h1>
+      <a href="/shop/grid" class="btn">Go to Shop</a>
+    </div>
+  {/if}
 </section>
+{#if showModal}
+  <div class="modal-overlay" on:click={() => (showModal = false)}>
+    <div class="modal-content" on:click|stopPropagation>
+      <p>{modalMessage}</p>
+      <a href="#" class="btn" on:click={() => (showModal = false)}>close</a>
+    </div>
+  </div>
+{/if}
 
 <Footer />
+
+<style>
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  .modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .modal-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .modal-content button {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .modal-content button:hover {
+    background-color: #187bcd;
+  }
+</style>
