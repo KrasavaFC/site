@@ -144,9 +144,7 @@
               >
             </li>
             <!-- Date of Birth -->
-            <li>
-              <span>⚽ Free access to home friendlies</span>
-            </li>
+
             <!-- Age -->
             <li>
               <span>🎉 Invitations to club events</span>
@@ -277,9 +275,7 @@
               >
             </li>
             <!-- Date of Birth -->
-            <li>
-              <span>⚽ Free Access to Home Friendlies</span>
-            </li>
+
             <!-- Age -->
             <li>
               <span>🎉 Invitations to club events</span>
