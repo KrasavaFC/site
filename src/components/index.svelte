@@ -109,49 +109,42 @@
     <div class="content">
       <div class="heading">
         <h2>
-          <span>passion</span> for the Game. <span>Commitment</span> to Values.
-          The Road to
-          <span>Success.</span>
+          <span>Love</span> for Football. <span>Respect</span> for Values. The
+          Path to
+          <span>Growth.</span>
         </h2>
-        <!-- Main Heading -->
       </div>
 
       <p>
-        FC Krasava was founded as an honest and independent alternative in the
-        football world. Today, the team is based in Cyprus and continues to grow
-        with a spirit of openness, accessibility, and transparency. Built
-        entirely on private investment, the club is open to young talent and
-        united by a strong digital and football community.
+        FC Krasava is an independent football club founded as a fair alternative
+        in the football world. Today, the team is based in Cyprus and continues
+        to grow with openness and transparency. Built entirely on private
+        investment, the club welcomes young players and brings together a strong
+        football and digital community.
       </p>
       <p>
-        In just three years, we’ve gone from newcomers to champions — earning
-        promotion to the Cypriot First Division. And this is only the beginning.
+        In just three years, we went from newcomers to champions, earning
+        promotion to the Cypriot First Division. And we’re still moving forward.
       </p>
-      <!-- Description -->
 
-      <!-- Key Features -->
       <ul class="features">
         <li>
-          <i class="fas fa-futbol"></i><span>Developing young talent</span>
+          <i class="fas fa-futbol"></i><span>Supporting young players</span>
         </li>
-        <!-- Feature 1 -->
         <li>
-          <i class="fas fa-futbol"></i><span>Transparency and integrity</span>
+          <i class="fas fa-futbol"></i><span>Openness and honesty</span>
         </li>
-        <!-- Feature 2 -->
         <li>
           <i class="fas fa-futbol"></i><span>A strong football community</span>
         </li>
-        <!-- Feature 3 -->
         <li>
           <i class="fas fa-futbol"></i><span
             >Winning with passion and purpose</span
           >
         </li>
-        <!-- Feature 4 -->
       </ul>
 
-      <a href="/about" class="btn">learn more</a>
+      <a href="/about" class="btn">Learn more</a>
     </div>
   </div>
 </section>
