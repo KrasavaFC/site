@@ -1195,90 +1195,20 @@
 <!-- ==================== Portfolio Area (End) ==================== -->
 
 <!-- ==================== Awards Area (Start) ==================== -->
-<section class="awards linear-bg">
-  <!-- Awards Heading -->
+<!-- <section class="awards linear-bg">
   <div class="heading">
     <h2>our <span>awards</span></h2>
   </div>
 
-  <!-- Awards Slider Container -->
   <div class="swiper-container award-slider">
     <div class="swiper-wrapper">
-      <!-- Award 1 -->
       <div class="swiper-slide award-item">
         <img src="/assets/images/Krasava/trophy.JPG" alt="Award Image" />
-        <!-- Award Image -->
         <h4>Cypriot 2nd tier champion<br /> 2025</h4>
-        <!-- Award Title and Year -->
       </div>
-      <!-- Award 2 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-2.png" alt="Award Image" />
-        <h4>National League <br /> 2004</h4>
-      </div> -->
-
-      <!-- Award 3 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-3.png" alt="Award Image" />
-        <h4>Premier League <br /> 2008</h4>
-      </div> -->
-
-      <!-- Award 4 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-4.png" alt="Award Image" />
-        <h4>National Cup <br /> 2012</h4>
-      </div> -->
-
-      <!-- Award 5 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-5.png" alt="Award Image" />
-        <h4>Champion League <br /> 2016</h4>
-      </div> -->
-
-      <!-- Award 6 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-6.png" alt="Award Image" />
-        <h4>Premier League <br /> 2020</h4>
-      </div> -->
-
-      <!-- Award 1 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-1.png" alt="Award Image" />
-        <h4>Champion League <br /> 2000</h4>
-      </div> -->
-
-      <!-- Award 2 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-2.png" alt="Award Image" />
-        <h4>National League <br /> 2004</h4>
-      </div> -->
-
-      <!-- Award 3 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-3.png" alt="" />
-        <h4>Premier League <br /> 2008</h4>
-      </div> -->
-
-      <!-- Award 4 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-4.png" alt="Award Image" />
-        <h4>National Cup <br /> 2012</h4>
-      </div> -->
-
-      <!-- Award 5 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-5.png" alt="Award Image" />
-        <h4>Champion League <br /> 2016</h4>
-      </div> -->
-
-      <!-- Award 6 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-6.png" alt="Award Image" />
-        <h4>Premier League <br /> 2020</h4>
-      </div> -->
     </div>
   </div>
-</section>
+</section> -->
 <!-- ==================== Awards Area (End) ==================== -->
 
 <!-- ==================== Products Area (Start) ==================== -->
