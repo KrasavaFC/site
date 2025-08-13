@@ -155,7 +155,7 @@
             </li>
             <!-- Current Club -->
           </ul>
-          <a class="btn" href={`/shop/cart/${tickets.season.id}`}>
+          <a class="btn" href="https://tickets.krasavafc.com/">
             €{tickets.season.price}: Buy Season Ticket
           </a>
         </div>
@@ -224,7 +224,7 @@
             </li>
             <!-- Current Club -->
           </ul>
-          <a class="btn" href={`/shop/cart/${tickets.kids.id}`}>
+          <a class="btn" href="https://tickets.krasavafc.com/">
             €{tickets.kids.price}: Buy Kids Ticket
           </a>
         </div>
@@ -296,7 +296,7 @@
             </li>
             <!-- Current Club -->
           </ul>
-          <a class="btn" href={`/shop/cart/${tickets.student.id}`}>
+          <a class="btn" href="https://tickets.krasavafc.com/">
             €{tickets.student.price}: Buy Student Season Ticket
           </a>
         </div>
