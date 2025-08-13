@@ -107,7 +107,7 @@
                 <img src={item.product.imageUrl} alt="Product-Image" />
                 <div class="name">{item.product.name}</div>
               </div>
-              <div class="box price">${item.product.price.toFixed(2)}</div>
+              <div class="box price">€{item.product.price.toFixed(2)}</div>
               <div class="box status in">in Stock</div>
               <div class="box action">
                 <a

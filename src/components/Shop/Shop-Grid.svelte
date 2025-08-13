@@ -285,9 +285,9 @@
                   ><h3>{product.name}</h3></a
                 >
                 <div class="price">
-                  ${product.price.toFixed(2)}
+                  €{product.price.toFixed(2)}
                   {#if product.oldPrice}
-                    <span>${product.oldPrice.toFixed(2)}</span>
+                    <span>€{product.oldPrice.toFixed(2)}</span>
                   {/if}
                 </div>
               </div>

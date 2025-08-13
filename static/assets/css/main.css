@@ -1655,10 +1655,9 @@ input:-webkit-autofill:active {
 .mission{
     padding: 0;
 }
-
 .mission .box-container{
     /* CUSTOM */
-    background-image: url("../../assets/images/About/about.JPG"); 
+    background-image: url("../../assets/images/Krasava/training.jpg"); 
     background-position: center;
     background-size: cover;
     display: -webkit-box;

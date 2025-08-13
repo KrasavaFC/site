@@ -1,27 +1,108 @@
 <script lang="ts">
   import Footer from "./Footer.svelte";
   import Header from "./Header.svelte";
+  import { onMount } from "svelte";
+
+  interface Match {
+    idEvent: string;
+    strLeague: string;
+    intRound?: string;
+    dateEvent: string;
+    strTime: string;
+    strVenue?: string;
+    strHomeTeam: string;
+    strAwayTeam: string;
+    strHomeTeamBadge: string;
+    strAwayTeamBadge: string;
+    intHomeScore?: string | null;
+    intAwayScore?: string | null;
+  }
+
+  let matches: Match[] = [];
+  let lastMatches: Match[] = []; 
+
+  const TEAM_NAME_API = "Krasava Ypsonas";
+  const TEAM_NAME_SITE = "FC Freedom24 Krasava ENY";
+  const API_KEY = "123";
+  const LEAGUE_ID = 4630;
+  const SEASON = "2025-2026";
+  const TEAM_ID = 141098; 
+
+  const teamNameMap: Record<string, string> = {
+    "Krasava Ypsonas": TEAM_NAME_SITE,
+  };
+
+  onMount(async () => {
+    try {
+      const resUpcoming = await fetch(
+        `https://www.thesportsdb.com/api/v1/json/${API_KEY}/eventsseason.php?id=${LEAGUE_ID}&s=${SEASON}`
+      );
+      const dataUpcoming = await resUpcoming.json();
+
+      if (dataUpcoming.events) {
+        let teamMatches: Match[] = dataUpcoming.events.filter(
+          (m: Match) =>
+            m.strHomeTeam === TEAM_NAME_API || m.strAwayTeam === TEAM_NAME_API
+        );
+
+        const now = new Date();
+        teamMatches = teamMatches.filter((m) => new Date(m.dateEvent) >= now);
+
+        teamMatches.sort(
+          (a, b) =>
+            new Date(a.dateEvent).getTime() - new Date(b.dateEvent).getTime()
+        );
+
+        matches = teamMatches.slice(0, 2).map((m) => ({
+          ...m,
+          strHomeTeam: teamNameMap[m.strHomeTeam] || m.strHomeTeam,
+          strAwayTeam: teamNameMap[m.strAwayTeam] || m.strAwayTeam,
+        }));
+      }
+
+      const resPast = await fetch(
+        `https://www.thesportsdb.com/api/v1/json/${API_KEY}/eventslast.php?id=${TEAM_ID}`
+      );
+      const dataPast = await resPast.json();
+
+      if (dataPast.results) {
+        lastMatches = dataPast.results.map((m: Match) => ({
+          ...m,
+          strHomeTeam: teamNameMap[m.strHomeTeam] || m.strHomeTeam,
+          strAwayTeam: teamNameMap[m.strAwayTeam] || m.strAwayTeam,
+        }));
+      }
+    } catch (error) {
+      console.error("Ошибка загрузки матчей:", error);
+    }
+  });
+
+  function formatDate(dateStr: string, timeStr: string): string {
+    const date = new Date(`${dateStr}T${timeStr}`);
+    const options: Intl.DateTimeFormatOptions = {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+    };
+    let hours = date.getHours();
+    const minutes = String(date.getMinutes()).padStart(2, "0");
+    const ampm = hours >= 12 ? "p.m." : "a.m.";
+    hours = hours % 12 || 12;
+    return `${date.toLocaleDateString("en-GB", options)} - ${hours}:${minutes} ${ampm}`;
+  }
 </script>
 
-<!-- ==================== Scroll-Top Area (Start) ==================== -->
 <a href="#" class="scroll-top">
   <i class="fa-solid fa-arrow-up-long"></i>
 </a>
-<!-- ==================== Scroll-Top Area (End) ==================== -->
 
-<!-- ==================== Header Area (Start) ==================== -->
 <Header />
-<!-- ==================== Header Area (End) ==================== -->
 
-<!-- ==================== Home-Slider Area (Start) ==================== -->
 <section class="home">
-  <!-- Home Slider -->
   <div class="swiper-container home-slider">
     <div class="swiper-wrapper">
-      <!-- Home Slide-1 -->
       <div class="swiper-slide home-item">
         <img src="/assets/images/Krasava/hp_banner_ .png" alt="Home Image" />
-        <!-- Slide Image -->
         <div class="content">
           <div class="text">
             <h5>
@@ -29,19 +110,14 @@
                 class="fa-solid fa-futbol"
               ></i>
             </h5>
-            <!-- Slide Subheading -->
             <h3>Fearless. Independent. United by Football.</h3>
-            <!-- Slide Heading -->
             <a href="/tickets" class="btn">Join the journey</a>
-            <!-- Contact Button -->
           </div>
         </div>
       </div>
 
-      <!-- Home Slide-2 -->
       <div class="swiper-slide home-item">
         <img src="/assets/images/Krasava/about3.png" alt="Home Image" />
-        <!-- Slide Image -->
         <div class="content">
           <div class="text">
             <h5>
@@ -49,20 +125,15 @@
                 class="fa-solid fa-futbol"
               ></i>
             </h5>
-            <!-- Slide Subheading -->
             <h3>Fearless. Independent. United by Football.</h3>
-            <!-- Slide Heading -->
             <a href="/tickets" class="btn">Join the journey</a>
-            <!-- Contact Button -->
           </div>
         </div>
       </div>
 
-      <!-- Home Slide-3 -->
 
       <div class="swiper-slide home-item">
         <img src="/assets/images/Krasava/about2.png" alt="Home Image" />
-        <!-- Slide Image -->
         <div class="content">
           <div class="text">
             <h5>
@@ -70,31 +141,22 @@
                 class="fa-solid fa-futbol"
               ></i>
             </h5>
-            <!-- Slide Subheading -->
             <h3>Fearless. Independent. United by Football.</h3>
-            <!-- Slide Heading -->
             <a href="/tickets" class="btn">Join the journey</a>
-            <!-- Contact Button -->
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Home Slider Pagination -->
     <div class="swiper-pagination swiper-pagination1"></div>
 
-    <!-- Home Slider Navigation arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
 </section>
-<!-- ==================== Home-Slider Area (End) ==================== -->
 
-<!-- ==================== About Area (Start) ==================== -->
 <section class="about">
-  <!-- About Information -->
   <div class="box-container">
-    <!-- About Image -->
     <div class="image">
       <div class="sub-image one">
         <img src="./assets/images/About/about.JPG" alt="About-Image1" />
@@ -109,49 +171,42 @@
     <div class="content">
       <div class="heading">
         <h2>
-          <span>passion</span> for the Game. <span>Commitment</span> to Values.
-          The Road to
-          <span>Success.</span>
+          <span>Love</span> for Football. <span>Respect</span> for Values. The
+          Path to
+          <span>Growth.</span>
         </h2>
-        <!-- Main Heading -->
       </div>
 
       <p>
-        FC Krasava was founded as an honest and independent alternative in the
-        football world. Today, the team is based in Cyprus and continues to grow
-        with a spirit of openness, accessibility, and transparency. Built
-        entirely on private investment, the club is open to young talent and
-        united by a strong digital and football community.
+        FC Krasava is an independent football club founded as a fair alternative
+        in the football world. Today, the team is based in Cyprus and continues
+        to grow with openness and transparency. Built entirely on private
+        investment, the club welcomes young players and brings together a strong
+        football and digital community.
       </p>
       <p>
-        In just three years, we’ve gone from newcomers to champions — earning
-        promotion to the Cypriot First Division. And this is only the beginning.
+        In just three years, we went from newcomers to champions, earning
+        promotion to the Cypriot First Division. And we’re still moving forward.
       </p>
-      <!-- Description -->
 
-      <!-- Key Features -->
       <ul class="features">
         <li>
-          <i class="fas fa-futbol"></i><span>Developing young talent</span>
+          <i class="fas fa-futbol"></i><span>Supporting young players</span>
         </li>
-        <!-- Feature 1 -->
         <li>
-          <i class="fas fa-futbol"></i><span>Transparency and integrity</span>
+          <i class="fas fa-futbol"></i><span>Openness and honesty</span>
         </li>
-        <!-- Feature 2 -->
         <li>
           <i class="fas fa-futbol"></i><span>A strong football community</span>
         </li>
-        <!-- Feature 3 -->
         <li>
           <i class="fas fa-futbol"></i><span
             >Winning with passion and purpose</span
           >
         </li>
-        <!-- Feature 4 -->
       </ul>
 
-      <a href="/about" class="btn">learn more</a>
+      <a href="/about" class="btn">Learn more</a>
     </div>
   </div>
 </section>
@@ -166,74 +221,34 @@
     </div>
 
     <div class="upcoming-container">
-      <!-- Match 1 -->
-      <div class="match-item">
-        <a href="https://soccer365.net/games/2217314/">
-          <div class="match-detail">
-            <div class="league">Cyprus Second Division 2024/25</div>
-            <div class="time">26 Apr 2025 - 16:00 p.m.</div>
-            <div class="venue">Koinotiko Stadio Erimis (Erimi)</div>
-          </div>
-          <div class="match-intro">
-            <div class="team-logo">
-              <img src="./assets/images/Club-Teams/FCKrasava.png" alt="logo" />
-              <h3>FC Freedom24 Krasava ENY</h3>
+      {#each lastMatches as match}
+        <div class="match-item">
+          <a href="#">
+            <div class="match-detail">
+              <div class="league">{match.strLeague}</div>
+              <div class="time">
+                {formatDate(match.dateEvent, match.strTime)}
+              </div>
+              <div class="venue">{match.strVenue}</div>
             </div>
-            <div class="result"><span>1</span><span>-</span><span>0</span></div>
-            <div class="team-logo">
-              <img
-                src="./assets/images/Club-Teams/Ahironas-Onisilos.png"
-                alt="logo"
-              />
-              <h3>Ahironas-Onisilos</h3>
+            <div class="match-intro">
+              <div class="team-logo">
+                <img src={match.strHomeTeamBadge} alt="logo" />
+                <h3>{match.strHomeTeam}</h3>
+              </div>
+              <div class="result">
+                <span>{match.intHomeScore ?? "-"}</span>
+                <span>-</span>
+                <span>{match.intAwayScore ?? "-"}</span>
+              </div>
+              <div class="team-logo">
+                <img src={match.strAwayTeamBadge} alt="logo" />
+                <h3>{match.strAwayTeam}</h3>
+              </div>
             </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Match 2 -->
-      <div class="match-item">
-        <a href="https://soccer365.net/games/2217307/">
-          <div class="match-detail">
-            <div class="league">Cyprus Second Division 2024/25</div>
-            <div class="time">12 Apr 2025 - 16:00 p.m.</div>
-            <div class="venue">Koinotiko Stadio Parekklisias (Parekklisia)</div>
-          </div>
-          <div class="match-intro">
-            <div class="team-logo">
-              <img src="./assets/images/Club-Teams/AEZakakiou.png" alt="logo" />
-              <h3>AE Zakakiou</h3>
-            </div>
-            <div class="result"><span>0</span><span>-</span><span>1</span></div>
-            <div class="team-logo">
-              <img src="./assets/images/Club-Teams/FCKrasava1.png" alt="logo" />
-              <h3>FC Freedom24 Krasava ENY</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <!-- Match 3 -->
-      <div class="match-item">
-        <a href="https://soccer365.net/games/2217299/">
-          <div class="match-detail">
-            <div class="league">Cyprus Second Division 2024/25</div>
-            <div class="time">06 Apr 2025 - 15:30 p.m.</div>
-            <div class="venue">Koinotiko Stadio Erimis (Erimi)</div>
-          </div>
-          <div class="match-intro">
-            <div class="team-logo">
-              <img src="./assets/images/Club-Teams/FCKrasava1.png" alt="logo" />
-              <h3>FC Freedom24 Krasava ENY</h3>
-            </div>
-            <div class="result"><span>3</span><span>-</span><span>0</span></div>
-            <div class="team-logo">
-              <img src="./assets/images/Club-Teams/ASIL.png" alt="logo" />
-              <h3>ASIL Lysi</h3>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
+      {/each}
     </div>
   </div>
   <!-- ==================== Latest Result Area (End) ==================== -->
@@ -553,70 +568,38 @@
   </div>
 
   <div class="box-container">
-    <!-- Match 1 -->
-    <div class="match-item">
-      <a href="/">
-        <div class="match-detail">
-          <div class="league">Cypriot First Division, 1-round</div>
-          <div class="time">23 Aug 2025 - 18:00 p.m.</div>
-          <!--<div class="venue">City Stadium, Pakistan</div>-->
-        </div>
-        <div class="match-intro">
-          <div class="team-logo">
-            <img src="./assets/images/Club-Teams/FCKrasava1.png" alt="logo" />
-            <h3>FC Freedom24 Krasava ENY</h3>
+    {#each matches as match}
+      <div class="match-item">
+        <a href="/">
+          <div class="match-detail">
+            <div class="league">
+              {match.strLeague}, {match.intRound}-round
+            </div>
+            <div class="time">{formatDate(match.dateEvent, match.strTime)}</div>
           </div>
-          <div class="result"><span>VS</span></div>
-          <div class="team-logo">
-            <img src="./assets/images/Club-Teams/APOEL.png" alt="logo" />
-            <h3>APOEL Nicosia</h3>
+          <div class="match-intro">
+            <div class="team-logo">
+              <img src={match.strHomeTeamBadge} alt={match.strHomeTeam} />
+              <h3>{match.strHomeTeam}</h3>
+            </div>
+            <div class="result"><span>VS</span></div>
+            <div class="team-logo">
+              <img src={match.strAwayTeamBadge} alt={match.strAwayTeam} />
+              <h3>{match.strAwayTeam}</h3>
+            </div>
           </div>
-        </div>
-      </a>
-      <div class="action-container">
-        <a href="/tickets"
-          ><i class="fas fa-ticket-alt"></i> <span>Buy ticket</span>
         </a>
-        <a href="https://soccer365.net/games/2295242/"
-          ><i class="fa-solid fa-pen-to-square"></i>
-          <span>Match Report</span></a
-        >
-      </div>
-    </div>
-
-    <!-- Match 2 -->
-    <div class="match-item">
-      <a href="/">
-        <div class="match-detail">
-          <div class="league">Cypriot First Division, 2-round</div>
-          <div class="time">30 Aug 2025 - 18:00 p.m.</div>
-          <!-- <div class="venue">City Stadium, Pakistan</div> -->
+        <div class="action-container">
+          <a href="https://tickets.krasavafc.com/">
+            <i class="fas fa-ticket-alt"></i> <span>Buy ticket</span>
+          </a>
+          <a href="https://soccer365.ru/">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Match Report</span>
+          </a>
         </div>
-        <div class="match-intro">
-          <div class="team-logo">
-            <img
-              src="./assets/images/Club-Teams/ApollonLimassol.png"
-              alt="logo"
-            />
-            <h3>Apollon Limassol</h3>
-          </div>
-          <div class="result"><span>VS</span></div>
-          <div class="team-logo">
-            <img src="./assets/images/Club-Teams/FCKrasava1.png" alt="logo" />
-            <h3>FC Freedom24 Krasava ENY</h3>
-          </div>
-        </div>
-      </a>
-      <div class="action-container">
-        <a href="/tickets"
-          ><i class="fas fa-ticket-alt"></i> <span>Buy ticket</span>
-        </a>
-        <a href="https://soccer365.ru/games/2295246/"
-          ><i class="fa-solid fa-pen-to-square"></i>
-          <span>Match Report</span></a
-        >
       </div>
-    </div>
+    {/each}
   </div>
 </section>
 <!-- ==================== Upcoming Matches Area (End) ==================== -->
@@ -1202,90 +1185,20 @@
 <!-- ==================== Portfolio Area (End) ==================== -->
 
 <!-- ==================== Awards Area (Start) ==================== -->
-<section class="awards linear-bg">
-  <!-- Awards Heading -->
+<!-- <section class="awards linear-bg">
   <div class="heading">
     <h2>our <span>awards</span></h2>
   </div>
 
-  <!-- Awards Slider Container -->
   <div class="swiper-container award-slider">
     <div class="swiper-wrapper">
-      <!-- Award 1 -->
       <div class="swiper-slide award-item">
         <img src="/assets/images/Krasava/trophy.JPG" alt="Award Image" />
-        <!-- Award Image -->
         <h4>Cypriot 2nd tier champion<br /> 2025</h4>
-        <!-- Award Title and Year -->
       </div>
-      <!-- Award 2 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-2.png" alt="Award Image" />
-        <h4>National League <br /> 2004</h4>
-      </div> -->
-
-      <!-- Award 3 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-3.png" alt="Award Image" />
-        <h4>Premier League <br /> 2008</h4>
-      </div> -->
-
-      <!-- Award 4 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-4.png" alt="Award Image" />
-        <h4>National Cup <br /> 2012</h4>
-      </div> -->
-
-      <!-- Award 5 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-5.png" alt="Award Image" />
-        <h4>Champion League <br /> 2016</h4>
-      </div> -->
-
-      <!-- Award 6 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-6.png" alt="Award Image" />
-        <h4>Premier League <br /> 2020</h4>
-      </div> -->
-
-      <!-- Award 1 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-1.png" alt="Award Image" />
-        <h4>Champion League <br /> 2000</h4>
-      </div> -->
-
-      <!-- Award 2 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-2.png" alt="Award Image" />
-        <h4>National League <br /> 2004</h4>
-      </div> -->
-
-      <!-- Award 3 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-3.png" alt="" />
-        <h4>Premier League <br /> 2008</h4>
-      </div> -->
-
-      <!-- Award 4 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-4.png" alt="Award Image" />
-        <h4>National Cup <br /> 2012</h4>
-      </div> -->
-
-      <!-- Award 5 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-5.png" alt="Award Image" />
-        <h4>Champion League <br /> 2016</h4>
-      </div> -->
-
-      <!-- Award 6 -->
-      <!-- <div class="swiper-slide award-item">
-        <img src="./assets/images/Awards/Award-6.png" alt="Award Image" />
-        <h4>Premier League <br /> 2020</h4>
-      </div> -->
     </div>
   </div>
-</section>
+</section> -->
 <!-- ==================== Awards Area (End) ==================== -->
 
 <!-- ==================== Products Area (Start) ==================== -->

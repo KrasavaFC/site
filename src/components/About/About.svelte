@@ -144,9 +144,7 @@
               >
             </li>
             <!-- Date of Birth -->
-            <li>
-              <span>⚽ Free access to home friendlies</span>
-            </li>
+
             <!-- Age -->
             <li>
               <span>🎉 Invitations to club events</span>
@@ -157,8 +155,8 @@
             </li>
             <!-- Current Club -->
           </ul>
-          <a class="btn" href={`/shop/cart/${tickets.season.id}`}>
-            {tickets.season.price}€: Buy Season Ticket
+          <a class="btn" href="https://tickets.krasavafc.com/">
+            €{tickets.season.price}: Buy Season Ticket
           </a>
         </div>
       </div>
@@ -226,8 +224,8 @@
             </li>
             <!-- Current Club -->
           </ul>
-          <a class="btn" href={`/shop/cart/${tickets.kids.id}`}>
-            {tickets.kids.price}€: Buy Kids Ticket
+          <a class="btn" href="https://tickets.krasavafc.com/">
+            €{tickets.kids.price}: Buy Kids Ticket
           </a>
         </div>
       </div>
@@ -277,9 +275,7 @@
               >
             </li>
             <!-- Date of Birth -->
-            <li>
-              <span>⚽ Free Access to Home Friendlies</span>
-            </li>
+
             <!-- Age -->
             <li>
               <span>🎉 Invitations to club events</span>
@@ -300,8 +296,8 @@
             </li>
             <!-- Current Club -->
           </ul>
-          <a class="btn" href={`/shop/cart/${tickets.student.id}`}>
-            {tickets.student.price}€: Buy Student Season Ticket
+          <a class="btn" href="https://tickets.krasavafc.com/">
+            €{tickets.student.price}: Buy Student Season Ticket
           </a>
         </div>
       </div>
