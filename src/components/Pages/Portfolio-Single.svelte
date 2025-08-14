@@ -96,11 +96,7 @@
       </p>
       <p>
         We strive to ensure that our young athletes develop not only physically,
-        but also as individuals, ready to interact in society. At our academy,
-        the emphasis is on the comprehensive development of each child,
-        providing a unique opportunity to grow and fulfill their dreams in the
-        most favorable environment.
-      </p>
+        but also as individuals, ready to interact in society. 
       <!-- Description -->
 
       <!-- Key Features -->
