@@ -163,7 +163,7 @@
       </div>
       <div class="sub-image two">
         <img src="./assets/images/About/about2.JPG" alt="About-Image2" />
-        <img src="./assets/images/About/about3.JPG" alt="About-Image3" />
+        <img src="./assets/images/Krasava/happy.JPG" alt="About-Image3" />
       </div>
     </div>
 
