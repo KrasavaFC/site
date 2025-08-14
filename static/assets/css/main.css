@@ -2052,7 +2052,7 @@ input:-webkit-autofill:active {
             transform: translate(-50%, -50%);
     height: 12rem;
     width: 12rem;
-    object-fit: cover;
+    object-fit: contain;
 }
   
 .account-form h3{ 
@@ -2784,11 +2784,15 @@ input:-webkit-autofill:active {
     justify-content: center;
 }
 
-.portfolio-item{
+.portfolio-item {
     width: 33.3%;
     padding: 0.8rem;
+    box-sizing: border-box; /* чтобы padding не ломал ширину */
 }
-
+.portfolio .box-container {
+    display: flex;
+    flex-wrap: wrap;   /* чтобы переносились на новую строку */
+}
 .portfolio-content{
     height: 30rem;
     position: relative;
