@@ -110,8 +110,8 @@
                 class="fa-solid fa-futbol"
               ></i>
             </h5>
-            <h3>Fearless. Independent. United by Football.</h3>
-            <a href="/tickets" class="btn">Join the journey</a>
+            <h3>Fueled by Freedom</h3>
+            <a href="https://tickets.krasavafc.com/" class="btn">Buy season tickets </a>
           </div>
         </div>
       </div>
@@ -125,8 +125,8 @@
                 class="fa-solid fa-futbol"
               ></i>
             </h5>
-            <h3>Fearless. Independent. United by Football.</h3>
-            <a href="/tickets" class="btn">Join the journey</a>
+                 <h3>Fueled by Freedom</h3>
+            <a href="https://tickets.krasavafc.com/" class="btn">Buy season tickets </a>
           </div>
         </div>
       </div>
@@ -138,11 +138,11 @@
           <div class="text">
             <h5>
               <span>WELCOME TO KRASAVA FOOTBALL CLUB</span><i
-                class="fa-solid fa-futbol"
+                class="fa-solid fa-futbol"  
               ></i>
             </h5>
-            <h3>Fearless. Independent. United by Football.</h3>
-            <a href="/tickets" class="btn">Join the journey</a>
+                 <h3>Fueled by Freedom</h3>
+            <a href="https://tickets.krasavafc.com/" class="btn">Buy season tickets </a>
           </div>
         </div>
       </div>
@@ -171,9 +171,8 @@
     <div class="content">
       <div class="heading">
         <h2>
-          <span>Love</span> for Football. <span>Respect</span> for Values. The
-          Path to
-          <span>Growth.</span>
+         Dare to <span>believe</span> <span> </span> dare to 
+          <span>be free.</span>
         </h2>
       </div>
 
@@ -649,354 +648,8 @@
 <!-- ==================== Count Area (End) ==================== -->
 
 <!-- ==================== Players Slider Area (Start) ==================== -->
-<section class="team">
-  <!-- Section Heading -->
-  <div class="heading">
-    <h2>our <span>players</span></h2>
-  </div>
 
-  <!-- Service Slider -->
-  <div class="swiper-container player-slider">
-    <div class="swiper-wrapper">
-      <!-- Team Member 1 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Goalkeepers/IoannisPieriteam.jpg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <!-- Team Member Details -->
-        <div class="team-content">
-          <span>1</span>
-          <!-- Team Member Jersey Number -->
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Ioannis Pieri</h3></a
-          >
-          <!-- Team Member Name -->
-          <p>GoalKeeper</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 2 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Goalkeepers/PatrykProcekteam.jpg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a> -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>95</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Patryk Procek</h3></a>
-          <!-- Team Member Name -->
-          <p>GoalKeeper</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 3 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/DimitrisKyprianou.jpeg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>25</span>
-          <a href="./pages/Team/Player-Single.html"
-            ><h3>Dimitris Kyprianou</h3></a
-          >
-          <!-- Team Member Name -->
-          <p>Defender</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 4 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/VangelisKyriacouteam.jpeg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>32</span>
-          <a href="./pages/Team/Player-Single.html"
-            ><h3>Vangelis Kyriacou</h3></a
-          >
-          <!-- Team Member Name -->
-          <p>Defender</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 5 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/ConstantinosDemetriouteam.jpeg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>77</span>
-          <a href="./pages/Team/Player-Single.html"
-            ><h3>Constantinos Demetrio</h3></a
-          >
-          <!-- Team Member Name -->
-          <p>Defender</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 6 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/AndreasKomodikisteam.jpeg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>7</span>
-          <a href="./pages/Team/Player-Single.html"
-            ><h3>Andreas Komodikis</h3></a
-          >
-          <!-- Team Member Name -->
-          <p>Midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 7 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/CurtisYebliteam.jpeg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>8</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Curtis Yebli</h3></a>
-          <!-- Team Member Name -->
-          <p>Midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 8 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/MarcioMeirateam.jpeg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>10</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Márcio Meira</h3></a>
-          <!-- Team Member Name -->
-          <p>Midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 9 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/TheodosisKyprouteam.jpeg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>17</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Theodosis Kyprou</h3></a
-          >
-          <!-- Team Member Name -->
-          <p>Midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 10 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/NikolasTarapoulouzisteam.jpeg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>30</span>
-          <a href="./pages/Team/Player-Single.html"
-            ><h3>Nikolas Tarapoulouzis</h3></a
-          >
-          <!-- Team Member Name -->
-          <p>Midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 11 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/OsmanKoroma.jpeg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>33</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Osman Koroma</h3></a>
-          <!-- Team Member Name -->
-          <p>Midfielder</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 12 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Forwards/MarianSutoteam.jpeg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>9</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Marian Suto</h3></a>
-          <!-- Team Member Name -->
-          <p>Forward</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 13 -->
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Forwards/Theodoroslosifidisteam.jpeg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <div class="team-content">
-          <span>26</span>
-          <a href="./pages/Team/Player-Single.html"
-            ><h3>Theodoros Losifidis</h3></a
-          >
-          <!-- Team Member Name -->
-          <p>Forward</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Team Member 23 
-      <div class="swiper-slide team-item">
-        <div class="team-image">
-          <img src="./assets/images/Team/Forwards/4.jpg" alt="Team-Image" />-->
-      <!-- Team Member Image -->
-      <!--  <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>-->
-      <!-- Facebook Icon -->
-      <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a>-->
-      <!-- LinkedIn Icon -->
-      <!-- <a href="#"><i class="fab fa-twitter"></i></a>-->
-      <!-- Twitter Icon -->
-      <!-- <a href="#"><i class="fab fa-instagram"></i></a>-->
-      <!-- Instagram Icon -->
-      <!--  </div>
-        </div>
-        <div class="team-content">
-          <span>04</span>
-          <a href="./pages/Team/Player-Single.html"><h3>Samuel Martin</h3></a>-->
-      <!-- Team Member Name -->
-      <!-- <p>forward</p>-->
-      <!-- Team Member Designation -->
-      <!--</div>
-      </div>
-    </div>
-  </div>-->
-    </div>
-  </div>
-</section>
+<!-- REMOVE TEAM -->
 <!-- ==================== Players Slider Area (End) ==================== -->
 
 <!-- ==================== Banner Area (Start) ==================== -->
@@ -1099,87 +752,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="portfolio-item trophy">
-      <div class="portfolio-content">
-        <img
-          src="./assets/images/Portfolio/Portfolio/Portfolio-4.jpg"
-          alt="Championship Victories"
-        />
-        <div class="content">
-          <div class="btn-container">
-            <a
-              class="view"
-              href="./assets/images/Portfolio/Portfolio/Portfolio-4.jpg"
-              ><i class="fa-solid fa-camera-retro"></i></a
-            >
-            <a href="./pages/Pages/Portfolio-Single.html"
-              ><i class="fa-solid fa-link"></i></a
-            >
-          </div>
-          <div class="text">
-            <p>Trophy</p>
-            <a href="./pages/Pages/Portfolio-Single.html"
-              ><h3>Championship Victories</h3></a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio-item player">
-      <div class="portfolio-content">
-        <img
-          src="./assets/images/Portfolio/Portfolio/Portfolio-5.jpg"
-          alt="Goal Machines"
-        />
-        <div class="content">
-          <div class="btn-container">
-            <a
-              class="view"
-              href="./assets/images/Portfolio/Portfolio/Portfolio-5.jpg"
-              ><i class="fa-solid fa-camera-retro"></i></a
-            >
-            <a href="./pages/Pages/Portfolio-Single.html"
-              ><i class="fa-solid fa-link"></i></a
-            >
-          </div>
-          <div class="text">
-            <p>Player</p>
-            <a href="./pages/Pages/Portfolio-Single.html"
-              ><h3>Goal Machines</h3></a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio-item community">
-      <div class="portfolio-content">
-        <img
-          src="./assets/images/Portfolio/Portfolio/Portfolio-6.jpg"
-          alt="Youth Development"
-        />
-        <div class="content">
-          <div class="btn-container">
-            <a
-              class="view"
-              href="./assets/images/Portfolio/Portfolio/Portfolio-6.jpg"
-              ><i class="fa-solid fa-camera-retro"></i></a
-            >
-            <a href="./pages/Pages/Portfolio-Single.html"
-              ><i class="fa-solid fa-link"></i></a
-            >
-          </div>
-          <div class="text">
-            <p>Community</p>
-            <a href="./pages/Pages/Portfolio-Single.html"
-              ><h3>Youth Development</h3></a
-            >
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 </section>
 <!-- ==================== Portfolio Area (End) ==================== -->
@@ -1481,6 +1053,45 @@
     <!-- Sponsors Logo -->
     <div class="swiper-wrapper">
       <div class="swiper-slide sponsor-item">
+        <a href="#"
+          ><img
+            src="./assets/images/Sponsors/freedom.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div>
+      <div class="swiper-slide sponsor-item">
+        <a href="#"
+          ><img
+            src="./assets/images/Sponsors/freedom.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div>
+      <div class="swiper-slide sponsor-item">
+        <a href="#"
+          ><img
+            src="./assets/images/Sponsors/freedom.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div>
+      <div class="swiper-slide sponsor-item">
+        <a href="#"
+          ><img
+            src="./assets/images/Sponsors/freedom.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div>
+      <div class="swiper-slide sponsor-item">
+        <a href="#"
+          ><img
+            src="./assets/images/Sponsors/freedom.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div><div class="swiper-slide sponsor-item">
         <a href="#"
           ><img
             src="./assets/images/Sponsors/freedom.png"
