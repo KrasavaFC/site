@@ -132,7 +132,7 @@
         </div>
       </div>
 
-      <div class="swiper-slide home-item">
+      <!-- <div class="swiper-slide home-item">
         <img src="/assets/images/Krasava/about3.png" alt="Home Image" />
         <div class="content">
           <div class="text">
@@ -145,7 +145,7 @@
             <a href="https://tickets.krasavafc.com/" class="btn">Buy season tickets </a>
           </div>
         </div>
-      </div>
+      </div> -->
 
 
       <div class="swiper-slide home-item">
