@@ -60,7 +60,7 @@
 
 <section class="register">
   <form class="account-form" on:submit|preventDefault={handleRegister}>
-    <img src="../../assets/images/Logo/Logo.png" alt="" />
+    <img src="../../assets/images/Krasava/krsv.png" alt="" />
     <h3>register</h3>
 
     <input

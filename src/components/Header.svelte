@@ -52,7 +52,7 @@
         <a class="nav-btn" href="/">home</a>
         <a class="nav-btn" href="/about">About</a>
         <a class="nav-btn" href="/academy">Academy</a>
-        <a class="nav-btn" href="/team">Team</a>
+        <!-- <a class="nav-btn" href="/team">Team</a> -->
         <a class="nav-btn" href="/tickets">Tickets</a>
         <a class="nav-btn" href="/shop/grid">Shop</a>
         <a class="nav-btn" href="/fanid">FanID</a>
@@ -104,11 +104,11 @@
           <a class="nav-btn" href="/academy">Academy</a>
         </div>
       </div>
-      <div class="nav-link">
+      <!-- <div class="nav-link">
         <div class="main-nav-link">
           <a class="nav-btn" href="/team">Team</a>
         </div>
-      </div>
+      </div> -->
       <div class="nav-link">
         <div class="main-nav-link">
           <a class="nav-btn" href="/tickets">Tickets</a>
