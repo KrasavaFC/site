@@ -101,6 +101,22 @@
 <section class="home">
   <div class="swiper-container home-slider">
     <div class="swiper-wrapper">
+
+      <div class="swiper-slide home-item">
+        <img src="/assets/images/Krasava/ticketsmain.png" alt="Home Image" />
+        <div class="content">
+          <div class="text">
+            <h5>
+              <span>Be part of Season 25/26</span><i
+                class="fa-solid fa-futbol"
+              ></i>
+            </h5>
+            <h3>get your season ticket now!</h3>
+            <a href="https://tickets.krasavafc.com/" class="btn">Buy season tickets </a>
+          </div>
+        </div>
+      </div>
+
       <div class="swiper-slide home-item">
         <img src="/assets/images/Krasava/hp_banner_ .png" alt="Home Image" />
         <div class="content">
