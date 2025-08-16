@@ -9,7 +9,7 @@
 
 <Header />
 
-<div class="page-title">
+<div class="page-title-fanid">
   <div class="title">
     <h2>How to create FanID</h2>
   </div>
