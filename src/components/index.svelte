@@ -132,7 +132,7 @@
         </div>
       </div>
 
-      <div class="swiper-slide home-item">
+      <!-- <div class="swiper-slide home-item">
         <img src="/assets/images/Krasava/about3.png" alt="Home Image" />
         <div class="content">
           <div class="text">
@@ -145,7 +145,7 @@
             <a href="https://tickets.krasavafc.com/" class="btn">Buy season tickets </a>
           </div>
         </div>
-      </div>
+      </div> -->
 
 
       <div class="swiper-slide home-item">
@@ -187,21 +187,22 @@
     <div class="content">
       <div class="heading">
         <h2>
-         Dare to <span>believe</span> <span> </span> dare to 
-          <span>be free.</span>
+          TERRITORY OF <span>FREEDOM</span> <span> </span> 
         </h2>
       </div>
-
       <p>
-        FC Krasava is an independent football club founded as a fair alternative
-        in the football world. Today, the team is based in Cyprus and continues
-        to grow with openness and transparency. Built entirely on private
-        investment, the club welcomes young players and brings together a strong
-        football and digital community.
+        We value freedom, independence, and accessibility for everyone who plays and loves football.
       </p>
       <p>
-        In just three years, we went from newcomers to champions, earning
-        promotion to the Cypriot First Division. And we’re still moving forward.
+        Founded in 2021, FC Krasava quickly became a unique football project built on openness and private support. From the start, the club gave young players real opportunities and inspired a strong community of fans.      </p>
+      <p>
+        Keeping its spirit of freedom and independence, FC Krasava relocated to Cyprus — purchasing a club in Ypsonas and starting a new chapter with a new name, logo, and colors.
+      </p>
+      <p>
+        In just three seasons, Krasava rose from the Second Division to the Cypriot First Division — becoming the only club in the country’s history to achieve this journey as newcomers from abroad.
+      </p>
+      <p>
+        FC Krasava is a football club for people who love the game — and their freedom.
       </p>
 
       <ul class="features">
@@ -209,15 +210,10 @@
           <i class="fas fa-futbol"></i><span>Supporting young players</span>
         </li>
         <li>
-          <i class="fas fa-futbol"></i><span>Openness and honesty</span>
-        </li>
-        <li>
           <i class="fas fa-futbol"></i><span>A strong football community</span>
         </li>
         <li>
-          <i class="fas fa-futbol"></i><span
-            >Winning with passion and purpose</span
-          >
+          <i class="fas fa-futbol"></i><span>Openness and honesty</span>
         </li>
       </ul>
 
