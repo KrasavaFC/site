@@ -274,3 +274,72 @@
 }
 
 /* PAGE SHOP TITLE */
+
+
+/* PAGE FANID TITLE */
+.page-title-fanid {
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/fan_banner.JPG");
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../../assets/images/Krasava/fan_banner.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0rem 5%;
+    padding-top: 8rem;
+    min-height: 40rem;
+}
+
+.page-title-fanid .title {
+    border-left: 0.4rem solid var(--main-color);
+    padding-left: 1rem;
+}
+
+.page-title-fanid .title h2 {
+    color: var(--white);
+    font-size: 5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.page-title-fanid .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.page-title-fanid .link a {
+    font-weight: 600;
+    color: var(--white);
+}
+
+.page-title-fanid .link a:hover {
+    color: var(--main-color);
+}
+
+.page-title-fanid .link i {
+    color: var(--white);
+}
+
+.page-title-fanid .link span {
+    font-weight: 500;
+    color: var(--white);
+}
+
+/* PAGE fanid TITLE */
