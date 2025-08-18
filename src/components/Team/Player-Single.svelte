@@ -43,15 +43,15 @@
 <Header />
 <!-- ==================== Header Area (End) ==================== -->
 <!-- ==================== Page-Title (Start) ==================== -->
-<div class="page-title">
+<div class="page-title-player">
   <div class="title">
-    <h2>player single</h2>
+    <h2>player</h2>
   </div>
 
   <div class="link">
     <a href="/"> <i class="fa-solid fa-house-chimney"></i> Home</a>
     <i class="fa-solid fa-angles-right"></i>
-    <span class="page">player single</span>
+    <span class="page">player</span>
   </div>
 </div>
 <!-- ==================== Page-Title (End) ==================== -->
@@ -95,26 +95,24 @@
           <span>{age}</span>
         </li>
         <!-- Age -->
-        <li>
+        <!-- <li>
           <h6><i class="fas fa-arrows-alt-v"></i> Height:</h6>
           <span>{player.height}</span>
-        </li>
+        </li> -->
         <!-- Height -->
       </ul>
 
       <!-- Player Social Media Accounts -->
       <div class="icon-container">
-        <a href={player.instagram} target="_blank">
+        <!-- <a href={player.instagram} target="_blank">
           <i class="fab fa-instagram"></i>
-        </a>
+        </a> -->
         <!-- Instagram Link -->
       </div>
     </div>
   </div>
 
-  <!-- Career Statistics -->
-  <div class="career-stats">
-    <!-- Club Statistics -->
+  <!-- <div class="career-stats">
     <div class="club-stats">
       <div class="heading">
         <h2>Club statistics</h2>
@@ -122,7 +120,6 @@
 
       <div class="stats-container">
         <div class="container">
-          <!-- Career Title -->
           <div class="career-title">
             <h3>Season</h3>
             <h3 class="name">Club</h3>
@@ -132,9 +129,7 @@
             <h3 class="card">Red Cards</h3>
           </div>
 
-          <!-- Club Statistics Content -->
           <div class="stats-content">
-            <!-- Club Stat Item 1 -->
             <div class="career-stat-item">
               <div class="box season">2020</div>
               <div class="box name">Lion FC</div>
@@ -144,7 +139,6 @@
               <div class="box card">4</div>
             </div>
 
-            <!-- Club Stat Item 2 -->
             <div class="career-stat-item">
               <div class="box season">2021</div>
               <div class="box name">Tiger United</div>
@@ -154,7 +148,6 @@
               <div class="box card">2</div>
             </div>
 
-            <!-- Club Stat Item 3 -->
             <div class="career-stat-item">
               <div class="box season">2022</div>
               <div class="box name">Panther FC</div>
@@ -168,7 +161,6 @@
       </div>
     </div>
 
-    <!-- International Statistics -->
     <div class="inter-stats">
       <div class="heading">
         <h2>International statistics</h2>
@@ -176,7 +168,6 @@
 
       <div class="stats-container">
         <div class="container">
-          <!-- Career Title -->
           <div class="career-title">
             <h3>Season</h3>
             <h3 class="name">Club</h3>
@@ -186,9 +177,7 @@
             <h3 class="card">Red Cards</h3>
           </div>
 
-          <!-- International Statistics Content -->
           <div class="stats-content">
-            <!-- International Stat Item 1 -->
             <div class="career-stat-item">
               <div class="box season">2020</div>
               <div class="box name">National A</div>
@@ -198,7 +187,6 @@
               <div class="box card">1</div>
             </div>
 
-            <!-- International Stat Item 2 -->
             <div class="career-stat-item">
               <div class="box season">2021</div>
               <div class="box name">National A</div>
@@ -208,7 +196,6 @@
               <div class="box card">3</div>
             </div>
 
-            <!-- International Stat Item 3 -->
             <div class="career-stat-item">
               <div class="box season">2022</div>
               <div class="box name">National A</div>
@@ -223,14 +210,12 @@
     </div>
   </div>
 
-  <!-- Player Honours -->
   <div class="team-member-honours">
     <div class="heading">
       <h2>Player Honours</h2>
     </div>
 
     <div class="honours-container">
-      <!-- Player Honour 1 -->
       <div class="team-honour">
         <div class="honour-season">2020/21</div>
         <div class="honour-trophy">
@@ -241,7 +226,6 @@
         <div class="honour-title">Best Goalkeeper Award</div>
       </div>
 
-      <!-- Player Honour 2-->
       <div class="team-honour">
         <div class="honour-season">2021/22</div>
         <div class="honour-trophy">
@@ -252,7 +236,6 @@
         <div class="honour-title">Golden Glove</div>
       </div>
 
-      <!-- Player Honour 3 -->
       <div class="team-honour">
         <div class="honour-season">2022/23</div>
         <div class="honour-trophy">
@@ -263,7 +246,6 @@
         <div class="honour-title">Top Saves Award</div>
       </div>
 
-      <!-- Player Honour 4 -->
       <div class="team-honour">
         <div class="honour-season">2023/24</div>
         <div class="honour-trophy">
@@ -274,9 +256,8 @@
         <div class="honour-title">Outstanding Goalkeeper</div>
       </div>
     </div>
-  </div>
+  </div> -->
 </section>
-<!-- ==================== Player Single Area (End) ==================== -->
 
 <!-- ==================== Footer Area (Start) ==================== -->
 <Footer />
