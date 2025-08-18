@@ -1,5 +1,10 @@
-<script lang="ts">
+<!-- <script lang="ts">
   import Team from "../../components/Team/Team.svelte";
 </script>
 
-<Team />
+<Team /> -->
+<script lang="ts">
+  import Players from "../../components/Team/Players.svelte";
+</script>
+
+<Players />
