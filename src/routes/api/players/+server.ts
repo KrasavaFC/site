@@ -4,7 +4,8 @@ import prisma from '$lib/prisma';
 export async function GET() {
   try {
     const players = await prisma.player.findMany({
-      orderBy: { number: 'asc' } 
+      where: { active: true },
+      orderBy: { number: 'asc' },
     });
     return json(players);
   } catch (error) {
