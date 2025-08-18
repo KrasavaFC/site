@@ -198,17 +198,18 @@ model KrasavaUsers {
 }
 
 model Player {
-  id          String   @id @default(uuid())
+  id          String    @id @default(uuid())
   firstName   String
-  lastName    String
-  number      Int
-  position    Position
+  lastName    String?
+  number      Int?
+  position    Position?
   birthDate   DateTime
-  nationality String
-  height      Float
+  nationality String?
+  height      Float?
   info        String?
   instagram   String?
   imageUrl    String?
+  active      Boolean?  @default(true)
 }
 
 enum Position {
