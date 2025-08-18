@@ -1,600 +1,234 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+  import { goto } from "$app/navigation";
   import Footer from "../Footer.svelte";
   import Header from "../Header.svelte";
+
+  type Position = "GOALKEEPER" | "DEFENDER" | "MIDFIELDER" | "FORWARD";
+
+  type Player = {
+    id: string;
+    firstName: string;
+    lastName: string;
+    number: number;
+    position: Position;
+    birthDate: string;
+    nationality: string;
+    height: number;
+    info?: string | null;
+    instagram?: string | null;
+    imageUrl?: string | null;
+  };
+
+  const POS_LABEL: Record<Position, string> = {
+    GOALKEEPER: "Goalkeeper",
+    DEFENDER: "Defender",
+    MIDFIELDER: "Midfielder",
+    FORWARD: "Forward",
+  };
+
+  const PLACEHOLDER_IMAGE = "/assets/images/placeholder-player.jpg";
+
+  let loading = true;
+  let error: string | null = null;
+
+  let goalkeepers: Player[] = [];
+  let defenders: Player[] = [];
+  let midfielders: Player[] = [];
+  let forwards: Player[] = [];
+
+  const fullName = (p: Player) => `${p.firstName} ${p.lastName}`.trim();
+  const num = (n: number) => String(n).padStart(2, "0");
+  const playerPath = (p: Player) => `/team/player/${encodeURIComponent(p.firstName)}`;
+
+  function splitGroups(list: Player[]) {
+    const byNum = (a: Player, b: Player) => a.number - b.number;
+    goalkeepers = list.filter(p => p.position === "GOALKEEPER").sort(byNum);
+    defenders   = list.filter(p => p.position === "DEFENDER").sort(byNum);
+    midfielders = list.filter(p => p.position === "MIDFIELDER").sort(byNum);
+    forwards    = list.filter(p => p.position === "FORWARD").sort(byNum);
+  }
+
+  onMount(async () => {
+    try {
+      const res = await fetch("/api/players");
+      if (!res.ok) throw new Error("Failed to load players");
+      const data: Player[] = await res.json();
+      splitGroups(data);
+    } catch (e: any) {
+      error = e?.message ?? "Unknown error";
+    } finally {
+      loading = false;
+    }
+  });
 </script>
 
-<!-- ==================== Scroll-Top Area (Start) ==================== -->
 <a href="#" class="scroll-top">
   <i class="fa-solid fa-arrow-up-long"></i>
 </a>
-<!-- ==================== Scroll-Top Area (End) ==================== -->
 
-<!-- ==================== Header Area (Start) ==================== -->
 <Header />
-<!-- ==================== Header Area (End) ==================== -->
 
-<!-- ==================== Page-Title (Start) ==================== -->
-<div class="page-title">
+<div class="page-title-team">
   <div class="title">
-    <h2>Players</h2>
+    <h2>Team</h2>
   </div>
 
   <div class="link">
-    <a href="../../index.html">Home</a>
+    <a href="/">Home</a>
     <i class="fa-solid fa-angles-right"></i>
-    <span class="page">Players</span>
+    <span class="page">Team</span>
   </div>
 </div>
-<!-- ==================== Page-Title (End) ==================== -->
 
-<!-- ==================== Players Area (Start) ==================== -->
 <section class="team">
-  <!-- Team Section Heading -->
   <div class="heading">
     <h2>our <span>team</span></h2>
   </div>
 
-  <!-- Tab Buttons for Team Categories -->
   <ul class="tab-buttons">
-    <li><a class="button" href="#goalkeepers">goalkeepers</a></li>
-    <!-- Button for Goalkeepers -->
+    <li><a class="button" href="#goalkeepers">Goalkeepers</a></li>
     <li><a class="button" href="#defenders">Defenders</a></li>
-    <!-- Button for Defenders -->
     <li><a class="button" href="#midfielders">Midfielders</a></li>
-    <!-- Button for Midfielders -->
     <li><a class="button" href="#forwards">Forwards</a></li>
-    <!-- Button for Forwards -->
   </ul>
 
-  <!-- Goalkeepers -->
-  <div class="team-gallery" id="goalkeepers">
-    <div class="sub-heading">
-      <h3>GoalKeepers</h3>
-    </div>
-
+  {#if loading}
+    <div class="team-gallery"><p>Loading…</p></div>
+  {:else if error}
+    <div class="team-gallery"><p class="error">{error}</p></div>
+  {:else}
     <!-- Goalkeepers -->
-    <div class="box-container">
-      <!-- Goalkeeper 1 - John Smith -->
-      <div class="team-item">
-        <!-- Team Member Image and Social Icons -->
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Goalkeepers/1.jpg"
-            alt="Team-Image"
-          />
-          <!-- Team Member Image -->
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <!-- Facebook Icon -->
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <!-- LinkedIn Icon -->
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <!-- Twitter Icon -->
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <!-- Instagram Icon -->
-          </div>
-        </div>
-        <!-- Team Member Details -->
-        <div class="team-content">
-          <span>25</span>
-          <!-- Team Member Jersey Number -->
-          <a href="../../pages/Team/Player-Single.html"><h3>John Smith</h3></a>
-          <!-- Team Member Name -->
-          <p>GoalKeeper</p>
-          <!-- Team Member Designation -->
-        </div>
-      </div>
-
-      <!-- Goalkeeper 2 - Michael Johnson -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Goalkeepers/2.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>12</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Michael Johnson</h3></a
+    <div class="team-gallery" id="goalkeepers">
+      <div class="sub-heading"><h3>Goalkeepers</h3></div>
+      <div class="box-container">
+        {#each goalkeepers as p}
+          <div
+            class="team-item"
+            role="button"
+            tabindex="0"
+            on:click={() => goto(playerPath(p))}
+            on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && goto(playerPath(p))}
           >
-          <p>GoalKeeper</p>
-        </div>
-      </div>
-
-      <!-- Goalkeeper 3 - Christopher Brown -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Goalkeepers/3.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="team-image">
+              <img
+                src={encodeURI(p.imageUrl || PLACEHOLDER_IMAGE)}
+                alt={`Photo of ${fullName(p)}`}
+              />
+              <div class="icon-container">
+                {#if p.instagram}
+                  <a href={p.instagram} target="_blank" rel="noopener" on:click|stopPropagation>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                {/if}
+              </div>
+            </div>
+            <div class="team-content">
+              <span>{num(p.number)}</span>
+              <a href={playerPath(p)} on:click|preventDefault><h3>{fullName(p)}</h3></a>
+              <p>{POS_LABEL[p.position]}</p>
+            </div>
           </div>
-        </div>
-        <div class="team-content">
-          <span>18</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Christopher Brown</h3></a
-          >
-          <p>GoalKeeper</p>
-        </div>
+        {/each}
       </div>
     </div>
-  </div>
 
-  <!-- Defenders -->
-  <div class="team-gallery" id="defenders">
-    <div class="sub-heading">
-      <h3>Defenders</h3>
+    <!-- Defenders -->
+    <div class="team-gallery" id="defenders">
+      <div class="sub-heading"><h3>Defenders</h3></div>
+      <div class="box-container">
+        {#each defenders as p}
+          <div
+            class="team-item"
+            role="button"
+            tabindex="0"
+            on:click={() => goto(playerPath(p))}
+            on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && goto(playerPath(p))}
+          >
+            <div class="team-image">
+              <img src={encodeURI(p.imageUrl || PLACEHOLDER_IMAGE)} alt={`Photo of ${fullName(p)}`} />
+              <div class="icon-container">
+                {#if p.instagram}
+                  <a href={p.instagram} target="_blank" rel="noopener" on:click|stopPropagation>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                {/if}
+              </div>
+            </div>
+            <div class="team-content">
+              <span>{num(p.number)}</span>
+              <a href={playerPath(p)} on:click|preventDefault><h3>{fullName(p)}</h3></a>
+              <p>{POS_LABEL[p.position]}</p>
+            </div>
+          </div>
+        {/each}
+      </div>
     </div>
 
-    <div class="box-container">
-      <!-- Defender 1 - Daniel Davis -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/1.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>03</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Daniel Davis</h3></a
+    <!-- Midfielders -->
+    <div class="team-gallery" id="midfielders">
+      <div class="sub-heading"><h3>Midfielders</h3></div>
+      <div class="box-container">
+        {#each midfielders as p}
+          <div
+            class="team-item"
+            role="button"
+            tabindex="0"
+            on:click={() => goto(playerPath(p))}
+            on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && goto(playerPath(p))}
           >
-          <p>Defender</p>
-        </div>
-      </div>
-
-      <!-- Defender 2 - Matthew White -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/2.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="team-image">
+              <img src={encodeURI(p.imageUrl || PLACEHOLDER_IMAGE)} alt={`Photo of ${fullName(p)}`} />
+              <div class="icon-container">
+                {#if p.instagram}
+                  <a href={p.instagram} target="_blank" rel="noopener" on:click|stopPropagation>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                {/if}
+              </div>
+            </div>
+            <div class="team-content">
+              <span>{num(p.number)}</span>
+              <a href={playerPath(p)} on:click|preventDefault><h3>{fullName(p)}</h3></a>
+              <p>{POS_LABEL[p.position]}</p>
+            </div>
           </div>
-        </div>
-        <div class="team-content">
-          <span>27</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Matthew White</h3></a
-          >
-          <p>Defender</p>
-        </div>
-      </div>
-
-      <!-- Defender 3 - Alexander Turner -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/3.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>09</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Alexander Turner</h3></a
-          >
-          <p>Defender</p>
-        </div>
-      </div>
-
-      <!-- Defender 4 - Robert Harris -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/4.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>15</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Robert Harris</h3></a
-          >
-          <p>Defender</p>
-        </div>
-      </div>
-
-      <!-- Defender 5 - William Martin -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/5.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>21</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>William Martin</h3></a
-          >
-          <p>Defender</p>
-        </div>
-      </div>
-
-      <!-- Defender 6 - Thomas Clark -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/6.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>36</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Thomas Clark</h3></a
-          >
-          <p>Defender</p>
-        </div>
-      </div>
-
-      <!-- Defender 7 - Richard Hall -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/7.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>06</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Richard Hall</h3></a
-          >
-          <p>Defender</p>
-        </div>
-      </div>
-
-      <!-- Defender 8 - Joseph Young -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Defenders/8.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>28</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Joseph Young</h3></a
-          >
-          <p>Defender</p>
-        </div>
+        {/each}
       </div>
     </div>
-  </div>
 
-  <!-- Midfielders -->
-  <div class="team-gallery" id="midfielders">
-    <div class="sub-heading">
-      <h3>midfielders</h3>
-    </div>
-
-    <div class="box-container">
-      <!-- Midfielder 1 - David Scott -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/1.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>14</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>David Scott</h3></a>
-          <p>midfielder</p>
-        </div>
-      </div>
-
-      <!-- Midfielder 2 - Benjamin Lewis -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/2.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>30</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Benjamin Lewis</h3></a
+    <!-- Forwards -->
+    <div class="team-gallery" id="forwards">
+      <div class="sub-heading"><h3>Forwards</h3></div>
+      <div class="box-container">
+        {#each forwards as p}
+          <div
+            class="team-item"
+            role="button"
+            tabindex="0"
+            on:click={() => goto(playerPath(p))}
+            on:keydown={(e) => (e.key === 'Enter' || e.key === ' ') && goto(playerPath(p))}
           >
-          <p>midfielder</p>
-        </div>
-      </div>
-
-      <!-- Midfielder 3 - James King -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/3.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="team-image">
+              <img src={encodeURI(p.imageUrl || PLACEHOLDER_IMAGE)} alt={`Photo of ${fullName(p)}`} />
+              <div class="icon-container">
+                {#if p.instagram}
+                  <a href={p.instagram} target="_blank" rel="noopener" on:click|stopPropagation>
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                {/if}
+              </div>
+            </div>
+            <div class="team-content">
+              <span>{num(p.number)}</span>
+              <a href={playerPath(p)} on:click|preventDefault><h3>{fullName(p)}</h3></a>
+              <p>{POS_LABEL[p.position]}</p>
+            </div>
           </div>
-        </div>
-        <div class="team-content">
-          <span>02</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>James King</h3></a>
-          <p>midfielder</p>
-        </div>
-      </div>
-
-      <!-- Midfielder 4 - Charles Taylor -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/4.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>19</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Charles Taylor</h3></a
-          >
-          <p>midfielder</p>
-        </div>
-      </div>
-
-      <!-- Midfielder 5 - Andrew Wilson -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/5.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>22</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Andrew Wilson</h3></a
-          >
-          <p>midfielder</p>
-        </div>
-      </div>
-
-      <!-- Midfielder 6 - Edward Moore -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/6.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>08</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Edward Moore</h3></a
-          >
-          <p>midfielder</p>
-        </div>
-      </div>
-
-      <!-- Midfielder 7 - Henry Adams -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/7.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>33</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Henry Adams</h3></a>
-          <p>midfielder</p>
-        </div>
-      </div>
-
-      <!-- Midfielder 8 - George Walker -->
-      <div class="team-item">
-        <div class="team-image">
-          <img
-            src="../../assets/images/Team/Midfielders/8.jpg"
-            alt="Team-Image"
-          />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>10</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>George Walker</h3></a
-          >
-          <p>midfielder</p>
-        </div>
+        {/each}
       </div>
     </div>
-  </div>
-
-  <!-- Forwards -->
-  <div class="team-gallery" id="forwards">
-    <div class="sub-heading">
-      <h3>forwards</h3>
-    </div>
-
-    <div class="box-container">
-      <!-- Forward 1 - Oliver White -->
-      <div class="team-item">
-        <div class="team-image">
-          <img src="../../assets/images/Team/Forwards/1.jpg" alt="Team-Image" />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>07</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Oliver White</h3></a
-          >
-          <p>forward</p>
-        </div>
-      </div>
-
-      <!-- Forward 2 - Harry Turner -->
-      <div class="team-item">
-        <div class="team-image">
-          <img src="../../assets/images/Team/Forwards/2.jpg" alt="Team-Image" />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>26</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Harry Turner</h3></a
-          >
-          <p>forward</p>
-        </div>
-      </div>
-
-      <!-- Forward 3 - Jack Harris -->
-      <div class="team-item">
-        <div class="team-image">
-          <img src="../../assets/images/Team/Forwards/3.jpg" alt="Team-Image" />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>13</span>
-          <a href="../../pages/Team/Player-Single.html"><h3>Jack Harris</h3></a>
-          <p>forward</p>
-        </div>
-      </div>
-
-      <!-- Forward 4 - Samuel Martin -->
-      <div class="team-item">
-        <div class="team-image">
-          <img src="../../assets/images/Team/Forwards/4.jpg" alt="Team-Image" />
-          <div class="icon-container">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="team-content">
-          <span>04</span>
-          <a href="../../pages/Team/Player-Single.html"
-            ><h3>Samuel Martin</h3></a
-          >
-          <p>forward</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  {/if}
 </section>
-<!-- ==================== Players Area (End) ==================== -->
 
-<!-- ==================== Footer Area (Start) ==================== -->
 <Footer />
-<!-- ==================== Footer Area (End) ==================== -->
