@@ -1064,8 +1064,8 @@
   <div class="swiper-container sponsor-slider">
     <!-- Sponsors Logo -->
     <div class="swiper-wrapper">
-      <div class="swiper-slide sponsor-item">
-        <a href="#"
+       <div class="swiper-slide sponsor-item">
+        <a href="https://freedom24.com/"
           ><img
             src="./assets/images/Sponsors/freedom.png"
             alt="Sponsor-Logo"
@@ -1073,7 +1073,22 @@
         >
       </div>
       <div class="swiper-slide sponsor-item">
-        <a href="#"
+        <a href="https://bc.game/"
+          ><img
+            src="./assets/images/Sponsors/bcgame.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div>
+      <div class="swiper-slide sponsor-item">
+        <a href="https://utorg.pro/"
+          ><img
+            src="./assets/images/Sponsors/utorg.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div> <div class="swiper-slide sponsor-item">
+        <a href="https://freedom24.com/"
           ><img
             src="./assets/images/Sponsors/freedom.png"
             alt="Sponsor-Logo"
@@ -1081,7 +1096,22 @@
         >
       </div>
       <div class="swiper-slide sponsor-item">
-        <a href="#"
+        <a href="https://bc.game/"
+          ><img
+            src="./assets/images/Sponsors/bcgame.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div>
+      <div class="swiper-slide sponsor-item">
+        <a href="https://utorg.pro/"
+          ><img
+            src="./assets/images/Sponsors/utorg.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div> <div class="swiper-slide sponsor-item">
+        <a href="https://freedom24.com/"
           ><img
             src="./assets/images/Sponsors/freedom.png"
             alt="Sponsor-Logo"
@@ -1089,7 +1119,22 @@
         >
       </div>
       <div class="swiper-slide sponsor-item">
-        <a href="#"
+        <a href="https://bc.game/"
+          ><img
+            src="./assets/images/Sponsors/bcgame.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div>
+      <div class="swiper-slide sponsor-item">
+        <a href="https://utorg.pro/"
+          ><img
+            src="./assets/images/Sponsors/utorg.png"
+            alt="Sponsor-Logo"
+          /></a
+        >
+      </div> <div class="swiper-slide sponsor-item">
+        <a href="https://freedom24.com/"
           ><img
             src="./assets/images/Sponsors/freedom.png"
             alt="Sponsor-Logo"
@@ -1097,48 +1142,17 @@
         >
       </div>
       <div class="swiper-slide sponsor-item">
-        <a href="#"
+        <a href="https://bc.game/"
           ><img
-            src="./assets/images/Sponsors/freedom.png"
-            alt="Sponsor-Logo"
-          /></a
-        >
-      </div><div class="swiper-slide sponsor-item">
-        <a href="#"
-          ><img
-            src="./assets/images/Sponsors/freedom.png"
+            src="./assets/images/Sponsors/bcgame.png"
             alt="Sponsor-Logo"
           /></a
         >
       </div>
       <div class="swiper-slide sponsor-item">
-        <a href="#"
+        <a href="https://utorg.pro/"
           ><img
-            src="./assets/images/Sponsors/freedom.png"
-            alt="Sponsor-Logo"
-          /></a
-        >
-      </div>
-      <div class="swiper-slide sponsor-item">
-        <a href="#"
-          ><img
-            src="./assets/images/Sponsors/freedom.png"
-            alt="Sponsor-Logo"
-          /></a
-        >
-      </div>
-      <div class="swiper-slide sponsor-item">
-        <a href="#"
-          ><img
-            src="./assets/images/Sponsors/freedom.png"
-            alt="Sponsor-Logo"
-          /></a
-        >
-      </div>
-      <div class="swiper-slide sponsor-item">
-        <a href="#"
-          ><img
-            src="./assets/images/Sponsors/freedom.png"
+            src="./assets/images/Sponsors/utorg.png"
             alt="Sponsor-Logo"
           /></a
         >
