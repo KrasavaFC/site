@@ -40,12 +40,9 @@
           </h2>
         </div>
 
-        <!-- Main Heading -->
-        <p>Krasava Football Club was founded in 2021 with one clear idea:</p>
 
         <p>
-          to create an honest, independent alternative to the traditional
-          football system.
+  FC Krasava stands as a unique football project for people who love the game and their freedom.
         </p>
 
         <!-- Mission Points -->
@@ -53,22 +50,27 @@
           <li>
             <i class="fas fa-users"></i>
             <div class="text">
-              <h5>teamwork</h5>
+              <h5>2021</h5>
               <p>
-                While most clubs relied on state funding and closed structures,
-                we built Krasava entirely on private investment — open,
-                transparent, and accessible to anyone with a dream to play.
+               FC Krasava was founded in Moscow as an independent alternative to traditional football. Unlike many other clubs, it was built entirely on private investment, operated with full transparency, and gave every young player a chance to join the team — creating a huge buzz in the football community.
               </p>
             </div>
           </li>
           <li>
             <i class="fas fa-medal"></i>
             <div class="text">
-              <h5>excellence</h5>
+              <h5>2022 → Cyprus</h5>
               <p>
-                We stand for openness. We stand for integrity. We stand for
-                football built by the people — for the people.
+               Staying true to its values of freedom and independence, the club relocated to Cyprus, acquiring a team in Ypsonas and agreeing on a new name, logo, and colors — symbols of heritage and football legacy.
               </p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-medal"></i>
+            <div class="text">
+              <h5>2025</h5>
+              <p>
+In just three seasons, FC Krasava rose from the second division of Cypriot football to the top tier, becoming the only club in the country’s history to make such a journey as an immigrant team.              </p>
             </div>
           </li>
         </ul>
