@@ -159,9 +159,7 @@
           <li>
             <span>Game day (Saturday)</span>
           </li>
-          <li>
-            <span>Swimming pool training (2 times per month)</span>
-          </li>
+      
           <li>
             <span>Stretching (1 time per week)</span>
           </li>
@@ -205,9 +203,7 @@
           <li>
             <span>Game day (Saturday)</span>
           </li>
-          <li>
-            <span>Swimming pool training (2 times per month)</span>
-          </li>
+     
           <li>
             <span>Stretching (1 time per week)</span>
           </li>
@@ -257,9 +253,7 @@
           <li>
             <span>Game day (Saturday)</span>
           </li>
-          <li>
-            <span>Swimming pool training (2 times per month)</span>
-          </li>
+       
           <li>
             <span>Stretching (1 time per week)</span>
           </li>
