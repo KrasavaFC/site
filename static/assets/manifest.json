@@ -1,0 +1,20 @@
+{
+  "name": "Krasava | Football Club",
+  "short_name": "Krasava",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/assets/images/Krasava/krsv.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/Krasava/krsv.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
