@@ -21,12 +21,12 @@
       <h2>Contact Info</h2>
       <div class="info connect">
         <p>
-          <i class="fas fa-envelope"></i><span class="gmail">abc@gmail.com</span
+          <i class="fas fa-envelope"></i><span class="gmail">fckrasavaeny@gmail.com</span
           >
         </p>
 
         <p>
-          <i class="fas fa-map-marker-alt"></i><span>Cyprus, Larnaka</span>
+          <i class="fas fa-map-marker-alt"></i><span>Agias Paraskevis 6, Germasogeia 4045, Cyprus</span>
         </p>
       </div>
     </div>

@@ -36,7 +36,7 @@
       <i class="fa-solid fa-map-location-dot"></i>
       <div class="content">
         <h3>address</h3>
-        <p>Cyprus, Larnaka</p>
+        <p>Agias Paraskevis 6, Germasogeia 4045, Cyprus</p>
       </div>
     </div>
 
@@ -45,7 +45,7 @@
       <i class="fas fa-phone"></i>
       <div class="content">
         <h3>call us</h3>
-        <p>+123-456-789</p>
+        <p>+357 99 117207</p>
       </div>
     </div>
 
@@ -54,7 +54,7 @@
       <i class="fas fa-envelope"></i>
       <div class="content">
         <h3>mail us</h3>
-        <p class="gmail">abc@gmail.com</p>
+        <p class="gmail">fckrasavaeny@gmail.com</p>
       </div>
     </div>
   </div>
