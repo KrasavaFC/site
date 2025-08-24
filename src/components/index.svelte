@@ -4,92 +4,124 @@
   import { onMount } from "svelte";
 
   interface Match {
-    idEvent: string;
-    strLeague: string;
-    intRound?: string;
-    dateEvent: string;
-    strTime: string;
-    strVenue?: string;
-    strHomeTeam: string;
-    strAwayTeam: string;
-    strHomeTeamBadge: string;
-    strAwayTeamBadge: string;
-    intHomeScore?: string | null;
-    intAwayScore?: string | null;
+    id: number;
+    league: string;
+    round?: string;
+    date: string;
+    venue?: string;
+    homeTeam: string;
+    awayTeam: string;
+    homeLogo: string;
+    awayLogo: string;
+    homeScore?: number | null;
+    awayScore?: number | null;
   }
 
-  let matches: Match[] = [];
-  let lastMatches: Match[] = []; 
+  interface TableRow {
+    rank: number;
+    name: string;
+    logo: string;
+    points: number;
+    played: number;
+    win: number;
+    draw: number;
+    lose: number;
+    goalsFor: number;
+    goalsAgainst: number;
+    goalsDiff: number;
+  }
 
-  const TEAM_NAME_API = "Krasava Ypsonas";
+  const TEAM_ID = 3424;
   const TEAM_NAME_SITE = "FC Freedom24 Krasava ENY";
-  const API_KEY = "123";
-  const LEAGUE_ID = 4630;
-  const SEASON = "2025-2026";
-  const TEAM_ID = 141098; 
+  const API_KEY = "8ba875d194dca14499319ae757224ee3";
+  const LEAGUE_ID = 318;
+  const SEASON = 2025;
+
+  let matches: Match[] = [];
+  let lastMatches: Match[] = [];
+  let table: TableRow[] = [];
 
   const teamNameMap: Record<string, string> = {
-    "Krasava Ypsonas": TEAM_NAME_SITE,
+    "Digenis Ypsonas": TEAM_NAME_SITE,
   };
 
   onMount(async () => {
     try {
       const resUpcoming = await fetch(
-        `https://www.thesportsdb.com/api/v1/json/${API_KEY}/eventsseason.php?id=${LEAGUE_ID}&s=${SEASON}`
+        `https://v3.football.api-sports.io/fixtures?team=${TEAM_ID}&next=2`,
+        { headers: { "x-apisports-key": API_KEY } }
       );
       const dataUpcoming = await resUpcoming.json();
-
-      if (dataUpcoming.events) {
-        let teamMatches: Match[] = dataUpcoming.events.filter(
-          (m: Match) =>
-            m.strHomeTeam === TEAM_NAME_API || m.strAwayTeam === TEAM_NAME_API
-        );
-
-        const now = new Date();
-        teamMatches = teamMatches.filter((m) => new Date(m.dateEvent) >= now);
-
-        teamMatches.sort(
-          (a, b) =>
-            new Date(a.dateEvent).getTime() - new Date(b.dateEvent).getTime()
-        );
-
-        matches = teamMatches.slice(0, 2).map((m) => ({
-          ...m,
-          strHomeTeam: teamNameMap[m.strHomeTeam] || m.strHomeTeam,
-          strAwayTeam: teamNameMap[m.strAwayTeam] || m.strAwayTeam,
+      if (dataUpcoming.response) {
+        matches = dataUpcoming.response.map((m: any) => ({
+          id: m.fixture.id,
+          league: m.league.name,
+          round: m.league.round,
+          date: m.fixture.date,
+          venue: m.fixture.venue?.name,
+          homeTeam: teamNameMap[m.teams.home.name] || m.teams.home.name,
+          awayTeam: teamNameMap[m.teams.away.name] || m.teams.away.name,
+          homeLogo: m.teams.home.logo,
+          awayLogo: m.teams.away.logo,
         }));
       }
 
       const resPast = await fetch(
-        `https://www.thesportsdb.com/api/v1/json/${API_KEY}/eventslast.php?id=${TEAM_ID}`
+        `https://v3.football.api-sports.io/fixtures?team=${TEAM_ID}&last=1`, // amount of matches
+        { headers: { "x-apisports-key": API_KEY } }
       );
       const dataPast = await resPast.json();
+      if (dataPast.response) {
+        lastMatches = dataPast.response.map((m: any) => ({
+          id: m.fixture.id,
+          league: m.league.name,
+          date: m.fixture.date,
+          venue: m.fixture.venue?.name,
+          homeTeam: teamNameMap[m.teams.home.name] || m.teams.home.name,
+          awayTeam: teamNameMap[m.teams.away.name] || m.teams.away.name,
+          homeLogo: m.teams.home.logo,
+          awayLogo: m.teams.away.logo,
+          homeScore: m.goals.home,
+          awayScore: m.goals.away,
+        }));
+      }
 
-      if (dataPast.results) {
-        lastMatches = dataPast.results.map((m: Match) => ({
-          ...m,
-          strHomeTeam: teamNameMap[m.strHomeTeam] || m.strHomeTeam,
-          strAwayTeam: teamNameMap[m.strAwayTeam] || m.strAwayTeam,
+      const resTable = await fetch(
+        `https://v3.football.api-sports.io/standings?league=${LEAGUE_ID}&season=${SEASON}`,
+        { headers: { "x-apisports-key": API_KEY } }
+      );
+      const dataTable = await resTable.json();
+      if (dataTable.response) {
+        table = dataTable.response[0].league.standings[0].map((row: any) => ({
+          rank: row.rank,
+          name: teamNameMap[row.team.name] || row.team.name,
+          logo: row.team.logo,
+          points: row.points,
+          played: row.all.played,
+          win: row.all.win,
+          draw: row.all.draw,
+          lose: row.all.lose,
+          goalsFor: row.all.goals.for,
+          goalsAgainst: row.all.goals.against,
+          goalsDiff: row.goalsDiff,
         }));
       }
     } catch (error) {
-      console.error("Ошибка загрузки матчей:", error);
+      console.error("Ошибка загрузки данных:", error);
     }
   });
 
-  function formatDate(dateStr: string, timeStr: string): string {
-    const date = new Date(`${dateStr}T${timeStr}`);
-    const options: Intl.DateTimeFormatOptions = {
+  function formatDate(dateStr: string): string {
+    const date = new Date(dateStr);
+    return date.toLocaleString("en-GB", {
       day: "2-digit",
       month: "short",
       year: "numeric",
-    };
-    let hours = date.getHours();
-    const minutes = String(date.getMinutes()).padStart(2, "0");
-    const ampm = hours >= 12 ? "p.m." : "a.m.";
-    hours = hours % 12 || 12;
-    return `${date.toLocaleDateString("en-GB", options)} - ${hours}:${minutes} ${ampm}`;
+      hour: "2-digit",
+      minute: "2-digit",
+    });
   }
+  
 </script>
 
 <a href="#" class="scroll-top">
@@ -101,18 +133,18 @@
 <section class="home">
   <div class="swiper-container home-slider">
     <div class="swiper-wrapper">
-
       <div class="swiper-slide home-item">
         <img src="/assets/images/Krasava/ticketsmain.png" alt="Home Image" />
         <div class="content">
           <div class="text">
             <h5>
-              <span>Be part of Season 25/26</span><i
-                class="fa-solid fa-futbol"
+              <span>Be part of Season 25/26</span><i class="fa-solid fa-futbol"
               ></i>
             </h5>
             <h3>get your season ticket now!</h3>
-            <a href="https://tickets.krasavafc.com/" class="btn">Buy season tickets </a>
+            <a href="https://tickets.krasavafc.com/" class="btn"
+              >Buy season tickets
+            </a>
           </div>
         </div>
       </div>
@@ -127,7 +159,9 @@
               ></i>
             </h5>
             <h3>Fueled by Freedom</h3>
-            <a href="https://tickets.krasavafc.com/" class="btn">Buy season tickets </a>
+            <a href="https://tickets.krasavafc.com/" class="btn"
+              >Buy season tickets
+            </a>
           </div>
         </div>
       </div>
@@ -147,18 +181,19 @@
         </div>
       </div> -->
 
-
       <div class="swiper-slide home-item">
         <img src="/assets/images/Krasava/about2.png" alt="Home Image" />
         <div class="content">
           <div class="text">
             <h5>
               <span>WELCOME TO KRASAVA FOOTBALL CLUB</span><i
-                class="fa-solid fa-futbol"  
+                class="fa-solid fa-futbol"
               ></i>
             </h5>
-                 <h3>Fueled by Freedom</h3>
-            <a href="https://tickets.krasavafc.com/" class="btn">Buy season tickets </a>
+            <h3>Fueled by Freedom</h3>
+            <a href="https://tickets.krasavafc.com/" class="btn"
+              >Buy season tickets
+            </a>
           </div>
         </div>
       </div>
@@ -187,22 +222,32 @@
     <div class="content">
       <div class="heading">
         <h2>
-          TERRITORY OF <span>FREEDOM</span> <span> </span> 
+          TERRITORY OF <span>FREEDOM</span> <span> </span>
         </h2>
       </div>
       <p>
-        We value freedom, independence, and accessibility for everyone who plays and loves football.
+        We value freedom, independence, and accessibility for everyone who plays
+        and loves football.
       </p>
       <p>
-        Founded in 2021, FC Krasava quickly became a unique football project built on openness and private support. From the start, the club gave young players real opportunities and inspired a strong community of fans.      </p>
-      <p>
-        Keeping its spirit of freedom and independence, FC Krasava relocated to Cyprus — purchasing a club in Ypsonas and starting a new chapter with a new name, logo, and colors.
+        Founded in 2021, FC Krasava quickly became a unique football project
+        built on openness and private support. From the start, the club gave
+        young players real opportunities and inspired a strong community of
+        fans.
       </p>
       <p>
-        In just three seasons, Krasava rose from the Second Division to the Cypriot First Division — becoming the only club in the country’s history to achieve this journey as newcomers from abroad.
+        Keeping its spirit of freedom and independence, FC Krasava relocated to
+        Cyprus — purchasing a club in Ypsonas and starting a new chapter with a
+        new name, logo, and colors.
       </p>
       <p>
-        FC Krasava is a football club for people who love the game — and their freedom.
+        In just three seasons, Krasava rose from the Second Division to the
+        Cypriot First Division — becoming the only club in the country’s history
+        to achieve this journey as newcomers from abroad.
+      </p>
+      <p>
+        FC Krasava is a football club for people who love the game — and their
+        freedom.
       </p>
 
       <ul class="features">
@@ -234,30 +279,26 @@
     <div class="upcoming-container">
       {#each lastMatches as match}
         <div class="match-item">
-          <a href="#">
-            <div class="match-detail">
-              <div class="league">{match.strLeague}</div>
-              <div class="time">
-                {formatDate(match.dateEvent, match.strTime)}
-              </div>
-              <div class="venue">{match.strVenue}</div>
+          <div class="match-detail">
+            <div class="league">{match.league}</div>
+            <div class="time">{formatDate(match.date)}</div>
+            <div class="venue">{match.venue}</div>
+          </div>
+          <div class="match-intro">
+            <div class="team-logo">
+              <img src={match.homeLogo} alt="logo" />
+              <h3>{match.homeTeam}</h3>
             </div>
-            <div class="match-intro">
-              <div class="team-logo">
-                <img src={match.strHomeTeamBadge} alt="logo" />
-                <h3>{match.strHomeTeam}</h3>
-              </div>
-              <div class="result">
-                <span>{match.intHomeScore ?? "-"}</span>
-                <span>-</span>
-                <span>{match.intAwayScore ?? "-"}</span>
-              </div>
-              <div class="team-logo">
-                <img src={match.strAwayTeamBadge} alt="logo" />
-                <h3>{match.strAwayTeam}</h3>
-              </div>
+            <div class="result">
+              <span>{match.homeScore ?? "-"}</span>
+              <span>-</span>
+              <span>{match.awayScore ?? "-"}</span>
             </div>
-          </a>
+            <div class="team-logo">
+              <img src={match.awayLogo} alt="logo" />
+              <h3>{match.awayTeam}</h3>
+            </div>
+          </div>
         </div>
       {/each}
     </div>
@@ -288,282 +329,23 @@
 
         <!-- Points Section -->
         <div class="points">
-          <!-- Team-1 Point Item -->
-          <div class="point-item">
-            <div class="box">1</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/AEKLarnaka.png"
-                alt="team-logo"
-              />
-              <span>AEK Larnaca</span>
+          {#each table as row}
+            <div class="point-item">
+              <div class="box">{row.rank}</div>
+              <div class="box name">
+                <img src={row.logo} alt={row.name} />
+                <span>{row.name}</span>
+              </div>
+              <div class="box">{row.played}</div>
+              <div class="box">{row.win}</div>
+              <div class="box">{row.draw}</div>
+              <div class="box">{row.lose}</div>
+              <div class="box">{row.goalsFor}</div>
+              <div class="box">{row.goalsAgainst}</div>
+              <div class="box">{row.goalsDiff}</div>
+              <div class="box">{row.points}</div>
             </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-2 Point Item -->
-          <div class="point-item">
-            <div class="box">2</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/AELLimassol.png"
-                alt="team-logo"
-              />
-              <span>AEL Limassol</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-3 Point Item -->
-          <div class="point-item">
-            <div class="box">3</div>
-            <div class="box name">
-              <img src="./assets/images/Club-Teams/APOEL.png" alt="team-logo" />
-              <span>APOEL Nicosia</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-4 Point Item -->
-          <div class="point-item">
-            <div class="box">4</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/Akritas.png"
-                alt="team-logo"
-              />
-              <span>Akritas</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-5 Point Item -->
-          <div class="point-item">
-            <div class="box">5</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/Anorthosis.png"
-                alt="team-logo"
-              />
-              <span>Anorthosis Famagusta</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-6 Point Item -->
-          <div class="point-item">
-            <div class="box">6</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/ApollonLimassol.png"
-                alt="team-logo"
-              />
-              <span>Apollon Limassol</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-7 Point Item -->
-          <div class="point-item">
-            <div class="box">7</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/ArisLimassol.png"
-                alt="team-logo"
-              />
-              <span>Aris Limassol</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-8 Point Item -->
-          <div class="point-item">
-            <div class="box">8</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/EnosisNeon.png"
-                alt="team-logo"
-              />
-              <span>Enosis Neon Paralimniou</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-9 Point Item -->
-          <div class="point-item">
-            <div class="box">9</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/EthnikosAchnas.png"
-                alt="team-logo"
-              />
-              <span>Ethnikos Achnas</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-10 Point Item -->
-          <div class="point-item">
-            <div class="box">10</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/FCKrasava1.png"
-                alt="team-logo"
-              />
-              <span>FC Freedom24 Krasava ENY</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-11 Point Item -->
-          <div class="point-item">
-            <div class="box">11</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/OlympiakosNicosia.png"
-                alt="team-logo"
-              />
-              <span>Olympiakos Nicosia</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-12 Point Item -->
-          <div class="point-item">
-            <div class="box">12</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/OmoniaAradippou.png"
-                alt="team-logo"
-              />
-              <span>Omonia Aradippou</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-13 Point Item -->
-          <div class="point-item">
-            <div class="box">13</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/OmoniaNicosia.png"
-                alt="team-logo"
-              />
-              <span>Omonia Nicosia</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
-
-          <!-- Team-14 Point Item -->
-          <div class="point-item">
-            <div class="box">14</div>
-            <div class="box name">
-              <img
-                src="./assets/images/Club-Teams/PafosFC.png"
-                alt="team-logo"
-              />
-              <span>Pafos FC</span>
-            </div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-            <div class="box">0</div>
-          </div>
+          {/each}
         </div>
       </div>
     </div>
@@ -581,25 +363,24 @@
   <div class="box-container">
     {#each matches as match}
       <div class="match-item">
-        <a href="/">
-          <div class="match-detail">
-            <div class="league">
-              {match.strLeague}, {match.intRound}-round
-            </div>
-            <div class="time">{formatDate(match.dateEvent, match.strTime)}</div>
+        <div class="match-detail">
+          <div class="league">{match.league}, {match.round}</div>
+          <div class="time">{formatDate(match.date)}</div>
+        </div>
+
+        <div class="match-intro">
+          <div class="team-logo">
+            <img src={match.homeLogo} alt={match.homeTeam} />
+            <h3>{match.homeTeam}</h3>
           </div>
-          <div class="match-intro">
-            <div class="team-logo">
-              <img src={match.strHomeTeamBadge} alt={match.strHomeTeam} />
-              <h3>{match.strHomeTeam}</h3>
-            </div>
-            <div class="result"><span>VS</span></div>
-            <div class="team-logo">
-              <img src={match.strAwayTeamBadge} alt={match.strAwayTeam} />
-              <h3>{match.strAwayTeam}</h3>
-            </div>
+          <div class="result"><span>VS</span></div>
+          <div class="team-logo">
+            <img src={match.awayLogo} alt={match.awayTeam} />
+            <h3>{match.awayTeam}</h3>
           </div>
-        </a>
+        </div>
+
+        <!-- Блок с кнопками -->
         <div class="action-container">
           <a href="https://tickets.krasavafc.com/">
             <i class="fas fa-ticket-alt"></i> <span>Buy ticket</span>
@@ -613,6 +394,7 @@
     {/each}
   </div>
 </section>
+
 <!-- ==================== Upcoming Matches Area (End) ==================== -->
 
 <!-- ==================== Count Area (Start) ==================== -->
@@ -1064,7 +846,7 @@
   <div class="swiper-container sponsor-slider">
     <!-- Sponsors Logo -->
     <div class="swiper-wrapper">
-       <div class="swiper-slide sponsor-item">
+      <div class="swiper-slide sponsor-item">
         <a href="https://freedom24.com/"
           ><img
             src="./assets/images/Sponsors/freedom.png"
@@ -1087,7 +869,8 @@
             alt="Sponsor-Logo"
           /></a
         >
-      </div> <div class="swiper-slide sponsor-item">
+      </div>
+      <div class="swiper-slide sponsor-item">
         <a href="https://freedom24.com/"
           ><img
             src="./assets/images/Sponsors/freedom.png"
@@ -1110,7 +893,8 @@
             alt="Sponsor-Logo"
           /></a
         >
-      </div> <div class="swiper-slide sponsor-item">
+      </div>
+      <div class="swiper-slide sponsor-item">
         <a href="https://freedom24.com/"
           ><img
             src="./assets/images/Sponsors/freedom.png"
@@ -1133,7 +917,8 @@
             alt="Sponsor-Logo"
           /></a
         >
-      </div> <div class="swiper-slide sponsor-item">
+      </div>
+      <div class="swiper-slide sponsor-item">
         <a href="https://freedom24.com/"
           ><img
             src="./assets/images/Sponsors/freedom.png"
