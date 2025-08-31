@@ -67,7 +67,7 @@
       }
 
       const resPast = await fetch(
-        `https://v3.football.api-sports.io/fixtures?team=${TEAM_ID}&last=1`, // amount of matches
+        `https://v3.football.api-sports.io/fixtures?team=${TEAM_ID}&last=3`, // amount of matches
         { headers: { "x-apisports-key": API_KEY } }
       );
       const dataPast = await resPast.json();
@@ -121,7 +121,6 @@
       minute: "2-digit",
     });
   }
-  
 </script>
 
 <a href="#" class="scroll-top">
@@ -278,6 +277,8 @@
 
     <div class="upcoming-container">
       {#each lastMatches as match}
+      <a href={`/fixture?id=${match.id}`}>
+
         <div class="match-item">
           <div class="match-detail">
             <div class="league">{match.league}</div>
@@ -300,6 +301,7 @@
             </div>
           </div>
         </div>
+        </a>
       {/each}
     </div>
   </div>
@@ -362,6 +364,7 @@
 
   <div class="box-container">
     {#each matches as match}
+
       <div class="match-item">
         <div class="match-detail">
           <div class="league">{match.league}, {match.round}</div>
@@ -385,7 +388,7 @@
           <a href="https://tickets.krasavafc.com/">
             <i class="fas fa-ticket-alt"></i> <span>Buy ticket</span>
           </a>
-          <a href="https://soccer365.ru/">
+          <a href={`/fixture?id=${match.id}`}>
             <i class="fa-solid fa-pen-to-square"></i>
             <span>Match Report</span>
           </a>
@@ -393,6 +396,7 @@
       </div>
     {/each}
   </div>
+  <a href="/fixtures" class="btn-more">Learn more</a>
 </section>
 
 <!-- ==================== Upcoming Matches Area (End) ==================== -->
